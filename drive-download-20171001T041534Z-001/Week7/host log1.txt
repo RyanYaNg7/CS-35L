@@ -1,0 +1,61 @@
+boot from cd
+try Ubuntu
+-loading the ubuntu OS to give root access for the lab
+
+ctrl-Alt-T
+-Open terminal in Ubuntu
+
+~~~~~SERVER TEAM~~~~~
+
+dpkg-get-selections | grep openssh
+
+OUTPUT:
+	openssh-client 			install
+
+	-so we need to install the server 
+	
+sudo apt-get install openssh-server
+-installed the open ssh server
+
+dpkg-get-selections | grep openssh
+OUTPUT:
+	openssh-client 			install
+	openssh-server 			install
+	openssh-sftp-server 	install
+-check if the psuedo installwas successful
+
+ssh-keygen
+memes
+memes
+-create a (password?) key and generate a randmart image
+
+cat ~/.ssh/id_rsa.pub
+-sjow our public key
+
+cat ~/.ssh/id_rsa id_rsa.pub
+-show our private key
+
+sudo useradd -d /home/kyle -m kw
+sudo masswd kw
+memes1
+-specify the home directory name and create a password for our client to log in with
+-passphrase is memes1
+
+cd /home/kyle
+sudo mkdir .ssh
+-create a directory to hold the users key
+
+sudo chown -R kw .ssh
+-chaning owner to the client, username kw
+
+sudo chmod 700 .ssh
+-giving read, write, and execute permission to the owner and no others
+
+ifconfig
+-view our ip address, the inet address: 10.97.85.46
+
+ps -aux | grep firefox 
+-check if firefox is running under
+
+ps -aux | grep kw
+-view all processes being run by our client

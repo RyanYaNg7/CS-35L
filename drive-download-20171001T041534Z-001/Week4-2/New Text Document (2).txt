@@ -1,0 +1,2579 @@
+Using username "classzfu".
+classzfu@lnxsrv09.seas.ucla.edu's password:
+Access denied
+classzfu@lnxsrv09.seas.ucla.edu's password:
+Access denied
+classzfu@lnxsrv09.seas.ucla.edu's password:
+Last failed login: Wed Apr 26 15:18:51 PDT 2017 from cr3760-router.seas.ucla.edu on ssh:nott
+There were 2 failed login attempts since the last successful login.
+Last login: Wed Apr 26 14:02:14 2017 from cr3760-router.seas.ucla.edu
+*****************************************************************************
+                        lnxsrv09.seas.ucla.edu RHEL 7
+*****************************************************************************
+
+        RedHat 7 -- may not behave the same as other lnxsrv
+        Will be used by CS 35L, CS 33, CS 111, and CS 131
+
+*****************************************************************************
+*****************************************************************************
+* ========================================================================= *
+* ACCOUNT RENEWALS                                             May 23, 2016 *
+*                                                                           *
+* SEASnet has begun notifying users of the account renewal process.  The    *
+* first notification has already been sent via email to your SEASnet        *
+* account or Official UCLA Email Address.  Although the account renewal     *
+* process actually takes place in October, we send out the first notice     *
+* early as a courtesy in case you are planning on taking a leave of absence *
+* for the upcoming fall quarter.  Please make sure you check your email for *
+* this important announcement.  Accounts that are not renewed or placed on  *
+* hold by October 31, 2016 will be removed and will NOT be restored.        *
+*                                                                           *
+* Detailed information about the renewal process can also be found here:    *
+*       http://www.seasnet.ucla.edu/seasnet-accounts                        *
+* ========================================================================= *
+* Starting winter quarter 2016, SEASnet will be restricting access to our   *
+* instructional linux and eeapps servers to on campus IP addresses.  Users  *
+* needing to use these machines will need to connect from:                  *
+*       -a machine on the campus network                                    *
+*       -machines off-campus, but connected to the campus VPN server        *
+*       -SEASnet's terminal server                                          *
+* ========================================================================= *
+* SEASnet Computing Access                                                  *
+*                                                                           *
+* Priority is given both on the servers and in the student labs to those    *
+* students doing coursework. Computing support for research is provided by  *
+* each department.                                                          *
+*****************************************************************************
+* For assistance please contact help@seas.ucla.edu or call 206-6864.        *
+*****************************************************************************
+[classzfu@lnxsrv09 ~]$ cd 35l/week4_2
+[classzfu@lnxsrv09 ~/35l/week4_2]$ cd coreutils-with-bug
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ cd src
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug/src]$ cd ..
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ emacs Makefile
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:14.0 unavailable, simulating -nw
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ emacs config
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:14.0 unavailable, simulating -nw
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ emacs configure
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:14.0 unavailable, simulating -nw
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ pwd ../coreutils
+coreutils.diff              coreutils-with-bug-install/
+coreutils-with-bug/         coreutils-with-bug.tar.gz
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ pwd ../coreutils-with-bug-install/
+/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ cd ../coreutils-with-bug-install/
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug-install]$ pwd
+/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug-install]$ ./configure --prefix=/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install
+-bash: ./configure: No such file or directory
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug-install]$ cd ../coreutils-with-bug
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ ./configure --prefix=/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+configure: autobuild project... GNU coreutils
+configure: autobuild revision... 5.93
+configure: autobuild hostname... lnxsrv09.seas.ucla.edu
+configure: autobuild timestamp... 20170426-152802
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for desired default level of POSIX conformance... none-specified
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables...
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for AIX... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking for perl5.003 or newer... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking how to run the C preprocessor... gcc -E
+checking whether gcc needs -traditional... no
+checking for ranlib... ranlib
+checking whether ln -s works... yes
+checking for uname... yes
+checking for chroot... yes
+checking for gethostid... yes
+checking for library containing strerror... none required
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for _LARGE_FILES value needed for large files... no
+checking for function prototypes... yes
+checking for string.h... (cached) yes
+checking whether byte ordering is bigendian... no
+checking for an ANSI C-conforming const... yes
+checking for working volatile... yes
+checking for inline... inline
+checking for working long double with more range or precision than double... yes
+checking hurd.h usability... no
+checking hurd.h presence... no
+checking for hurd.h... no
+checking paths.h usability... yes
+checking paths.h presence... yes
+checking for paths.h... yes
+checking priv.h usability... no
+checking priv.h presence... no
+checking for priv.h... no
+checking stropts.h usability... no
+checking stropts.h presence... no
+checking for stropts.h... no
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/statvfs.h usability... yes
+checking sys/statvfs.h presence... yes
+checking for sys/statvfs.h... yes
+checking sys/systeminfo.h usability... no
+checking sys/systeminfo.h presence... no
+checking for sys/systeminfo.h... no
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/vfs.h usability... yes
+checking sys/vfs.h presence... yes
+checking for sys/vfs.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking utmp.h usability... yes
+checking utmp.h presence... yes
+checking for utmp.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking for sys/types.h... (cached) yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking sys/fs_types.h usability... no
+checking sys/fs_types.h presence... no
+checking for sys/fs_types.h... no
+checking stdio_ext.h usability... yes
+checking stdio_ext.h presence... yes
+checking for stdio_ext.h... yes
+checking libgen.h usability... yes
+checking libgen.h presence... yes
+checking for libgen.h... yes
+checking for unistd.h... (cached) yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking utmpx.h usability... yes
+checking utmpx.h presence... yes
+checking for utmpx.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking sys/sysmacros.h usability... yes
+checking sys/sysmacros.h presence... yes
+checking for sys/sysmacros.h... yes
+checking for sys/mount.h... yes
+checking for sys/sysctl.h... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for struct stat.st_blocks... yes
+checking for st_dm_mode in struct stat... no
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... gid_t
+checking for mbstate_t... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for uint32_t... uint32_t
+checking for UINT32_MAX... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unsigned long long... yes
+checking for uintptr_t... uintptr_t
+checking for UINTPTR_MAX... yes
+checking whether sys/types.h defines makedev... yes
+checking host operating system... GNU/Linux
+checking whether to enable assertions... yes
+checking for d_type member in directory struct... yes
+checking for d_ino member in directory struct... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether free is declared... yes
+checking whether getenv is declared... yes
+checking whether geteuid is declared... yes
+checking whether getgrgid is declared... yes
+checking whether getlogin is declared... yes
+checking whether getpwuid is declared... yes
+checking whether getuid is declared... yes
+checking whether getutent is declared... yes
+checking whether lseek is declared... yes
+checking whether malloc is declared... yes
+checking whether memchr is declared... yes
+checking whether memrchr is declared... yes
+checking whether nanosleep is declared... yes
+checking whether realloc is declared... yes
+checking whether stpcpy is declared... yes
+checking whether strndup is declared... yes
+checking whether strnlen is declared... yes
+checking whether strstr is declared... yes
+checking whether strtoul is declared... yes
+checking whether strtoull is declared... yes
+checking whether ttyname is declared... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for long long... yes
+checking for long double... yes
+checking whether system is Windows or MSDOS... no
+checking for long file names... yes
+checking for pathconf... yes
+checking for isascii... yes
+checking for mempcpy... yes
+checking for __fsetlocking... yes
+checking for tcgetattr... yes
+checking for tcsetattr... yes
+checking for alarm... yes
+checking for gettimeofday... yes
+checking for microuptime... no
+checking for nanouptime... no
+checking for nanotime... no
+checking for setlocale... yes
+checking for iswprint... yes
+checking for mbsinit... yes
+checking for utmpname... yes
+checking for utmpxname... yes
+checking for isblank... yes
+checking for mbrtowc... yes
+checking for wcrtomb... yes
+checking for wcscoll... yes
+checking for fchdir... yes
+checking for settimeofday... yes
+checking for stime... yes
+checking for futimes... yes
+checking for futimesat... yes
+checking for mblen... yes
+checking for mbrlen... yes
+checking for tzset... yes
+checking for siginterrupt... yes
+checking for directio... no
+checking for endgrent... yes
+checking for endpwent... yes
+checking for fchmod... yes
+checking for fchown... yes
+checking for ftruncate... yes
+checking for hasmntopt... yes
+checking for iswspace... yes
+checking for lchown... yes
+checking for listmntent... no
+checking for mkfifo... yes
+checking for realpath... yes
+checking for sethostname... yes
+checking for sysctl... yes
+checking for sysinfo... yes
+checking for tcgetpgrp... yes
+checking for statvfs... yes
+checking for fdopendir... yes
+checking whether strtold conforms to C99... yes
+checking for C/C++ restrict keyword... __restrict
+checking for IPv4 sockets... yes
+checking for IPv6 sockets... yes
+checking for library containing getaddrinfo... none required
+checking for library containing gethostbyname... none required
+checking for library containing getservbyname... none required
+checking for getaddrinfo... yes
+checking for gai_strerror... yes
+checking whether getaddrinfo is declared... yes
+checking whether freeaddrinfo is declared... yes
+checking whether gai_strerror is declared... yes
+checking for struct addrinfo... yes
+checking whether strerror_r is declared... yes
+checking for strerror_r... yes
+checking whether strerror_r returns char *... yes
+checking for error_at_line... yes
+checking for struct stat.st_blocks... (cached) yes
+checking for sys/mount.h... (cached) yes
+checking how to get file system space usage...
+checking for statvfs function (SVR4)... no
+checking for 3-argument statfs function (DEC OSF/1)... no
+checking for two-argument statfs with statfs.bsize member (AIX, 4.3BSD)... yes
+checking dustat.h usability... no
+checking dustat.h presence... no
+checking for dustat.h... no
+checking sys/fs/s5param.h usability... no
+checking sys/fs/s5param.h presence... no
+checking for sys/fs/s5param.h... no
+checking sys/filsys.h usability... no
+checking sys/filsys.h presence... no
+checking for sys/filsys.h... no
+checking sys/statfs.h usability... yes
+checking sys/statfs.h presence... yes
+checking for sys/statfs.h... yes
+checking for sys/statvfs.h... (cached) yes
+checking for statfs that truncates block counts... no
+checking for atexit... yes
+checking for dup2... yes
+checking for working GNU fnmatch... yes
+checking for gethostname... yes
+checking whether getdelim is declared... yes
+checking whether getline is declared... yes
+checking for getline... yes
+checking for working getline function... yes
+checking for getloadavg... yes
+checking for pstat_getdynamic... no
+checking for kstat_open in -lkstat... no
+checking for getloadavg... yes
+checking whether getloadavg requires setgid... no
+checking whether getpass is declared... yes
+checking whether fflush_unlocked is declared... yes
+checking whether flockfile is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether funlockfile is declared... yes
+checking whether putc_unlocked is declared... yes
+checking for getusershell... yes
+checking whether lstat dereferences a symlink specified with a trailing slash... yes
+checking for memchr... yes
+checking for memcpy... yes
+checking for memmove... yes
+checking for mempcpy... (cached) yes
+checking whether memrchr is declared... (cached) yes
+checking for memrchr... yes
+checking for memset... yes
+checking whether mkdir fails due to a trailing slash... no
+checking for working mktime... yes
+checking whether getenv is declared... (cached) yes
+checking for mkstemp... yes
+checking for mkstemp limitations... no
+checking whether euidaccess is declared... yes
+checking whether setregid is declared... yes
+checking for getgroups... yes
+checking for working getgroups... yes
+checking for euidaccess... yes
+checking for readlink... yes
+checking for rmdir... yes
+checking for rpmatch... yes
+checking for setenv... yes
+checking for unsetenv... yes
+checking for unsetenv() return type... int
+checking for sig2str... no
+checking for stpcpy... yes
+checking for strcspn... yes
+checking whether strdup is declared... yes
+checking for strdup... yes
+checking for strndup... yes
+checking whether strnlen is declared... (cached) yes
+checking for working strnlen... yes
+checking for strpbrk... yes
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking for working strtod... yes
+checking whether <inttypes.h> defines strtoimax as a macro... no
+checking for strtoimax... yes
+checking for strtoll... yes
+checking for strtol... yes
+checking for strtoull... yes
+checking for strtoul... yes
+checking whether <inttypes.h> defines strtoumax as a macro... no
+checking for strtoumax... yes
+checking for strverscmp... yes
+checking whether tzset clobbers localtime buffer... no
+checking for EOVERFLOW... yes
+checking for signed... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking for intmax_t... yes
+checking for vasnprintf... no
+checking for ptrdiff_t... yes
+checking for snprintf... yes
+checking for wcslen... yes
+checking for vasprintf... yes
+checking for struct timespec... yes
+checking whether nanosleep is declared... (cached) yes
+checking for compound literals... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for library containing clock_gettime... none required
+checking for clock_gettime... yes
+checking for clock_settime... yes
+checking for struct tm.tm_gmtoff... yes
+checking for struct tm.tm_zone... yes
+checking for arithmetic hrtime_t... no
+checking whether gethrtime is declared... no
+checking whether CLOCK_MONOTONIC is defined... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for getopt_long_only... yes
+checking whether optreset is declared... no
+checking for working GNU getopt function... yes
+checking OS.h usability... no
+checking OS.h presence... no
+checking for OS.h... no
+checking for getpagesize... yes
+checking type of array argument to getgroups... (cached) gid_t
+checking for nl_langinfo and CODESET... yes
+checking whether we are using the GNU C Library 2.1 or newer... yes
+checking for iswcntrl... yes
+checking for wcwidth... yes
+checking whether mbrtowc and mbstate_t are properly declared... (cached) yes
+checking whether wcwidth is declared... yes
+checking whether mbswidth is declared in <wchar.h>... no
+checking for mbstate_t... (cached) yes
+checking for working memcmp... yes
+checking for working strcoll... yes
+checking for listmntent... (cached) no
+checking for getmntinfo... no
+checking for sys/ucred.h... no
+checking for sys/mount.h... (cached) yes
+checking mntent.h usability... yes
+checking mntent.h presence... yes
+checking for mntent.h... yes
+checking for sys/fs_types.h... (cached) no
+checking for struct fsstat.f_fstypename... no
+checking for library containing getmntent... none required
+checking for getmntent... yes
+checking for listmntent of Cray/Unicos-9... no
+checking for mntctl function and struct vmount... no
+checking for one-argument getmntent function... yes
+checking sys/mntent.h usability... no
+checking sys/mntent.h presence... no
+checking for sys/mntent.h... no
+checking for f_fstypename in struct statfs... no
+checking for obstacks... yes
+checking for external symbol _system_configuration... no
+checking for sys/pstat.h... no
+checking for sys/sysmp.h... no
+checking for sys/sysinfo.h... yes
+checking for machine/hal_sysinfo.h... no
+checking for sys/table.h... no
+checking for sys/param.h... (cached) yes
+checking for sys/sysctl.h... (cached) yes
+checking for sys/systemcfg.h... no
+checking for pstat_getstatic... no
+checking for pstat_getdynamic... (cached) no
+checking for sysmp... no
+checking for getsysinfo... no
+checking for sysctl... (cached) yes
+checking for table... no
+checking whether struct tm is in sys/time.h or time.h... (cached) time.h
+checking for mbstate_t... (cached) yes
+checking whether mbrtowc and mbstate_t are properly declared... (cached) yes
+checking whether free (NULL) is known to work... yes
+checking whether getutent is declared... (cached) yes
+checking for struct utmpx.ut_user... yes
+checking for struct utmp.ut_user... yes
+checking for struct utmpx.ut_name... yes
+checking for struct utmp.ut_name... yes
+checking for struct utmpx.ut_type... yes
+checking for struct utmp.ut_type... yes
+checking for struct utmpx.ut_pid... yes
+checking for struct utmp.ut_pid... yes
+checking for struct utmpx.ut_id... yes
+checking for struct utmp.ut_id... yes
+checking for struct utmpx.ut_exit... yes
+checking for struct utmp.ut_exit... yes
+checking for struct utmpx.ut_exit.ut_exit... no
+checking for struct utmp.ut_exit.ut_exit... no
+checking for struct utmpx.ut_exit.e_exit... yes
+checking for struct utmp.ut_exit.e_exit... yes
+checking for struct utmpx.ut_exit.ut_termination... no
+checking for struct utmp.ut_exit.ut_termination... no
+checking for struct utmpx.ut_exit.e_termination... yes
+checking for struct utmp.ut_exit.e_termination... yes
+checking for working re_compile_pattern... yes
+checking whether closedir returns void... no
+checking whether stat file-mode macros are broken... no
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether mbrtowc and mbstate_t are properly declared... (cached) yes
+checking for strncasecmp... yes
+checking for inline... (cached) inline
+checking determine whether the utimes function works... yes
+checking for struct utimbuf... yes
+checking whether getcwd (NULL, 0) allocates memory for result... yes
+checking whether getcwd is declared... yes
+checking whether getcwd handles long file names properly... yes
+checking whether strtoimax is declared... yes
+checking whether strtoumax is declared... yes
+checking for GNU libc compatible calloc... yes
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... yes
+checking whether ferror_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking whether fputc_unlocked is declared... yes
+checking whether fread_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether getc_unlocked is declared... yes
+checking whether getchar_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking for strftime... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... (cached) yes
+checking for library containing nanosleep... none required
+checking whether nanosleep works... yes
+checking for SVID conformant putenv... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking whether utime accepts a null argument... yes
+checking whether rename is broken... no
+checking for dirent.h that defines DIR... (cached) yes
+checking for library containing opendir... (cached) none required
+checking for dirfd... yes
+checking whether dirfd is declared... yes
+checking whether dirfd is a macro... no
+checking sys/acl.h usability... yes
+checking sys/acl.h presence... yes
+checking for sys/acl.h... yes
+checking for acl... no
+checking for unistd.h... (cached) yes
+checking for working chown... yes
+checking whether chown(2) dereferences symlinks... yes
+checking for lchown... (cached) yes
+checking for rmdir-not-empty errno value... 39
+checking whether lstat accepts an empty string... no
+checking for group_member... yes
+checking whether link(2) dereferences a symlink specified with a trailing slash... no
+checking for stdio_ext.h... (cached) yes
+checking for __fpending... yes
+checking whether __fpending is declared... yes
+checking for inttypes.h... yes
+checking whether the inttypes.h PRIxNN macros are broken... no
+checking whether ULONG_MAX < ULLONG_MAX... no
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for fseeko... yes
+checking for /proc/uptime... yes
+checking for ftruncate... (cached) yes
+checking for sys/mount.h... (cached) yes
+checking for netinet/in.h... (cached) yes
+checking for nfs/nfs_clnt.h... no
+checking for nfs/vfs.h... no
+checking for struct statfs.f_basetype... no
+checking for struct statvfs.f_basetype... no
+checking for struct statfs.f_fstypename... no
+checking for struct statfs.f_type... yes
+checking for struct statvfs.f_type... no
+checking for struct statfs.f_fsid.__val... yes
+checking for struct statvfs.f_fsid.__val... no
+checking for struct statfs.f_namemax... no
+checking for struct statvfs.f_namemax... yes
+checking for struct statfs.f_namelen... yes
+checking for struct statvfs.f_namelen... no
+checking for ld used by GCC... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for sys/param.h... (cached) yes
+checking for resolvepath... no
+checking for canonicalize_file_name... yes
+checking whether this system has an arbitrary file name length limit... yes
+checking for mempcpy... (cached) yes
+checking for openat... yes
+checking for memrchr... (cached) yes
+checking for socklen_t... yes
+checking for struct stat.st_author... no
+checking for struct stat.st_blksize... yes
+checking for ino_t... yes
+checking for ssize_t... yes
+checking for major_t... no
+checking for minor_t... no
+checking for getloadavg... (cached) yes
+checking for pstat_getdynamic... (cached) no
+checking for kstat_open in -lkstat... (cached) no
+checking for getloadavg... (cached) yes
+checking whether getloadavg requires setgid... (cached) no
+checking for raise... yes
+checking whether setvbuf arguments are reversed... no
+checking whether gettimeofday clobbers localtime buffer... no
+checking for working strtod... (cached) yes
+checking for library containing fdatasync... none required
+checking for fdatasync... yes
+checking for iconv... yes
+checking for iconv declaration...
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking whether a running program can be unlinked... yes
+checking for fchdir... (cached) yes
+checking POSIX termios... yes
+checking whether use of struct winsize requires sys/ptem.h... no
+checking whether localtime caches TZ... no
+checking for initgroups... yes
+checking for syslog... yes
+checking for 3-argument setpriority function... yes
+checking ut_host in struct utmp... yes
+checking for sysctl... (cached) yes
+checking for sys/sysctl.h... (cached) yes
+checking whether we can get the system boot time... yes
+checking POSIX termios... (cached) yes
+checking whether use of TIOCGWINSZ requires termios.h... no
+checking whether use of TIOCGWINSZ requires sys/ioctl.h... yes
+checking whether termios.h needs _XOPEN_SOURCE... no
+checking c_line in struct termios... yes
+checking whether use of struct winsize requires sys/ptem.h... (cached) no
+checking whether use of TIOCGWINSZ requires termios.h... (cached) no
+checking whether strsignal is declared... yes
+checking whether sys_siglist is declared... yes
+checking whether _sys_siglist is declared... yes
+checking whether __sys_siglist is declared... no
+checking whether strtoimax is declared... (cached) yes
+checking whether strtoumax is declared... (cached) yes
+checking for main in -lypsec... no
+checking for main in -lldgc... no
+checking for library containing floor... -lm
+checking for library containing modf... none required
+checking for library containing rint... none required
+checking for floor... yes
+checking for modf... yes
+checking for rint... yes
+checking for library containing yp_match... no
+checking for library containing getspnam... none required
+checking shadow.h usability... yes
+checking shadow.h presence... yes
+checking for shadow.h... yes
+checking for struct spwd.sp_pwdp... yes
+checking for getspnam... yes
+checking for library containing crypt... -lcrypt
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking whether NLS is requested... yes
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating lib/Makefile
+config.status: creating man/Makefile
+config.status: creating po/Makefile.in
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/basename/Makefile
+config.status: creating tests/chgrp/Makefile
+config.status: creating tests/chmod/Makefile
+config.status: creating tests/chown/Makefile
+config.status: creating tests/cp/Makefile
+config.status: creating tests/cut/Makefile
+config.status: creating tests/dd/Makefile
+config.status: creating tests/dircolors/Makefile
+config.status: creating tests/du/Makefile
+config.status: creating tests/expr/Makefile
+config.status: creating tests/factor/Makefile
+config.status: creating tests/fmt/Makefile
+config.status: creating tests/head/Makefile
+config.status: creating tests/install/Makefile
+config.status: creating tests/join/Makefile
+config.status: creating tests/ln/Makefile
+config.status: creating tests/ls-2/Makefile
+config.status: creating tests/ls/Makefile
+config.status: creating tests/md5sum/Makefile
+config.status: creating tests/misc/Makefile
+config.status: creating tests/mkdir/Makefile
+config.status: creating tests/mv/Makefile
+config.status: creating tests/od/Makefile
+config.status: creating tests/pr/Makefile
+config.status: creating tests/readlink/Makefile
+config.status: creating tests/rm/Makefile
+config.status: creating tests/rmdir/Makefile
+config.status: creating tests/seq/Makefile
+config.status: creating tests/sha1sum/Makefile
+config.status: creating tests/shred/Makefile
+config.status: creating tests/sort/Makefile
+config.status: creating tests/stty/Makefile
+config.status: creating tests/sum/Makefile
+config.status: creating tests/tac/Makefile
+config.status: creating tests/tail-2/Makefile
+config.status: creating tests/tail/Makefile
+config.status: creating tests/tee/Makefile
+config.status: creating tests/test/Makefile
+config.status: creating tests/touch/Makefile
+config.status: creating tests/tr/Makefile
+config.status: creating tests/tsort/Makefile
+config.status: creating tests/unexpand/Makefile
+config.status: creating tests/uniq/Makefile
+config.status: creating tests/wc/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing default-1 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ make
+make  all-recursive
+make[1]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug'
+Making all in lib
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/lib'
+make  all-am
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/lib'
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT allocsa.o -MD -MP -MF ".deps/allocsa.Tpo" -c -o allocsa.o allocsa.c; \
+then mv -f ".deps/allocsa.Tpo" ".deps/allocsa.Po"; else rm -f ".deps/allocsa.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT fprintftime.o -MD -MP -MF ".deps/fprintftime.Tpo" -c -o fprintftime.o fprintftime.c; \
+then mv -f ".deps/fprintftime.Tpo" ".deps/fprintftime.Po"; else rm -f ".deps/fprintftime.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT full-read.o -MD -MP -MF ".deps/full-read.Tpo" -c -o full-read.o full-read.c; \
+then mv -f ".deps/full-read.Tpo" ".deps/full-read.Po"; else rm -f ".deps/full-read.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT full-write.o -MD -MP -MF ".deps/full-write.Tpo" -c -o full-write.o full-write.c; \
+then mv -f ".deps/full-write.Tpo" ".deps/full-write.Po"; else rm -f ".deps/full-write.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT localcharset.o -MD -MP -MF ".deps/localcharset.Tpo" -c -o localcharset.o localcharset.c; \
+then mv -f ".deps/localcharset.Tpo" ".deps/localcharset.Po"; else rm -f ".deps/localcharset.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT mbswidth.o -MD -MP -MF ".deps/mbswidth.Tpo" -c -o mbswidth.o mbswidth.c; \
+then mv -f ".deps/mbswidth.Tpo" ".deps/mbswidth.Po"; else rm -f ".deps/mbswidth.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT readtokens0.o -MD -MP -MF ".deps/readtokens0.Tpo" -c -o readtokens0.o readtokens0.c; \
+then mv -f ".deps/readtokens0.Tpo" ".deps/readtokens0.Po"; else rm -f ".deps/readtokens0.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT strnlen1.o -MD -MP -MF ".deps/strnlen1.Tpo" -c -o strnlen1.o strnlen1.c; \
+then mv -f ".deps/strnlen1.Tpo" ".deps/strnlen1.Po"; else rm -f ".deps/strnlen1.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT time_r.o -MD -MP -MF ".deps/time_r.Tpo" -c -o time_r.o time_r.c; \
+then mv -f ".deps/time_r.Tpo" ".deps/time_r.Po"; else rm -f ".deps/time_r.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT unicodeio.o -MD -MP -MF ".deps/unicodeio.Tpo" -c -o unicodeio.o unicodeio.c; \
+then mv -f ".deps/unicodeio.Tpo" ".deps/unicodeio.Po"; else rm -f ".deps/unicodeio.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xalloc-die.o -MD -MP -MF ".deps/xalloc-die.Tpo" -c -o xalloc-die.o xalloc-die.c; \
+then mv -f ".deps/xalloc-die.Tpo" ".deps/xalloc-die.Po"; else rm -f ".deps/xalloc-die.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xgethostname.o -MD -MP -MF ".deps/xgethostname.Tpo" -c -o xgethostname.o xgethostname.c; \
+then mv -f ".deps/xgethostname.Tpo" ".deps/xgethostname.Po"; else rm -f ".deps/xgethostname.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xmemcoll.o -MD -MP -MF ".deps/xmemcoll.Tpo" -c -o xmemcoll.o xmemcoll.c; \
+then mv -f ".deps/xmemcoll.Tpo" ".deps/xmemcoll.Po"; else rm -f ".deps/xmemcoll.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xstrndup.o -MD -MP -MF ".deps/xstrndup.Tpo" -c -o xstrndup.o xstrndup.c; \
+then mv -f ".deps/xstrndup.Tpo" ".deps/xstrndup.Po"; else rm -f ".deps/xstrndup.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xstrtoimax.o -MD -MP -MF ".deps/xstrtoimax.Tpo" -c -o xstrtoimax.o xstrtoimax.c; \
+then mv -f ".deps/xstrtoimax.Tpo" ".deps/xstrtoimax.Po"; else rm -f ".deps/xstrtoimax.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xstrtoumax.o -MD -MP -MF ".deps/xstrtoumax.Tpo" -c -o xstrtoumax.o xstrtoumax.c; \
+then mv -f ".deps/xstrtoumax.Tpo" ".deps/xstrtoumax.Po"; else rm -f ".deps/xstrtoumax.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT backupfile.o -MD -MP -MF ".deps/backupfile.Tpo" -c -o backupfile.o backupfile.c; \
+then mv -f ".deps/backupfile.Tpo" ".deps/backupfile.Po"; else rm -f ".deps/backupfile.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT basename.o -MD -MP -MF ".deps/basename.Tpo" -c -o basename.o basename.c; \
+then mv -f ".deps/basename.Tpo" ".deps/basename.Po"; else rm -f ".deps/basename.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT c-strtod.o -MD -MP -MF ".deps/c-strtod.Tpo" -c -o c-strtod.o c-strtod.c; \
+then mv -f ".deps/c-strtod.Tpo" ".deps/c-strtod.Po"; else rm -f ".deps/c-strtod.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT c-strtold.o -MD -MP -MF ".deps/c-strtold.Tpo" -c -o c-strtold.o c-strtold.c; \
+then mv -f ".deps/c-strtold.Tpo" ".deps/c-strtold.Po"; else rm -f ".deps/c-strtold.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT canon-host.o -MD -MP -MF ".deps/canon-host.Tpo" -c -o canon-host.o canon-host.c; \
+then mv -f ".deps/canon-host.Tpo" ".deps/canon-host.Po"; else rm -f ".deps/canon-host.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT cloexec.o -MD -MP -MF ".deps/cloexec.Tpo" -c -o cloexec.o cloexec.c; \
+then mv -f ".deps/cloexec.Tpo" ".deps/cloexec.Po"; else rm -f ".deps/cloexec.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT closeout.o -MD -MP -MF ".deps/closeout.Tpo" -c -o closeout.o closeout.c; \
+then mv -f ".deps/closeout.Tpo" ".deps/closeout.Po"; else rm -f ".deps/closeout.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT dirname.o -MD -MP -MF ".deps/dirname.Tpo" -c -o dirname.o dirname.c; \
+then mv -f ".deps/dirname.Tpo" ".deps/dirname.Po"; else rm -f ".deps/dirname.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT exclude.o -MD -MP -MF ".deps/exclude.Tpo" -c -o exclude.o exclude.c; \
+then mv -f ".deps/exclude.Tpo" ".deps/exclude.Po"; else rm -f ".deps/exclude.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT exitfail.o -MD -MP -MF ".deps/exitfail.Tpo" -c -o exitfail.o exitfail.c; \
+then mv -f ".deps/exitfail.Tpo" ".deps/exitfail.Po"; else rm -f ".deps/exitfail.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT open-safer.o -MD -MP -MF ".deps/open-safer.Tpo" -c -o open-safer.o open-safer.c; \
+then mv -f ".deps/open-safer.Tpo" ".deps/open-safer.Po"; else rm -f ".deps/open-safer.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT creat-safer.o -MD -MP -MF ".deps/creat-safer.Tpo" -c -o creat-safer.o creat-safer.c; \
+then mv -f ".deps/creat-safer.Tpo" ".deps/creat-safer.Po"; else rm -f ".deps/creat-safer.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT fd-reopen.o -MD -MP -MF ".deps/fd-reopen.Tpo" -c -o fd-reopen.o fd-reopen.c; \
+then mv -f ".deps/fd-reopen.Tpo" ".deps/fd-reopen.Po"; else rm -f ".deps/fd-reopen.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT filemode.o -MD -MP -MF ".deps/filemode.Tpo" -c -o filemode.o filemode.c; \
+then mv -f ".deps/filemode.Tpo" ".deps/filemode.Po"; else rm -f ".deps/filemode.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT filenamecat.o -MD -MP -MF ".deps/filenamecat.Tpo" -c -o filenamecat.o filenamecat.c; \
+then mv -f ".deps/filenamecat.Tpo" ".deps/filenamecat.Po"; else rm -f ".deps/filenamecat.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT file-type.o -MD -MP -MF ".deps/file-type.Tpo" -c -o file-type.o file-type.c; \
+then mv -f ".deps/file-type.Tpo" ".deps/file-type.Po"; else rm -f ".deps/file-type.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT fsusage.o -MD -MP -MF ".deps/fsusage.Tpo" -c -o fsusage.o fsusage.c; \
+then mv -f ".deps/fsusage.Tpo" ".deps/fsusage.Po"; else rm -f ".deps/fsusage.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT getpass.o -MD -MP -MF ".deps/getpass.Tpo" -c -o getpass.o getpass.c; \
+then mv -f ".deps/getpass.Tpo" ".deps/getpass.Po"; else rm -f ".deps/getpass.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT sig2str.o -MD -MP -MF ".deps/sig2str.Tpo" -c -o sig2str.o sig2str.c; \
+then mv -f ".deps/sig2str.Tpo" ".deps/sig2str.Po"; else rm -f ".deps/sig2str.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT strstr.o -MD -MP -MF ".deps/strstr.Tpo" -c -o strstr.o strstr.c; \
+then mv -f ".deps/strstr.Tpo" ".deps/strstr.Po"; else rm -f ".deps/strstr.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT vasnprintf.o -MD -MP -MF ".deps/vasnprintf.Tpo" -c -o vasnprintf.o vasnprintf.c; \
+then mv -f ".deps/vasnprintf.Tpo" ".deps/vasnprintf.Po"; else rm -f ".deps/vasnprintf.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT printf-args.o -MD -MP -MF ".deps/printf-args.Tpo" -c -o printf-args.o printf-args.c; \
+then mv -f ".deps/printf-args.Tpo" ".deps/printf-args.Po"; else rm -f ".deps/printf-args.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT printf-parse.o -MD -MP -MF ".deps/printf-parse.Tpo" -c -o printf-parse.o printf-parse.c; \
+then mv -f ".deps/printf-parse.Tpo" ".deps/printf-parse.Po"; else rm -f ".deps/printf-parse.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT asnprintf.o -MD -MP -MF ".deps/asnprintf.Tpo" -c -o asnprintf.o asnprintf.c; \
+then mv -f ".deps/asnprintf.Tpo" ".deps/asnprintf.Po"; else rm -f ".deps/asnprintf.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT getdate.o -MD -MP -MF ".deps/getdate.Tpo" -c -o getdate.o getdate.c; \
+then mv -f ".deps/getdate.Tpo" ".deps/getdate.Po"; else rm -f ".deps/getdate.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT gethrxtime.o -MD -MP -MF ".deps/gethrxtime.Tpo" -c -o gethrxtime.o gethrxtime.c; \
+then mv -f ".deps/gethrxtime.Tpo" ".deps/gethrxtime.Po"; else rm -f ".deps/gethrxtime.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT getndelim2.o -MD -MP -MF ".deps/getndelim2.Tpo" -c -o getndelim2.o getndelim2.c; \
+then mv -f ".deps/getndelim2.Tpo" ".deps/getndelim2.Po"; else rm -f ".deps/getndelim2.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT gettime.o -MD -MP -MF ".deps/gettime.Tpo" -c -o gettime.o gettime.c; \
+then mv -f ".deps/gettime.Tpo" ".deps/gettime.Po"; else rm -f ".deps/gettime.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT getugroups.o -MD -MP -MF ".deps/getugroups.Tpo" -c -o getugroups.o getugroups.c; \
+then mv -f ".deps/getugroups.Tpo" ".deps/getugroups.Po"; else rm -f ".deps/getugroups.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT hard-locale.o -MD -MP -MF ".deps/hard-locale.Tpo" -c -o hard-locale.o hard-locale.c; \
+then mv -f ".deps/hard-locale.Tpo" ".deps/hard-locale.Po"; else rm -f ".deps/hard-locale.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT hash.o -MD -MP -MF ".deps/hash.Tpo" -c -o hash.o hash.c; \
+then mv -f ".deps/hash.Tpo" ".deps/hash.Po"; else rm -f ".deps/hash.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT hash-pjw.o -MD -MP -MF ".deps/hash-pjw.Tpo" -c -o hash-pjw.o hash-pjw.c; \
+then mv -f ".deps/hash-pjw.Tpo" ".deps/hash-pjw.Po"; else rm -f ".deps/hash-pjw.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT human.o -MD -MP -MF ".deps/human.Tpo" -c -o human.o human.c; \
+then mv -f ".deps/human.Tpo" ".deps/human.Po"; else rm -f ".deps/human.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT idcache.o -MD -MP -MF ".deps/idcache.Tpo" -c -o idcache.o idcache.c; \
+then mv -f ".deps/idcache.Tpo" ".deps/idcache.Po"; else rm -f ".deps/idcache.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT imaxtostr.o -MD -MP -MF ".deps/imaxtostr.Tpo" -c -o imaxtostr.o imaxtostr.c; \
+then mv -f ".deps/imaxtostr.Tpo" ".deps/imaxtostr.Po"; else rm -f ".deps/imaxtostr.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT offtostr.o -MD -MP -MF ".deps/offtostr.Tpo" -c -o offtostr.o offtostr.c; \
+then mv -f ".deps/offtostr.Tpo" ".deps/offtostr.Po"; else rm -f ".deps/offtostr.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT umaxtostr.o -MD -MP -MF ".deps/umaxtostr.Tpo" -c -o umaxtostr.o umaxtostr.c; \
+then mv -f ".deps/umaxtostr.Tpo" ".deps/umaxtostr.Po"; else rm -f ".deps/umaxtostr.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT linebuffer.o -MD -MP -MF ".deps/linebuffer.Tpo" -c -o linebuffer.o linebuffer.c; \
+then mv -f ".deps/linebuffer.Tpo" ".deps/linebuffer.Po"; else rm -f ".deps/linebuffer.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT long-options.o -MD -MP -MF ".deps/long-options.Tpo" -c -o long-options.o long-options.c; \
+then mv -f ".deps/long-options.Tpo" ".deps/long-options.Po"; else rm -f ".deps/long-options.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT mbchar.o -MD -MP -MF ".deps/mbchar.Tpo" -c -o mbchar.o mbchar.c; \
+then mv -f ".deps/mbchar.Tpo" ".deps/mbchar.Po"; else rm -f ".deps/mbchar.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT md5.o -MD -MP -MF ".deps/md5.Tpo" -c -o md5.o md5.c; \
+then mv -f ".deps/md5.Tpo" ".deps/md5.Po"; else rm -f ".deps/md5.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT memcoll.o -MD -MP -MF ".deps/memcoll.Tpo" -c -o memcoll.o memcoll.c; \
+then mv -f ".deps/memcoll.Tpo" ".deps/memcoll.Po"; else rm -f ".deps/memcoll.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT mkdir-p.o -MD -MP -MF ".deps/mkdir-p.Tpo" -c -o mkdir-p.o mkdir-p.c; \
+then mv -f ".deps/mkdir-p.Tpo" ".deps/mkdir-p.Po"; else rm -f ".deps/mkdir-p.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT modechange.o -MD -MP -MF ".deps/modechange.Tpo" -c -o modechange.o modechange.c; \
+then mv -f ".deps/modechange.Tpo" ".deps/modechange.Po"; else rm -f ".deps/modechange.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT mountlist.o -MD -MP -MF ".deps/mountlist.Tpo" -c -o mountlist.o mountlist.c; \
+then mv -f ".deps/mountlist.Tpo" ".deps/mountlist.Po"; else rm -f ".deps/mountlist.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT physmem.o -MD -MP -MF ".deps/physmem.Tpo" -c -o physmem.o physmem.c; \
+then mv -f ".deps/physmem.Tpo" ".deps/physmem.Po"; else rm -f ".deps/physmem.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT posixtm.o -MD -MP -MF ".deps/posixtm.Tpo" -c -o posixtm.o posixtm.c; \
+then mv -f ".deps/posixtm.Tpo" ".deps/posixtm.Po"; else rm -f ".deps/posixtm.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT posixver.o -MD -MP -MF ".deps/posixver.Tpo" -c -o posixver.o posixver.c; \
+then mv -f ".deps/posixver.Tpo" ".deps/posixver.Po"; else rm -f ".deps/posixver.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT quotearg.o -MD -MP -MF ".deps/quotearg.Tpo" -c -o quotearg.o quotearg.c; \
+then mv -f ".deps/quotearg.Tpo" ".deps/quotearg.Po"; else rm -f ".deps/quotearg.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT quote.o -MD -MP -MF ".deps/quote.Tpo" -c -o quote.o quote.c; \
+then mv -f ".deps/quote.Tpo" ".deps/quote.Po"; else rm -f ".deps/quote.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT readtokens.o -MD -MP -MF ".deps/readtokens.Tpo" -c -o readtokens.o readtokens.c; \
+then mv -f ".deps/readtokens.Tpo" ".deps/readtokens.Po"; else rm -f ".deps/readtokens.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT readutmp.o -MD -MP -MF ".deps/readutmp.Tpo" -c -o readutmp.o readutmp.c; \
+then mv -f ".deps/readutmp.Tpo" ".deps/readutmp.Po"; else rm -f ".deps/readutmp.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT regex.o -MD -MP -MF ".deps/regex.Tpo" -c -o regex.o regex.c; \
+then mv -f ".deps/regex.Tpo" ".deps/regex.Po"; else rm -f ".deps/regex.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT safe-read.o -MD -MP -MF ".deps/safe-read.Tpo" -c -o safe-read.o safe-read.c; \
+then mv -f ".deps/safe-read.Tpo" ".deps/safe-read.Po"; else rm -f ".deps/safe-read.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT safe-write.o -MD -MP -MF ".deps/safe-write.Tpo" -c -o safe-write.o safe-write.c; \
+then mv -f ".deps/safe-write.Tpo" ".deps/safe-write.Po"; else rm -f ".deps/safe-write.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT same.o -MD -MP -MF ".deps/same.Tpo" -c -o same.o same.c; \
+then mv -f ".deps/same.Tpo" ".deps/same.Po"; else rm -f ".deps/same.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT savedir.o -MD -MP -MF ".deps/savedir.Tpo" -c -o savedir.o savedir.c; \
+then mv -f ".deps/savedir.Tpo" ".deps/savedir.Po"; else rm -f ".deps/savedir.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT save-cwd.o -MD -MP -MF ".deps/save-cwd.Tpo" -c -o save-cwd.o save-cwd.c; \
+then mv -f ".deps/save-cwd.Tpo" ".deps/save-cwd.Po"; else rm -f ".deps/save-cwd.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT settime.o -MD -MP -MF ".deps/settime.Tpo" -c -o settime.o settime.c; \
+then mv -f ".deps/settime.Tpo" ".deps/settime.Po"; else rm -f ".deps/settime.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT sha1.o -MD -MP -MF ".deps/sha1.Tpo" -c -o sha1.o sha1.c; \
+then mv -f ".deps/sha1.Tpo" ".deps/sha1.Po"; else rm -f ".deps/sha1.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT fopen-safer.o -MD -MP -MF ".deps/fopen-safer.Tpo" -c -o fopen-safer.o fopen-safer.c; \
+then mv -f ".deps/fopen-safer.Tpo" ".deps/fopen-safer.Po"; else rm -f ".deps/fopen-safer.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT strcasecmp.o -MD -MP -MF ".deps/strcasecmp.Tpo" -c -o strcasecmp.o strcasecmp.c; \
+then mv -f ".deps/strcasecmp.Tpo" ".deps/strcasecmp.Po"; else rm -f ".deps/strcasecmp.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT strintcmp.o -MD -MP -MF ".deps/strintcmp.Tpo" -c -o strintcmp.o strintcmp.c; \
+then mv -f ".deps/strintcmp.Tpo" ".deps/strintcmp.Po"; else rm -f ".deps/strintcmp.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT strnumcmp.o -MD -MP -MF ".deps/strnumcmp.Tpo" -c -o strnumcmp.o strnumcmp.c; \
+then mv -f ".deps/strnumcmp.Tpo" ".deps/strnumcmp.Po"; else rm -f ".deps/strnumcmp.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT stripslash.o -MD -MP -MF ".deps/stripslash.Tpo" -c -o stripslash.o stripslash.c; \
+then mv -f ".deps/stripslash.Tpo" ".deps/stripslash.Po"; else rm -f ".deps/stripslash.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT dup-safer.o -MD -MP -MF ".deps/dup-safer.Tpo" -c -o dup-safer.o dup-safer.c; \
+then mv -f ".deps/dup-safer.Tpo" ".deps/dup-safer.Po"; else rm -f ".deps/dup-safer.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT fd-safer.o -MD -MP -MF ".deps/fd-safer.Tpo" -c -o fd-safer.o fd-safer.c; \
+then mv -f ".deps/fd-safer.Tpo" ".deps/fd-safer.Po"; else rm -f ".deps/fd-safer.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT pipe-safer.o -MD -MP -MF ".deps/pipe-safer.Tpo" -c -o pipe-safer.o pipe-safer.c; \
+then mv -f ".deps/pipe-safer.Tpo" ".deps/pipe-safer.Po"; else rm -f ".deps/pipe-safer.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT unlinkdir.o -MD -MP -MF ".deps/unlinkdir.Tpo" -c -o unlinkdir.o unlinkdir.c; \
+then mv -f ".deps/unlinkdir.Tpo" ".deps/unlinkdir.Po"; else rm -f ".deps/unlinkdir.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT userspec.o -MD -MP -MF ".deps/userspec.Tpo" -c -o userspec.o userspec.c; \
+then mv -f ".deps/userspec.Tpo" ".deps/userspec.Po"; else rm -f ".deps/userspec.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT utimecmp.o -MD -MP -MF ".deps/utimecmp.Tpo" -c -o utimecmp.o utimecmp.c; \
+then mv -f ".deps/utimecmp.Tpo" ".deps/utimecmp.Po"; else rm -f ".deps/utimecmp.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT utimens.o -MD -MP -MF ".deps/utimens.Tpo" -c -o utimens.o utimens.c; \
+then mv -f ".deps/utimens.Tpo" ".deps/utimens.Po"; else rm -f ".deps/utimens.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xmalloc.o -MD -MP -MF ".deps/xmalloc.Tpo" -c -o xmalloc.o xmalloc.c; \
+then mv -f ".deps/xmalloc.Tpo" ".deps/xmalloc.Po"; else rm -f ".deps/xmalloc.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xgetcwd.o -MD -MP -MF ".deps/xgetcwd.Tpo" -c -o xgetcwd.o xgetcwd.c; \
+then mv -f ".deps/xgetcwd.Tpo" ".deps/xgetcwd.Po"; else rm -f ".deps/xgetcwd.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xnanosleep.o -MD -MP -MF ".deps/xnanosleep.Tpo" -c -o xnanosleep.o xnanosleep.c; \
+then mv -f ".deps/xnanosleep.Tpo" ".deps/xnanosleep.Po"; else rm -f ".deps/xnanosleep.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xreadlink.o -MD -MP -MF ".deps/xreadlink.Tpo" -c -o xreadlink.o xreadlink.c; \
+then mv -f ".deps/xreadlink.Tpo" ".deps/xreadlink.Po"; else rm -f ".deps/xreadlink.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xstrtod.o -MD -MP -MF ".deps/xstrtod.Tpo" -c -o xstrtod.o xstrtod.c; \
+then mv -f ".deps/xstrtod.Tpo" ".deps/xstrtod.Po"; else rm -f ".deps/xstrtod.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xstrtol.o -MD -MP -MF ".deps/xstrtol.Tpo" -c -o xstrtol.o xstrtol.c; \
+then mv -f ".deps/xstrtol.Tpo" ".deps/xstrtol.Po"; else rm -f ".deps/xstrtol.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xstrtoul.o -MD -MP -MF ".deps/xstrtoul.Tpo" -c -o xstrtoul.o xstrtoul.c; \
+then mv -f ".deps/xstrtoul.Tpo" ".deps/xstrtoul.Po"; else rm -f ".deps/xstrtoul.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT yesno.o -MD -MP -MF ".deps/yesno.Tpo" -c -o yesno.o yesno.c; \
+then mv -f ".deps/yesno.Tpo" ".deps/yesno.Po"; else rm -f ".deps/yesno.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT strftime.o -MD -MP -MF ".deps/strftime.Tpo" -c -o strftime.o strftime.c; \
+then mv -f ".deps/strftime.Tpo" ".deps/strftime.Po"; else rm -f ".deps/strftime.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT fts.o -MD -MP -MF ".deps/fts.Tpo" -c -o fts.o fts.c; \
+then mv -f ".deps/fts.Tpo" ".deps/fts.Po"; else rm -f ".deps/fts.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT memcasecmp.o -MD -MP -MF ".deps/memcasecmp.Tpo" -c -o memcasecmp.o memcasecmp.c; \
+then mv -f ".deps/memcasecmp.Tpo" ".deps/memcasecmp.Po"; else rm -f ".deps/memcasecmp.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT argmatch.o -MD -MP -MF ".deps/argmatch.Tpo" -c -o argmatch.o argmatch.c; \
+then mv -f ".deps/argmatch.Tpo" ".deps/argmatch.Po"; else rm -f ".deps/argmatch.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT cycle-check.o -MD -MP -MF ".deps/cycle-check.Tpo" -c -o cycle-check.o cycle-check.c; \
+then mv -f ".deps/cycle-check.Tpo" ".deps/cycle-check.Po"; else rm -f ".deps/cycle-check.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT acl.o -MD -MP -MF ".deps/acl.Tpo" -c -o acl.o acl.c; \
+then mv -f ".deps/acl.Tpo" ".deps/acl.Po"; else rm -f ".deps/acl.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT canonicalize.o -MD -MP -MF ".deps/canonicalize.Tpo" -c -o canonicalize.o canonicalize.c; \
+then mv -f ".deps/canonicalize.Tpo" ".deps/canonicalize.Po"; else rm -f ".deps/canonicalize.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT chdir-long.o -MD -MP -MF ".deps/chdir-long.Tpo" -c -o chdir-long.o chdir-long.c; \
+then mv -f ".deps/chdir-long.Tpo" ".deps/chdir-long.Po"; else rm -f ".deps/chdir-long.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT openat-die.o -MD -MP -MF ".deps/openat-die.Tpo" -c -o openat-die.o openat-die.c; \
+then mv -f ".deps/openat-die.Tpo" ".deps/openat-die.Po"; else rm -f ".deps/openat-die.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT xfts.o -MD -MP -MF ".deps/xfts.Tpo" -c -o xfts.o xfts.c; \
+then mv -f ".deps/xfts.Tpo" ".deps/xfts.Po"; else rm -f ".deps/xfts.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT root-dev-ino.o -MD -MP -MF ".deps/root-dev-ino.Tpo" -c -o root-dev-ino.o root-dev-ino.c; \
+then mv -f ".deps/root-dev-ino.Tpo" ".deps/root-dev-ino.Po"; else rm -f ".deps/root-dev-ino.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT version-etc-fsf.o -MD -MP -MF ".deps/version-etc-fsf.Tpo" -c -o version-etc-fsf.o version-etc-fsf.c; \
+then mv -f ".deps/version-etc-fsf.Tpo" ".deps/version-etc-fsf.Po"; else rm -f ".deps/version-etc-fsf.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT version-etc.o -MD -MP -MF ".deps/version-etc.Tpo" -c -o version-etc.o version-etc.c; \
+then mv -f ".deps/version-etc.Tpo" ".deps/version-etc.Po"; else rm -f ".deps/version-etc.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT diacrit.o -MD -MP -MF ".deps/diacrit.Tpo" -c -o diacrit.o diacrit.c; \
+then mv -f ".deps/diacrit.Tpo" ".deps/diacrit.Po"; else rm -f ".deps/diacrit.Tpo"; exit 1; fi
+rm -f libcoreutils.a
+ar cru libcoreutils.a allocsa.o fprintftime.o full-read.o full-write.o localcharset.o mbswidth.o readtokens0.o strnlen1.o time_r.o unicodeio.o xalloc-die.o xgethostname.o xmemcoll.o xstrndup.o xstrtoimax.o xstrtoumax.o backupfile.o basename.o c-strtod.o c-strtold.o canon-host.o cloexec.o closeout.o dirname.o exclude.o exitfail.o open-safer.o creat-safer.o fd-reopen.o filemode.o filenamecat.o file-type.o fsusage.o getpass.o sig2str.o strstr.o vasnprintf.o printf-args.o printf-parse.o asnprintf.o getdate.o gethrxtime.o getndelim2.o gettime.o getugroups.o hard-locale.o hash.o hash-pjw.o human.o idcache.o imaxtostr.o offtostr.o umaxtostr.o linebuffer.o long-options.o mbchar.o md5.o memcoll.o mkdir-p.o modechange.o mountlist.o physmem.o posixtm.o posixver.o quotearg.o quote.o readtokens.o readutmp.o regex.o safe-read.o safe-write.o same.o savedir.o save-cwd.o settime.o sha1.o fopen-safer.o mkstemp-safer.o strcasecmp.o strintcmp.o strnumcmp.o stripslash.o dup-safer.o fd-safer.o pipe-safer.o unlinkdir.o userspec.o utimecmp.o utimens.o xmalloc.o xgetcwd.o xnanosleep.o xreadlink.o xstrtod.o xstrtol.o xstrtoul.o yesno.o strftime.o fts.o memcasecmp.o argmatch.o cycle-check.o acl.o canonicalize.o chdir-long.o openat-die.o xfts.o root-dev-ino.o version-etc-fsf.o version-etc.o diacrit.o
+ranlib libcoreutils.a
+if gcc -DHAVE_CONFIG_H -DLIBDIR=\"/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib\" -I. -I. -I..  -I.. -I.   -g -O0 -MT t-fpending.o -MD -MP -MF ".deps/t-fpending.Tpo" -c -o t-fpending.o t-fpending.c; \
+then mv -f ".deps/t-fpending.Tpo" ".deps/t-fpending.Po"; else rm -f ".deps/t-fpending.Tpo"; exit 1; fi
+gcc  -g -O0   -o t-fpending  t-fpending.o libcoreutils.a
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/lib'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/lib'
+Making all in src
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/src'
+make  all-am
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/src'
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT lbracket.o -MD -MP -MF ".deps/lbracket.Tpo" -c -o lbracket.o lbracket.c; \
+then mv -f ".deps/lbracket.Tpo" ".deps/lbracket.Po"; else rm -f ".deps/lbracket.Tpo"; exit 1; fi
+gcc  -g -O0   -o [  lbracket.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT chgrp.o -MD -MP -MF ".deps/chgrp.Tpo" -c -o chgrp.o chgrp.c; \
+then mv -f ".deps/chgrp.Tpo" ".deps/chgrp.Po"; else rm -f ".deps/chgrp.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT chown-core.o -MD -MP -MF ".deps/chown-core.Tpo" -c -o chown-core.o chown-core.c; \
+then mv -f ".deps/chown-core.Tpo" ".deps/chown-core.Po"; else rm -f ".deps/chown-core.Tpo"; exit 1; fi
+gcc  -g -O0   -o chgrp  chgrp.o chown-core.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT chown.o -MD -MP -MF ".deps/chown.Tpo" -c -o chown.o chown.c; \
+then mv -f ".deps/chown.Tpo" ".deps/chown.Po"; else rm -f ".deps/chown.Tpo"; exit 1; fi
+gcc  -g -O0   -o chown  chown.o chown-core.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT chmod.o -MD -MP -MF ".deps/chmod.Tpo" -c -o chmod.o chmod.c; \
+then mv -f ".deps/chmod.Tpo" ".deps/chmod.Po"; else rm -f ".deps/chmod.Tpo"; exit 1; fi
+gcc  -g -O0   -o chmod  chmod.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT cp.o -MD -MP -MF ".deps/cp.Tpo" -c -o cp.o cp.c; \
+then mv -f ".deps/cp.Tpo" ".deps/cp.Po"; else rm -f ".deps/cp.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT copy.o -MD -MP -MF ".deps/copy.Tpo" -c -o copy.o copy.c; \
+then mv -f ".deps/copy.Tpo" ".deps/copy.Po"; else rm -f ".deps/copy.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT cp-hash.o -MD -MP -MF ".deps/cp-hash.Tpo" -c -o cp-hash.o cp-hash.c; \
+then mv -f ".deps/cp-hash.Tpo" ".deps/cp-hash.Po"; else rm -f ".deps/cp-hash.Tpo"; exit 1; fi
+gcc  -g -O0   -o cp  cp.o copy.o cp-hash.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT dd.o -MD -MP -MF ".deps/dd.Tpo" -c -o dd.o dd.c; \
+then mv -f ".deps/dd.Tpo" ".deps/dd.Po"; else rm -f ".deps/dd.Tpo"; exit 1; fi
+gcc  -g -O0   -o dd  dd.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT dircolors.o -MD -MP -MF ".deps/dircolors.Tpo" -c -o dircolors.o dircolors.c; \
+then mv -f ".deps/dircolors.Tpo" ".deps/dircolors.Po"; else rm -f ".deps/dircolors.Tpo"; exit 1; fi
+gcc  -g -O0   -o dircolors  dircolors.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT du.o -MD -MP -MF ".deps/du.Tpo" -c -o du.o du.c; \
+then mv -f ".deps/du.Tpo" ".deps/du.Po"; else rm -f ".deps/du.Tpo"; exit 1; fi
+gcc  -g -O0   -o du  du.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT install.o -MD -MP -MF ".deps/install.Tpo" -c -o install.o install.c; \
+then mv -f ".deps/install.Tpo" ".deps/install.Po"; else rm -f ".deps/install.Tpo"; exit 1; fi
+gcc  -g -O0   -o ginstall  install.o copy.o cp-hash.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT link.o -MD -MP -MF ".deps/link.Tpo" -c -o link.o link.c; \
+then mv -f ".deps/link.Tpo" ".deps/link.Po"; else rm -f ".deps/link.Tpo"; exit 1; fi
+gcc  -g -O0   -o link  link.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT ln.o -MD -MP -MF ".deps/ln.Tpo" -c -o ln.o ln.c; \
+then mv -f ".deps/ln.Tpo" ".deps/ln.Po"; else rm -f ".deps/ln.Tpo"; exit 1; fi
+gcc  -g -O0   -o ln  ln.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT ls.o -MD -MP -MF ".deps/ls.Tpo" -c -o ls.o ls.c; \
+then mv -f ".deps/ls.Tpo" ".deps/ls.Po"; else rm -f ".deps/ls.Tpo"; exit 1; fi
+gcc  -g -O0   -o dir  ls.o ls-dir.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+gcc  -g -O0   -o vdir  ls.o ls-vdir.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+gcc  -g -O0   -o ls  ls.o ls-ls.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT mkdir.o -MD -MP -MF ".deps/mkdir.Tpo" -c -o mkdir.o mkdir.c; \
+then mv -f ".deps/mkdir.Tpo" ".deps/mkdir.Po"; else rm -f ".deps/mkdir.Tpo"; exit 1; fi
+gcc  -g -O0   -o mkdir  mkdir.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT mkfifo.o -MD -MP -MF ".deps/mkfifo.Tpo" -c -o mkfifo.o mkfifo.c; \
+then mv -f ".deps/mkfifo.Tpo" ".deps/mkfifo.Po"; else rm -f ".deps/mkfifo.Tpo"; exit 1; fi
+gcc  -g -O0   -o mkfifo  mkfifo.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT mknod.o -MD -MP -MF ".deps/mknod.Tpo" -c -o mknod.o mknod.c; \
+then mv -f ".deps/mknod.Tpo" ".deps/mknod.Po"; else rm -f ".deps/mknod.Tpo"; exit 1; fi
+gcc  -g -O0   -o mknod  mknod.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT mv.o -MD -MP -MF ".deps/mv.Tpo" -c -o mv.o mv.c; \
+then mv -f ".deps/mv.Tpo" ".deps/mv.Po"; else rm -f ".deps/mv.Tpo"; exit 1; fi
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT remove.o -MD -MP -MF ".deps/remove.Tpo" -c -o remove.o remove.c; \
+then mv -f ".deps/remove.Tpo" ".deps/remove.Po"; else rm -f ".deps/remove.Tpo"; exit 1; fi
+gcc  -g -O0   -o mv  mv.o copy.o cp-hash.o remove.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT nohup.o -MD -MP -MF ".deps/nohup.Tpo" -c -o nohup.o nohup.c; \
+then mv -f ".deps/nohup.Tpo" ".deps/nohup.Po"; else rm -f ".deps/nohup.Tpo"; exit 1; fi
+gcc  -g -O0   -o nohup  nohup.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT readlink.o -MD -MP -MF ".deps/readlink.Tpo" -c -o readlink.o readlink.c; \
+then mv -f ".deps/readlink.Tpo" ".deps/readlink.Po"; else rm -f ".deps/readlink.Tpo"; exit 1; fi
+gcc  -g -O0   -o readlink  readlink.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT rm.o -MD -MP -MF ".deps/rm.Tpo" -c -o rm.o rm.c; \
+then mv -f ".deps/rm.Tpo" ".deps/rm.Po"; else rm -f ".deps/rm.Tpo"; exit 1; fi
+gcc  -g -O0   -o rm  rm.o remove.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT rmdir.o -MD -MP -MF ".deps/rmdir.Tpo" -c -o rmdir.o rmdir.c; \
+then mv -f ".deps/rmdir.Tpo" ".deps/rmdir.Po"; else rm -f ".deps/rmdir.Tpo"; exit 1; fi
+gcc  -g -O0   -o rmdir  rmdir.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT shred.o -MD -MP -MF ".deps/shred.Tpo" -c -o shred.o shred.c; \
+then mv -f ".deps/shred.Tpo" ".deps/shred.Po"; else rm -f ".deps/shred.Tpo"; exit 1; fi
+gcc  -g -O0   -o shred  shred.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT stat.o -MD -MP -MF ".deps/stat.Tpo" -c -o stat.o stat.c; \
+then mv -f ".deps/stat.Tpo" ".deps/stat.Po"; else rm -f ".deps/stat.Tpo"; exit 1; fi
+gcc  -g -O0   -o stat  stat.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT sync.o -MD -MP -MF ".deps/sync.Tpo" -c -o sync.o sync.c; \
+then mv -f ".deps/sync.Tpo" ".deps/sync.Po"; else rm -f ".deps/sync.Tpo"; exit 1; fi
+gcc  -g -O0   -o sync  sync.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT touch.o -MD -MP -MF ".deps/touch.Tpo" -c -o touch.o touch.c; \
+then mv -f ".deps/touch.Tpo" ".deps/touch.Po"; else rm -f ".deps/touch.Tpo"; exit 1; fi
+gcc  -g -O0   -o touch  touch.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT unlink.o -MD -MP -MF ".deps/unlink.Tpo" -c -o unlink.o unlink.c; \
+then mv -f ".deps/unlink.Tpo" ".deps/unlink.Po"; else rm -f ".deps/unlink.Tpo"; exit 1; fi
+gcc  -g -O0   -o unlink  unlink.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT cat.o -MD -MP -MF ".deps/cat.Tpo" -c -o cat.o cat.c; \
+then mv -f ".deps/cat.Tpo" ".deps/cat.Po"; else rm -f ".deps/cat.Tpo"; exit 1; fi
+gcc  -g -O0   -o cat  cat.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT cksum.o -MD -MP -MF ".deps/cksum.Tpo" -c -o cksum.o cksum.c; \
+then mv -f ".deps/cksum.Tpo" ".deps/cksum.Po"; else rm -f ".deps/cksum.Tpo"; exit 1; fi
+gcc  -g -O0   -o cksum  cksum.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT comm.o -MD -MP -MF ".deps/comm.Tpo" -c -o comm.o comm.c; \
+then mv -f ".deps/comm.Tpo" ".deps/comm.Po"; else rm -f ".deps/comm.Tpo"; exit 1; fi
+gcc  -g -O0   -o comm  comm.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT csplit.o -MD -MP -MF ".deps/csplit.Tpo" -c -o csplit.o csplit.c; \
+then mv -f ".deps/csplit.Tpo" ".deps/csplit.Po"; else rm -f ".deps/csplit.Tpo"; exit 1; fi
+gcc  -g -O0   -o csplit  csplit.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT cut.o -MD -MP -MF ".deps/cut.Tpo" -c -o cut.o cut.c; \
+then mv -f ".deps/cut.Tpo" ".deps/cut.Po"; else rm -f ".deps/cut.Tpo"; exit 1; fi
+gcc  -g -O0   -o cut  cut.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT expand.o -MD -MP -MF ".deps/expand.Tpo" -c -o expand.o expand.c; \
+then mv -f ".deps/expand.Tpo" ".deps/expand.Po"; else rm -f ".deps/expand.Tpo"; exit 1; fi
+gcc  -g -O0   -o expand  expand.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT fmt.o -MD -MP -MF ".deps/fmt.Tpo" -c -o fmt.o fmt.c; \
+then mv -f ".deps/fmt.Tpo" ".deps/fmt.Po"; else rm -f ".deps/fmt.Tpo"; exit 1; fi
+gcc  -g -O0   -o fmt  fmt.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT fold.o -MD -MP -MF ".deps/fold.Tpo" -c -o fold.o fold.c; \
+then mv -f ".deps/fold.Tpo" ".deps/fold.Po"; else rm -f ".deps/fold.Tpo"; exit 1; fi
+gcc  -g -O0   -o fold  fold.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT head.o -MD -MP -MF ".deps/head.Tpo" -c -o head.o head.c; \
+then mv -f ".deps/head.Tpo" ".deps/head.Po"; else rm -f ".deps/head.Tpo"; exit 1; fi
+gcc  -g -O0   -o head  head.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT join.o -MD -MP -MF ".deps/join.Tpo" -c -o join.o join.c; \
+then mv -f ".deps/join.Tpo" ".deps/join.Po"; else rm -f ".deps/join.Tpo"; exit 1; fi
+gcc  -g -O0   -o join  join.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT md5sum.o -MD -MP -MF ".deps/md5sum.Tpo" -c -o md5sum.o md5sum.c; \
+then mv -f ".deps/md5sum.Tpo" ".deps/md5sum.Po"; else rm -f ".deps/md5sum.Tpo"; exit 1; fi
+gcc  -g -O0   -o md5sum  md5sum.o md5.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT nl.o -MD -MP -MF ".deps/nl.Tpo" -c -o nl.o nl.c; \
+then mv -f ".deps/nl.Tpo" ".deps/nl.Po"; else rm -f ".deps/nl.Tpo"; exit 1; fi
+gcc  -g -O0   -o nl  nl.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT od.o -MD -MP -MF ".deps/od.Tpo" -c -o od.o od.c; \
+then mv -f ".deps/od.Tpo" ".deps/od.Po"; else rm -f ".deps/od.Tpo"; exit 1; fi
+gcc  -g -O0   -o od  od.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT paste.o -MD -MP -MF ".deps/paste.Tpo" -c -o paste.o paste.c; \
+then mv -f ".deps/paste.Tpo" ".deps/paste.Po"; else rm -f ".deps/paste.Tpo"; exit 1; fi
+gcc  -g -O0   -o paste  paste.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT pr.o -MD -MP -MF ".deps/pr.Tpo" -c -o pr.o pr.c; \
+then mv -f ".deps/pr.Tpo" ".deps/pr.Po"; else rm -f ".deps/pr.Tpo"; exit 1; fi
+gcc  -g -O0   -o pr  pr.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT ptx.o -MD -MP -MF ".deps/ptx.Tpo" -c -o ptx.o ptx.c; \
+then mv -f ".deps/ptx.Tpo" ".deps/ptx.Po"; else rm -f ".deps/ptx.Tpo"; exit 1; fi
+gcc  -g -O0   -o ptx  ptx.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+gcc  -g -O0   -o sha1sum  md5sum.o sha1sum.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT sort.o -MD -MP -MF ".deps/sort.Tpo" -c -o sort.o sort.c; \
+then mv -f ".deps/sort.Tpo" ".deps/sort.Po"; else rm -f ".deps/sort.Tpo"; exit 1; fi
+gcc  -g -O0   -o sort  sort.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT split.o -MD -MP -MF ".deps/split.Tpo" -c -o split.o split.c; \
+then mv -f ".deps/split.Tpo" ".deps/split.Po"; else rm -f ".deps/split.Tpo"; exit 1; fi
+gcc  -g -O0   -o split  split.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT sum.o -MD -MP -MF ".deps/sum.Tpo" -c -o sum.o sum.c; \
+then mv -f ".deps/sum.Tpo" ".deps/sum.Po"; else rm -f ".deps/sum.Tpo"; exit 1; fi
+gcc  -g -O0   -o sum  sum.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT tac.o -MD -MP -MF ".deps/tac.Tpo" -c -o tac.o tac.c; \
+then mv -f ".deps/tac.Tpo" ".deps/tac.Po"; else rm -f ".deps/tac.Tpo"; exit 1; fi
+gcc  -g -O0   -o tac  tac.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT tail.o -MD -MP -MF ".deps/tail.Tpo" -c -o tail.o tail.c; \
+then mv -f ".deps/tail.Tpo" ".deps/tail.Po"; else rm -f ".deps/tail.Tpo"; exit 1; fi
+gcc  -g -O0   -o tail  tail.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT tr.o -MD -MP -MF ".deps/tr.Tpo" -c -o tr.o tr.c; \
+then mv -f ".deps/tr.Tpo" ".deps/tr.Po"; else rm -f ".deps/tr.Tpo"; exit 1; fi
+gcc  -g -O0   -o tr  tr.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT tsort.o -MD -MP -MF ".deps/tsort.Tpo" -c -o tsort.o tsort.c; \
+then mv -f ".deps/tsort.Tpo" ".deps/tsort.Po"; else rm -f ".deps/tsort.Tpo"; exit 1; fi
+gcc  -g -O0   -o tsort  tsort.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT unexpand.o -MD -MP -MF ".deps/unexpand.Tpo" -c -o unexpand.o unexpand.c; \
+then mv -f ".deps/unexpand.Tpo" ".deps/unexpand.Po"; else rm -f ".deps/unexpand.Tpo"; exit 1; fi
+gcc  -g -O0   -o unexpand  unexpand.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT uniq.o -MD -MP -MF ".deps/uniq.Tpo" -c -o uniq.o uniq.c; \
+then mv -f ".deps/uniq.Tpo" ".deps/uniq.Po"; else rm -f ".deps/uniq.Tpo"; exit 1; fi
+gcc  -g -O0   -o uniq  uniq.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT wc.o -MD -MP -MF ".deps/wc.Tpo" -c -o wc.o wc.c; \
+then mv -f ".deps/wc.Tpo" ".deps/wc.Po"; else rm -f ".deps/wc.Tpo"; exit 1; fi
+gcc  -g -O0   -o wc  wc.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT basename.o -MD -MP -MF ".deps/basename.Tpo" -c -o basename.o basename.c; \
+then mv -f ".deps/basename.Tpo" ".deps/basename.Po"; else rm -f ".deps/basename.Tpo"; exit 1; fi
+gcc  -g -O0   -o basename  basename.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT date.o -MD -MP -MF ".deps/date.Tpo" -c -o date.o date.c; \
+then mv -f ".deps/date.Tpo" ".deps/date.Po"; else rm -f ".deps/date.Tpo"; exit 1; fi
+gcc  -g -O0   -o date  date.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT dirname.o -MD -MP -MF ".deps/dirname.Tpo" -c -o dirname.o dirname.c; \
+then mv -f ".deps/dirname.Tpo" ".deps/dirname.Po"; else rm -f ".deps/dirname.Tpo"; exit 1; fi
+gcc  -g -O0   -o dirname  dirname.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT echo.o -MD -MP -MF ".deps/echo.Tpo" -c -o echo.o echo.c; \
+then mv -f ".deps/echo.Tpo" ".deps/echo.Po"; else rm -f ".deps/echo.Tpo"; exit 1; fi
+gcc  -g -O0   -o echo  echo.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT env.o -MD -MP -MF ".deps/env.Tpo" -c -o env.o env.c; \
+then mv -f ".deps/env.Tpo" ".deps/env.Po"; else rm -f ".deps/env.Tpo"; exit 1; fi
+gcc  -g -O0   -o env  env.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT expr.o -MD -MP -MF ".deps/expr.Tpo" -c -o expr.o expr.c; \
+then mv -f ".deps/expr.Tpo" ".deps/expr.Po"; else rm -f ".deps/expr.Tpo"; exit 1; fi
+gcc  -g -O0   -o expr  expr.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT factor.o -MD -MP -MF ".deps/factor.Tpo" -c -o factor.o factor.c; \
+then mv -f ".deps/factor.Tpo" ".deps/factor.Po"; else rm -f ".deps/factor.Tpo"; exit 1; fi
+gcc  -g -O0   -o factor  factor.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT false.o -MD -MP -MF ".deps/false.Tpo" -c -o false.o false.c; \
+then mv -f ".deps/false.Tpo" ".deps/false.Po"; else rm -f ".deps/false.Tpo"; exit 1; fi
+gcc  -g -O0   -o false  false.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT hostname.o -MD -MP -MF ".deps/hostname.Tpo" -c -o hostname.o hostname.c; \
+then mv -f ".deps/hostname.Tpo" ".deps/hostname.Po"; else rm -f ".deps/hostname.Tpo"; exit 1; fi
+gcc  -g -O0   -o hostname  hostname.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT id.o -MD -MP -MF ".deps/id.Tpo" -c -o id.o id.c; \
+then mv -f ".deps/id.Tpo" ".deps/id.Po"; else rm -f ".deps/id.Tpo"; exit 1; fi
+gcc  -g -O0   -o id  id.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT kill.o -MD -MP -MF ".deps/kill.Tpo" -c -o kill.o kill.c; \
+then mv -f ".deps/kill.Tpo" ".deps/kill.Po"; else rm -f ".deps/kill.Tpo"; exit 1; fi
+gcc  -g -O0   -o kill  kill.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT logname.o -MD -MP -MF ".deps/logname.Tpo" -c -o logname.o logname.c; \
+then mv -f ".deps/logname.Tpo" ".deps/logname.Po"; else rm -f ".deps/logname.Tpo"; exit 1; fi
+gcc  -g -O0   -o logname  logname.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT pathchk.o -MD -MP -MF ".deps/pathchk.Tpo" -c -o pathchk.o pathchk.c; \
+then mv -f ".deps/pathchk.Tpo" ".deps/pathchk.Po"; else rm -f ".deps/pathchk.Tpo"; exit 1; fi
+gcc  -g -O0   -o pathchk  pathchk.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT printenv.o -MD -MP -MF ".deps/printenv.Tpo" -c -o printenv.o printenv.c; \
+then mv -f ".deps/printenv.Tpo" ".deps/printenv.Po"; else rm -f ".deps/printenv.Tpo"; exit 1; fi
+gcc  -g -O0   -o printenv  printenv.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT printf.o -MD -MP -MF ".deps/printf.Tpo" -c -o printf.o printf.c; \
+then mv -f ".deps/printf.Tpo" ".deps/printf.Po"; else rm -f ".deps/printf.Tpo"; exit 1; fi
+gcc  -g -O0   -o printf  printf.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT pwd.o -MD -MP -MF ".deps/pwd.Tpo" -c -o pwd.o pwd.c; \
+then mv -f ".deps/pwd.Tpo" ".deps/pwd.Po"; else rm -f ".deps/pwd.Tpo"; exit 1; fi
+gcc  -g -O0   -o pwd  pwd.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT seq.o -MD -MP -MF ".deps/seq.Tpo" -c -o seq.o seq.c; \
+then mv -f ".deps/seq.Tpo" ".deps/seq.Po"; else rm -f ".deps/seq.Tpo"; exit 1; fi
+gcc  -g -O0   -o seq  seq.o ../lib/libcoreutils.a  ../lib/libcoreutils.a -lm
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT sleep.o -MD -MP -MF ".deps/sleep.Tpo" -c -o sleep.o sleep.c; \
+then mv -f ".deps/sleep.Tpo" ".deps/sleep.Po"; else rm -f ".deps/sleep.Tpo"; exit 1; fi
+gcc  -g -O0   -o sleep  sleep.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT tee.o -MD -MP -MF ".deps/tee.Tpo" -c -o tee.o tee.c; \
+then mv -f ".deps/tee.Tpo" ".deps/tee.Po"; else rm -f ".deps/tee.Tpo"; exit 1; fi
+gcc  -g -O0   -o tee  tee.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT test.o -MD -MP -MF ".deps/test.Tpo" -c -o test.o test.c; \
+then mv -f ".deps/test.Tpo" ".deps/test.Po"; else rm -f ".deps/test.Tpo"; exit 1; fi
+gcc  -g -O0   -o test  test.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT true.o -MD -MP -MF ".deps/true.Tpo" -c -o true.o true.c; \
+then mv -f ".deps/true.Tpo" ".deps/true.Po"; else rm -f ".deps/true.Tpo"; exit 1; fi
+gcc  -g -O0   -o true  true.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT tty.o -MD -MP -MF ".deps/tty.Tpo" -c -o tty.o tty.c; \
+then mv -f ".deps/tty.Tpo" ".deps/tty.Po"; else rm -f ".deps/tty.Tpo"; exit 1; fi
+gcc  -g -O0   -o tty  tty.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT whoami.o -MD -MP -MF ".deps/whoami.Tpo" -c -o whoami.o whoami.c; \
+then mv -f ".deps/whoami.Tpo" ".deps/whoami.Po"; else rm -f ".deps/whoami.Tpo"; exit 1; fi
+gcc  -g -O0   -o whoami  whoami.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT yes.o -MD -MP -MF ".deps/yes.Tpo" -c -o yes.o yes.c; \
+then mv -f ".deps/yes.Tpo" ".deps/yes.Po"; else rm -f ".deps/yes.Tpo"; exit 1; fi
+gcc  -g -O0   -o yes  yes.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT uname.o -MD -MP -MF ".deps/uname.Tpo" -c -o uname.o uname.c; \
+then mv -f ".deps/uname.Tpo" ".deps/uname.Po"; else rm -f ".deps/uname.Tpo"; exit 1; fi
+gcc  -g -O0   -o uname  uname.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT chroot.o -MD -MP -MF ".deps/chroot.Tpo" -c -o chroot.o chroot.c; \
+then mv -f ".deps/chroot.Tpo" ".deps/chroot.Po"; else rm -f ".deps/chroot.Tpo"; exit 1; fi
+gcc  -g -O0   -o chroot  chroot.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT hostid.o -MD -MP -MF ".deps/hostid.Tpo" -c -o hostid.o hostid.c; \
+then mv -f ".deps/hostid.Tpo" ".deps/hostid.Po"; else rm -f ".deps/hostid.Tpo"; exit 1; fi
+gcc  -g -O0   -o hostid  hostid.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT nice.o -MD -MP -MF ".deps/nice.Tpo" -c -o nice.o nice.c; \
+then mv -f ".deps/nice.Tpo" ".deps/nice.Po"; else rm -f ".deps/nice.Tpo"; exit 1; fi
+gcc  -g -O0   -o nice  nice.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT pinky.o -MD -MP -MF ".deps/pinky.Tpo" -c -o pinky.o pinky.c; \
+then mv -f ".deps/pinky.Tpo" ".deps/pinky.Po"; else rm -f ".deps/pinky.Tpo"; exit 1; fi
+gcc  -g -O0   -o pinky  pinky.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT users.o -MD -MP -MF ".deps/users.Tpo" -c -o users.o users.c; \
+then mv -f ".deps/users.Tpo" ".deps/users.Po"; else rm -f ".deps/users.Tpo"; exit 1; fi
+gcc  -g -O0   -o users  users.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT who.o -MD -MP -MF ".deps/who.Tpo" -c -o who.o who.c; \
+then mv -f ".deps/who.Tpo" ".deps/who.Po"; else rm -f ".deps/who.Tpo"; exit 1; fi
+gcc  -g -O0   -o who  who.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT uptime.o -MD -MP -MF ".deps/uptime.Tpo" -c -o uptime.o uptime.c; \
+then mv -f ".deps/uptime.Tpo" ".deps/uptime.Po"; else rm -f ".deps/uptime.Tpo"; exit 1; fi
+gcc  -g -O0   -o uptime  uptime.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT stty.o -MD -MP -MF ".deps/stty.Tpo" -c -o stty.o stty.c; \
+then mv -f ".deps/stty.Tpo" ".deps/stty.Po"; else rm -f ".deps/stty.Tpo"; exit 1; fi
+gcc  -g -O0   -o stty  stty.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT df.o -MD -MP -MF ".deps/df.Tpo" -c -o df.o df.c; \
+then mv -f ".deps/df.Tpo" ".deps/df.Po"; else rm -f ".deps/df.Tpo"; exit 1; fi
+gcc  -g -O0   -o df  df.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT setuidgid.o -MD -MP -MF ".deps/setuidgid.Tpo" -c -o setuidgid.o setuidgid.c; \
+then mv -f ".deps/setuidgid.Tpo" ".deps/setuidgid.Po"; else rm -f ".deps/setuidgid.Tpo"; exit 1; fi
+gcc  -g -O0   -o setuidgid  setuidgid.o ../lib/libcoreutils.a  ../lib/libcoreutils.a
+if gcc -DHAVE_CONFIG_H -I. -I. -I..  -I.. -I. -I../lib -I../lib   -g -O0 -MT su.o -MD -MP -MF ".deps/su.Tpo" -c -o su.o su.c; \
+then mv -f ".deps/su.Tpo" ".deps/su.Po"; else rm -f ".deps/su.Tpo"; exit 1; fi
+gcc  -g -O0   -o su  su.o ../lib/libcoreutils.a  ../lib/libcoreutils.a -lcrypt
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/src'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/src'
+Making all in doc
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/doc'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/doc'
+Making all in man
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/man'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/man'
+Making all in po
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/po'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/po'
+Making all in tests
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests'
+Making all in basename
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/basename'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/basename'
+Making all in chgrp
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chgrp'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chgrp'
+Making all in chmod
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chmod'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chmod'
+Making all in chown
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chown'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chown'
+Making all in cp
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/cp'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/cp'
+Making all in cut
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/cut'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/cut'
+Making all in dd
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/dd'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/dd'
+Making all in dircolors
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/dircolors'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/dircolors'
+Making all in du
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/du'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/du'
+Making all in expr
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/expr'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/expr'
+Making all in factor
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/factor'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/factor'
+Making all in fmt
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/fmt'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/fmt'
+Making all in head
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/head'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/head'
+Making all in install
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/install'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/install'
+Making all in join
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/join'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/join'
+Making all in ln
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ln'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ln'
+Making all in ls
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ls'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ls'
+Making all in ls-2
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ls-2'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ls-2'
+Making all in md5sum
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/md5sum'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/md5sum'
+Making all in misc
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/misc'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/misc'
+Making all in mkdir
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/mkdir'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/mkdir'
+Making all in mv
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/mv'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/mv'
+Making all in od
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/od'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/od'
+Making all in pr
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/pr'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/pr'
+Making all in readlink
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/readlink'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/readlink'
+Making all in rm
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/rm'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/rm'
+Making all in rmdir
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/rmdir'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/rmdir'
+Making all in seq
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/seq'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/seq'
+Making all in sha1sum
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sha1sum'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sha1sum'
+Making all in shred
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/shred'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/shred'
+Making all in sort
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sort'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sort'
+Making all in stty
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/stty'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/stty'
+Making all in sum
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sum'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sum'
+Making all in tac
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tac'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tac'
+Making all in tail
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tail'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tail'
+Making all in tail-2
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tail-2'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tail-2'
+Making all in tee
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tee'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tee'
+Making all in test
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/test'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/test'
+Making all in touch
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/touch'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/touch'
+Making all in tr
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tr'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tr'
+Making all in tsort
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tsort'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tsort'
+Making all in unexpand
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/unexpand'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/unexpand'
+Making all in uniq
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/uniq'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/uniq'
+Making all in wc
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/wc'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/wc'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests'
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug'
+make[1]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug'
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ make install
+Making install in lib
+make[1]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/lib'
+make  install-am
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/lib'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/lib'
+test yes != no || /bin/sh ../build-aux/mkinstalldirs /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib
+if test -f /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib/charset.alias; then \
+  sed -f ref-add.sed /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib/charset.alias > /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib/charset.tmp ; \
+  /usr/bin/install -c -m 644 /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib/charset.tmp /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib/charset.alias ; \
+  rm -f /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib/charset.tmp ; \
+else \
+  if test yes = no; then \
+    sed -f ref-add.sed charset.alias > /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib/charset.tmp ; \
+    /usr/bin/install -c -m 644 /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib/charset.tmp /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib/charset.alias ; \
+    rm -f /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/lib/charset.tmp ; \
+  fi ; \
+fi
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/lib'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/lib'
+make[1]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/lib'
+Making install in src
+make[1]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/src'
+make  install-am
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/src'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/src'
+test -z "/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin" || mkdir -p -- "/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin"
+  /usr/bin/install -c '[' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/['
+  /usr/bin/install -c 'chgrp' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/chgrp'
+  /usr/bin/install -c 'chown' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/chown'
+  /usr/bin/install -c 'chmod' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/chmod'
+  /usr/bin/install -c 'cp' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/cp'
+  /usr/bin/install -c 'dd' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/dd'
+  /usr/bin/install -c 'dircolors' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/dircolors'
+  /usr/bin/install -c 'du' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/du'
+  /usr/bin/install -c 'ginstall' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/install'
+  /usr/bin/install -c 'link' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/link'
+  /usr/bin/install -c 'ln' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ln'
+  /usr/bin/install -c 'dir' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/dir'
+  /usr/bin/install -c 'vdir' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/vdir'
+  /usr/bin/install -c 'ls' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ls'
+  /usr/bin/install -c 'mkdir' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/mkdir'
+  /usr/bin/install -c 'mkfifo' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/mkfifo'
+  /usr/bin/install -c 'mknod' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/mknod'
+  /usr/bin/install -c 'mv' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/mv'
+  /usr/bin/install -c 'nohup' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/nohup'
+  /usr/bin/install -c 'readlink' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/readlink'
+  /usr/bin/install -c 'rm' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/rm'
+  /usr/bin/install -c 'rmdir' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/rmdir'
+  /usr/bin/install -c 'shred' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/shred'
+  /usr/bin/install -c 'stat' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/stat'
+  /usr/bin/install -c 'sync' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/sync'
+  /usr/bin/install -c 'touch' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/touch'
+  /usr/bin/install -c 'unlink' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/unlink'
+  /usr/bin/install -c 'cat' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/cat'
+  /usr/bin/install -c 'cksum' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/cksum'
+  /usr/bin/install -c 'comm' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/comm'
+  /usr/bin/install -c 'csplit' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/csplit'
+  /usr/bin/install -c 'cut' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/cut'
+  /usr/bin/install -c 'expand' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/expand'
+  /usr/bin/install -c 'fmt' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/fmt'
+  /usr/bin/install -c 'fold' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/fold'
+  /usr/bin/install -c 'head' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/head'
+  /usr/bin/install -c 'join' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/join'
+  /usr/bin/install -c 'md5sum' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/md5sum'
+  /usr/bin/install -c 'nl' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/nl'
+  /usr/bin/install -c 'od' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/od'
+  /usr/bin/install -c 'paste' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/paste'
+  /usr/bin/install -c 'pr' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/pr'
+  /usr/bin/install -c 'ptx' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ptx'
+  /usr/bin/install -c 'sha1sum' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/sha1sum'
+  /usr/bin/install -c 'sort' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/sort'
+  /usr/bin/install -c 'split' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/split'
+  /usr/bin/install -c 'sum' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/sum'
+  /usr/bin/install -c 'tac' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/tac'
+  /usr/bin/install -c 'tail' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/tail'
+  /usr/bin/install -c 'tr' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/tr'
+  /usr/bin/install -c 'tsort' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/tsort'
+  /usr/bin/install -c 'unexpand' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/unexpand'
+  /usr/bin/install -c 'uniq' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/uniq'
+  /usr/bin/install -c 'wc' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/wc'
+  /usr/bin/install -c 'basename' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/basename'
+  /usr/bin/install -c 'date' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/date'
+  /usr/bin/install -c 'dirname' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/dirname'
+  /usr/bin/install -c 'echo' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/echo'
+  /usr/bin/install -c 'env' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/env'
+  /usr/bin/install -c 'expr' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/expr'
+  /usr/bin/install -c 'factor' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/factor'
+  /usr/bin/install -c 'false' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/false'
+  /usr/bin/install -c 'hostname' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/hostname'
+  /usr/bin/install -c 'id' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/id'
+  /usr/bin/install -c 'kill' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/kill'
+  /usr/bin/install -c 'logname' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/logname'
+  /usr/bin/install -c 'pathchk' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/pathchk'
+  /usr/bin/install -c 'printenv' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/printenv'
+  /usr/bin/install -c 'printf' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/printf'
+  /usr/bin/install -c 'pwd' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/pwd'
+  /usr/bin/install -c 'seq' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/seq'
+  /usr/bin/install -c 'sleep' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/sleep'
+  /usr/bin/install -c 'tee' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/tee'
+  /usr/bin/install -c 'test' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/test'
+  /usr/bin/install -c 'true' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/true'
+  /usr/bin/install -c 'tty' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/tty'
+  /usr/bin/install -c 'whoami' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/whoami'
+  /usr/bin/install -c 'yes' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/yes'
+  /usr/bin/install -c 'uname' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/uname'
+  /usr/bin/install -c 'chroot' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/chroot'
+  /usr/bin/install -c 'hostid' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/hostid'
+  /usr/bin/install -c 'nice' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/nice'
+  /usr/bin/install -c 'pinky' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/pinky'
+  /usr/bin/install -c 'users' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/users'
+  /usr/bin/install -c 'who' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/who'
+  /usr/bin/install -c 'uptime' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/uptime'
+  /usr/bin/install -c 'stty' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/stty'
+  /usr/bin/install -c 'df' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/df'
+test -z "/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin" || mkdir -p -- "/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin"
+ /usr/bin/install -c 'groups' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/groups'
+WARNING: insufficient access; not installing su
+NOTE: to install su, run 'make install-root' as root
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/src'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/src'
+make[1]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/src'
+Making install in doc
+make[1]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/doc'
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/doc'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/info" || mkdir -p -- "/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/info"
+ /usr/bin/install -c -m 644 './coreutils.info' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/info/coreutils.info'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/doc'
+make[1]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/doc'
+Making install in man
+make[1]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/man'
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1" || mkdir -p -- "/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1"
+ /usr/bin/install -c -m 644 './basename.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/basename.1'
+ /usr/bin/install -c -m 644 './cat.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/cat.1'
+ /usr/bin/install -c -m 644 './chgrp.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/chgrp.1'
+ /usr/bin/install -c -m 644 './chmod.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/chmod.1'
+ /usr/bin/install -c -m 644 './chown.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/chown.1'
+ /usr/bin/install -c -m 644 './chroot.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/chroot.1'
+ /usr/bin/install -c -m 644 './cksum.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/cksum.1'
+ /usr/bin/install -c -m 644 './comm.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/comm.1'
+ /usr/bin/install -c -m 644 './cp.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/cp.1'
+ /usr/bin/install -c -m 644 './csplit.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/csplit.1'
+ /usr/bin/install -c -m 644 './cut.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/cut.1'
+ /usr/bin/install -c -m 644 './date.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/date.1'
+ /usr/bin/install -c -m 644 './dd.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/dd.1'
+ /usr/bin/install -c -m 644 './df.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/df.1'
+ /usr/bin/install -c -m 644 './dir.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/dir.1'
+ /usr/bin/install -c -m 644 './dircolors.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/dircolors.1'
+ /usr/bin/install -c -m 644 './dirname.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/dirname.1'
+ /usr/bin/install -c -m 644 './du.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/du.1'
+ /usr/bin/install -c -m 644 './echo.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/echo.1'
+ /usr/bin/install -c -m 644 './env.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/env.1'
+ /usr/bin/install -c -m 644 './expand.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/expand.1'
+ /usr/bin/install -c -m 644 './expr.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/expr.1'
+ /usr/bin/install -c -m 644 './factor.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/factor.1'
+ /usr/bin/install -c -m 644 './false.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/false.1'
+ /usr/bin/install -c -m 644 './fmt.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/fmt.1'
+ /usr/bin/install -c -m 644 './fold.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/fold.1'
+ /usr/bin/install -c -m 644 './groups.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/groups.1'
+ /usr/bin/install -c -m 644 './head.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/head.1'
+ /usr/bin/install -c -m 644 './hostid.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/hostid.1'
+ /usr/bin/install -c -m 644 './hostname.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/hostname.1'
+ /usr/bin/install -c -m 644 './id.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/id.1'
+ /usr/bin/install -c -m 644 './install.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/install.1'
+ /usr/bin/install -c -m 644 './join.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/join.1'
+ /usr/bin/install -c -m 644 './kill.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/kill.1'
+ /usr/bin/install -c -m 644 './link.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/link.1'
+ /usr/bin/install -c -m 644 './ln.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/ln.1'
+ /usr/bin/install -c -m 644 './logname.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/logname.1'
+ /usr/bin/install -c -m 644 './ls.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/ls.1'
+ /usr/bin/install -c -m 644 './md5sum.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/md5sum.1'
+ /usr/bin/install -c -m 644 './mkdir.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/mkdir.1'
+ /usr/bin/install -c -m 644 './mkfifo.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/mkfifo.1'
+ /usr/bin/install -c -m 644 './mknod.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/mknod.1'
+ /usr/bin/install -c -m 644 './mv.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/mv.1'
+ /usr/bin/install -c -m 644 './nice.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/nice.1'
+ /usr/bin/install -c -m 644 './nl.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/nl.1'
+ /usr/bin/install -c -m 644 './nohup.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/nohup.1'
+ /usr/bin/install -c -m 644 './od.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/od.1'
+ /usr/bin/install -c -m 644 './paste.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/paste.1'
+ /usr/bin/install -c -m 644 './pathchk.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/pathchk.1'
+ /usr/bin/install -c -m 644 './pinky.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/pinky.1'
+ /usr/bin/install -c -m 644 './pr.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/pr.1'
+ /usr/bin/install -c -m 644 './printenv.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/printenv.1'
+ /usr/bin/install -c -m 644 './printf.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/printf.1'
+ /usr/bin/install -c -m 644 './ptx.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/ptx.1'
+ /usr/bin/install -c -m 644 './pwd.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/pwd.1'
+ /usr/bin/install -c -m 644 './readlink.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/readlink.1'
+ /usr/bin/install -c -m 644 './rm.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/rm.1'
+ /usr/bin/install -c -m 644 './rmdir.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/rmdir.1'
+ /usr/bin/install -c -m 644 './seq.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/seq.1'
+ /usr/bin/install -c -m 644 './sha1sum.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/sha1sum.1'
+ /usr/bin/install -c -m 644 './shred.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/shred.1'
+ /usr/bin/install -c -m 644 './sleep.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/sleep.1'
+ /usr/bin/install -c -m 644 './sort.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/sort.1'
+ /usr/bin/install -c -m 644 './split.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/split.1'
+ /usr/bin/install -c -m 644 './stat.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/stat.1'
+ /usr/bin/install -c -m 644 './stty.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/stty.1'
+ /usr/bin/install -c -m 644 './su.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/su.1'
+ /usr/bin/install -c -m 644 './sum.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/sum.1'
+ /usr/bin/install -c -m 644 './sync.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/sync.1'
+ /usr/bin/install -c -m 644 './tac.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/tac.1'
+ /usr/bin/install -c -m 644 './tail.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/tail.1'
+ /usr/bin/install -c -m 644 './tee.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/tee.1'
+ /usr/bin/install -c -m 644 './test.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/test.1'
+ /usr/bin/install -c -m 644 './touch.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/touch.1'
+ /usr/bin/install -c -m 644 './tr.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/tr.1'
+ /usr/bin/install -c -m 644 './true.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/true.1'
+ /usr/bin/install -c -m 644 './tsort.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/tsort.1'
+ /usr/bin/install -c -m 644 './tty.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/tty.1'
+ /usr/bin/install -c -m 644 './uname.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/uname.1'
+ /usr/bin/install -c -m 644 './unexpand.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/unexpand.1'
+ /usr/bin/install -c -m 644 './uniq.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/uniq.1'
+ /usr/bin/install -c -m 644 './unlink.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/unlink.1'
+ /usr/bin/install -c -m 644 './uptime.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/uptime.1'
+ /usr/bin/install -c -m 644 './users.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/users.1'
+ /usr/bin/install -c -m 644 './vdir.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/vdir.1'
+ /usr/bin/install -c -m 644 './wc.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/wc.1'
+ /usr/bin/install -c -m 644 './who.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/who.1'
+ /usr/bin/install -c -m 644 './whoami.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/whoami.1'
+ /usr/bin/install -c -m 644 './yes.1' '/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/man/man1/yes.1'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/man'
+make[1]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/man'
+Making install in po
+make[1]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/po'
+/bin/sh ../build-aux/mkinstalldirs /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share
+installing af.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/af/LC_MESSAGES/coreutils.mo
+installing af.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/af/LC_TIME/coreutils.mo
+installing be.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/be/LC_MESSAGES/coreutils.mo
+installing be.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/be/LC_TIME/coreutils.mo
+installing bg.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/bg/LC_MESSAGES/coreutils.mo
+installing bg.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/bg/LC_TIME/coreutils.mo
+installing ca.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/ca/LC_MESSAGES/coreutils.mo
+installing ca.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/ca/LC_TIME/coreutils.mo
+installing cs.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/cs/LC_MESSAGES/coreutils.mo
+installing cs.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/cs/LC_TIME/coreutils.mo
+installing da.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/da/LC_MESSAGES/coreutils.mo
+installing da.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/da/LC_TIME/coreutils.mo
+installing de.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/de/LC_MESSAGES/coreutils.mo
+installing de.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/de/LC_TIME/coreutils.mo
+installing el.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/el/LC_MESSAGES/coreutils.mo
+installing el.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/el/LC_TIME/coreutils.mo
+installing es.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/es/LC_MESSAGES/coreutils.mo
+installing es.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/es/LC_TIME/coreutils.mo
+installing et.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/et/LC_MESSAGES/coreutils.mo
+installing et.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/et/LC_TIME/coreutils.mo
+installing eu.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/eu/LC_MESSAGES/coreutils.mo
+installing eu.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/eu/LC_TIME/coreutils.mo
+installing fi.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/fi/LC_MESSAGES/coreutils.mo
+installing fi.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/fi/LC_TIME/coreutils.mo
+installing fr.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/fr/LC_MESSAGES/coreutils.mo
+installing fr.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/fr/LC_TIME/coreutils.mo
+installing ga.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/ga/LC_MESSAGES/coreutils.mo
+installing ga.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/ga/LC_TIME/coreutils.mo
+installing gl.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/gl/LC_MESSAGES/coreutils.mo
+installing gl.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/gl/LC_TIME/coreutils.mo
+installing hu.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/hu/LC_MESSAGES/coreutils.mo
+installing hu.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/hu/LC_TIME/coreutils.mo
+installing it.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/it/LC_MESSAGES/coreutils.mo
+installing it.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/it/LC_TIME/coreutils.mo
+installing ja.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/ja/LC_MESSAGES/coreutils.mo
+installing ja.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/ja/LC_TIME/coreutils.mo
+installing ko.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/ko/LC_MESSAGES/coreutils.mo
+installing ko.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/ko/LC_TIME/coreutils.mo
+installing lg.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/lg/LC_MESSAGES/coreutils.mo
+installing lg.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/lg/LC_TIME/coreutils.mo
+installing ms.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/ms/LC_MESSAGES/coreutils.mo
+installing ms.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/ms/LC_TIME/coreutils.mo
+installing nb.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/nb/LC_MESSAGES/coreutils.mo
+installing nb.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/nb/LC_TIME/coreutils.mo
+installing nl.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/nl/LC_MESSAGES/coreutils.mo
+installing nl.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/nl/LC_TIME/coreutils.mo
+installing no.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/no/LC_MESSAGES/coreutils.mo
+installing no.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/no/LC_TIME/coreutils.mo
+installing pl.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/pl/LC_MESSAGES/coreutils.mo
+installing pl.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/pl/LC_TIME/coreutils.mo
+installing pt.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/pt/LC_MESSAGES/coreutils.mo
+installing pt.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/pt/LC_TIME/coreutils.mo
+installing pt_BR.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/pt_BR/LC_MESSAGES/coreutils.mo
+installing pt_BR.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/pt_BR/LC_TIME/coreutils.mo
+installing ru.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/ru/LC_MESSAGES/coreutils.mo
+installing ru.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/ru/LC_TIME/coreutils.mo
+installing sk.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/sk/LC_MESSAGES/coreutils.mo
+installing sk.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/sk/LC_TIME/coreutils.mo
+installing sl.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/sl/LC_MESSAGES/coreutils.mo
+installing sl.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/sl/LC_TIME/coreutils.mo
+installing sv.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/sv/LC_MESSAGES/coreutils.mo
+installing sv.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/sv/LC_TIME/coreutils.mo
+installing tr.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/tr/LC_MESSAGES/coreutils.mo
+installing tr.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/tr/LC_TIME/coreutils.mo
+installing vi.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/vi/LC_MESSAGES/coreutils.mo
+installing vi.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/vi/LC_TIME/coreutils.mo
+installing zh_CN.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/zh_CN/LC_MESSAGES/coreutils.mo
+installing zh_CN.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/zh_CN/LC_TIME/coreutils.mo
+installing zh_TW.gmo as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/zh_TW/LC_MESSAGES/coreutils.mo
+installing zh_TW.gmo link as /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/locale/zh_TW/LC_TIME/coreutils.mo
+if test "coreutils" = "gettext-tools"; then \
+  /bin/sh ../build-aux/mkinstalldirs /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+                    /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/po'
+Making install in tests
+make[1]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests'
+Making install in basename
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/basename'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/basename'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/basename'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/basename'
+Making install in chgrp
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chgrp'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chgrp'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chgrp'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chgrp'
+Making install in chmod
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chmod'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chmod'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chmod'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chmod'
+Making install in chown
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chown'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chown'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chown'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/chown'
+Making install in cp
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/cp'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/cp'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/cp'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/cp'
+Making install in cut
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/cut'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/cut'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/cut'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/cut'
+Making install in dd
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/dd'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/dd'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/dd'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/dd'
+Making install in dircolors
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/dircolors'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/dircolors'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/dircolors'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/dircolors'
+Making install in du
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/du'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/du'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/du'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/du'
+Making install in expr
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/expr'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/expr'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/expr'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/expr'
+Making install in factor
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/factor'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/factor'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/factor'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/factor'
+Making install in fmt
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/fmt'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/fmt'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/fmt'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/fmt'
+Making install in head
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/head'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/head'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/head'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/head'
+Making install in install
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/install'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/install'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/install'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/install'
+Making install in join
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/join'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/join'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/join'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/join'
+Making install in ln
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ln'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ln'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ln'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ln'
+Making install in ls
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ls'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ls'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ls'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ls'
+Making install in ls-2
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ls-2'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ls-2'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ls-2'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/ls-2'
+Making install in md5sum
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/md5sum'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/md5sum'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/md5sum'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/md5sum'
+Making install in misc
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/misc'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/misc'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/misc'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/misc'
+Making install in mkdir
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/mkdir'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/mkdir'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/mkdir'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/mkdir'
+Making install in mv
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/mv'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/mv'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/mv'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/mv'
+Making install in od
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/od'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/od'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/od'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/od'
+Making install in pr
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/pr'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/pr'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/pr'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/pr'
+Making install in readlink
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/readlink'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/readlink'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/readlink'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/readlink'
+Making install in rm
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/rm'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/rm'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/rm'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/rm'
+Making install in rmdir
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/rmdir'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/rmdir'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/rmdir'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/rmdir'
+Making install in seq
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/seq'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/seq'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/seq'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/seq'
+Making install in sha1sum
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sha1sum'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sha1sum'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sha1sum'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sha1sum'
+Making install in shred
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/shred'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/shred'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/shred'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/shred'
+Making install in sort
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sort'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sort'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sort'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sort'
+Making install in stty
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/stty'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/stty'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/stty'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/stty'
+Making install in sum
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sum'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sum'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sum'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/sum'
+Making install in tac
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tac'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tac'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tac'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tac'
+Making install in tail
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tail'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tail'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tail'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tail'
+Making install in tail-2
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tail-2'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tail-2'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tail-2'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tail-2'
+Making install in tee
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tee'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tee'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tee'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tee'
+Making install in test
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/test'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/test'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/test'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/test'
+Making install in touch
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/touch'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/touch'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/touch'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/touch'
+Making install in tr
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tr'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tr'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tr'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tr'
+Making install in tsort
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tsort'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tsort'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tsort'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/tsort'
+Making install in unexpand
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/unexpand'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/unexpand'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/unexpand'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/unexpand'
+Making install in uniq
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/uniq'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/uniq'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/uniq'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/uniq'
+Making install in wc
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/wc'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/wc'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/wc'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests/wc'
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests'
+make[1]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug/tests'
+make[1]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug'
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug'
+make[1]: Leaving directory `/w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug'
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ cd ../coreutils-with-bug-install/bin/
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug-install/bin]$ gdb ls
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-94.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ls...done.
+(gdb) run -lt
+Starting program: /w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ls -lt
+total 7616
+-rwxr-xr-x 1 classzfu class   1987 2017-04-26 15:30 groups
+-rwxr-xr-x 1 classzfu class  93240 2017-04-26 15:30 df
+-rwxr-xr-x 1 classzfu class  84840 2017-04-26 15:30 stty
+-rwxr-xr-x 1 classzfu class  51392 2017-04-26 15:30 uptime
+-rwxr-xr-x 1 classzfu class  65032 2017-04-26 15:30 who
+-rwxr-xr-x 1 classzfu class  49552 2017-04-26 15:30 users
+-rwxr-xr-x 1 classzfu class  63416 2017-04-26 15:30 pinky
+-rwxr-xr-x 1 classzfu class  49256 2017-04-26 15:30 nice
+-rwxr-xr-x 1 classzfu class  46064 2017-04-26 15:30 hostid
+-rwxr-xr-x 1 classzfu class  46608 2017-04-26 15:30 chroot
+-rwxr-xr-x 1 classzfu class  45264 2017-04-26 15:30 uname
+-rwxr-xr-x 1 classzfu class  45480 2017-04-26 15:30 yes
+-rwxr-xr-x 1 classzfu class  46440 2017-04-26 15:30 whoami
+-rwxr-xr-x 1 classzfu class  44896 2017-04-26 15:30 tty
+-rwxr-xr-x 1 classzfu class  39152 2017-04-26 15:30 true
+-rwxr-xr-x 1 classzfu class  61856 2017-04-26 15:30 test
+-rwxr-xr-x 1 classzfu class  47040 2017-04-26 15:30 tee
+-rwxr-xr-x 1 classzfu class  49440 2017-04-26 15:30 sleep
+-rwxr-xr-x 1 classzfu class  52976 2017-04-26 15:30 seq
+-rwxr-xr-x 1 classzfu class  51272 2017-04-26 15:30 pwd
+-rwxr-xr-x 1 classzfu class  77296 2017-04-26 15:30 printf
+-rwxr-xr-x 1 classzfu class  46032 2017-04-26 15:30 printenv
+-rwxr-xr-x 1 classzfu class  48080 2017-04-26 15:30 pathchk
+-rwxr-xr-x 1 classzfu class  46136 2017-04-26 15:30 logname
+-rwxr-xr-x 1 classzfu class  52328 2017-04-26 15:30 kill
+-rwxr-xr-x 1 classzfu class  52224 2017-04-26 15:30 id
+-rwxr-xr-x 1 classzfu class  47008 2017-04-26 15:30 hostname
+-rwxr-xr-x 1 classzfu class  39152 2017-04-26 15:30 false
+-rwxr-xr-x 1 classzfu class  56552 2017-04-26 15:30 factor
+-rwxr-xr-x 1 classzfu class 236584 2017-04-26 15:30 expr
+-rwxr-xr-x 1 classzfu class  44704 2017-04-26 15:30 env
+-rwxr-xr-x 1 classzfu class  46328 2017-04-26 15:30 echo
+-rwxr-xr-x 1 classzfu class  47808 2017-04-26 15:30 dirname
+-rwxr-xr-x 1 classzfu class 123256 2017-04-26 15:30 date
+-rwxr-xr-x 1 classzfu class  47048 2017-04-26 15:30 basename
+-rwxr-xr-x 1 classzfu class  54632 2017-04-26 15:30 wc
+-rwxr-xr-x 1 classzfu class  66904 2017-04-26 15:30 uniq
+-rwxr-xr-x 1 classzfu class  52560 2017-04-26 15:30 unexpand
+-rwxr-xr-x 1 classzfu class  55672 2017-04-26 15:30 tsort
+-rwxr-xr-x 1 classzfu class  75224 2017-04-26 15:30 tr
+-rwxr-xr-x 1 classzfu class  93792 2017-04-26 15:30 tail
+-rwxr-xr-x 1 classzfu class 229600 2017-04-26 15:30 tac
+-rwxr-xr-x 1 classzfu class  64624 2017-04-26 15:30 sum
+-rwxr-xr-x 1 classzfu class  66752 2017-04-26 15:30 split
+-rwxr-xr-x 1 classzfu class 113872 2017-04-26 15:30 sort
+-rwxr-xr-x 1 classzfu class  78176 2017-04-26 15:30 sha1sum
+-rwxr-xr-x 1 classzfu class 256256 2017-04-26 15:30 ptx
+-rwxr-xr-x 1 classzfu class 113320 2017-04-26 15:30 pr
+-rwxr-xr-x 1 classzfu class  46152 2017-04-26 15:30 paste
+-rwxr-xr-x 1 classzfu class  80448 2017-04-26 15:30 od
+-rwxr-xr-x 1 classzfu class 236456 2017-04-26 15:30 nl
+-rwxr-xr-x 1 classzfu class  78144 2017-04-26 15:30 md5sum
+-rwxr-xr-x 1 classzfu class  72440 2017-04-26 15:30 join
+-rwxr-xr-x 1 classzfu class  68664 2017-04-26 15:30 head
+-rwxr-xr-x 1 classzfu class  52528 2017-04-26 15:30 fold
+-rwxr-xr-x 1 classzfu class  60592 2017-04-26 15:30 fmt
+-rwxr-xr-x 1 classzfu class  47976 2017-04-26 15:30 expand
+-rwxr-xr-x 1 classzfu class  72440 2017-04-26 15:30 cut
+-rwxr-xr-x 1 classzfu class 255792 2017-04-26 15:30 csplit
+-rwxr-xr-x 1 classzfu class  56072 2017-04-26 15:30 comm
+-rwxr-xr-x 1 classzfu class  47056 2017-04-26 15:30 cksum
+-rwxr-xr-x 1 classzfu class  54648 2017-04-26 15:30 cat
+-rwxr-xr-x 1 classzfu class  46048 2017-04-26 15:30 unlink
+-rwxr-xr-x 1 classzfu class  90168 2017-04-26 15:30 touch
+-rwxr-xr-x 1 classzfu class  41288 2017-04-26 15:30 sync
+-rwxr-xr-x 1 classzfu class  81552 2017-04-26 15:30 stat
+-rwxr-xr-x 1 classzfu class  93672 2017-04-26 15:30 shred
+-rwxr-xr-x 1 classzfu class  45960 2017-04-26 15:30 rmdir
+-rwxr-xr-x 1 classzfu class 104280 2017-04-26 15:30 rm
+-rwxr-xr-x 1 classzfu class  54664 2017-04-26 15:30 readlink
+-rwxr-xr-x 1 classzfu class  51048 2017-04-26 15:30 nohup
+-rwxr-xr-x 1 classzfu class 170944 2017-04-26 15:30 mv
+-rwxr-xr-x 1 classzfu class  54592 2017-04-26 15:30 mknod
+-rwxr-xr-x 1 classzfu class  47912 2017-04-26 15:30 mkfifo
+-rwxr-xr-x 1 classzfu class  65936 2017-04-26 15:30 mkdir
+-rwxr-xr-x 1 classzfu class 194632 2017-04-26 15:30 ls
+-rwxr-xr-x 1 classzfu class 194640 2017-04-26 15:30 vdir
+-rwxr-xr-x 1 classzfu class 194640 2017-04-26 15:30 dir
+-rwxr-xr-x 1 classzfu class  72008 2017-04-26 15:30 ln
+-rwxr-xr-x 1 classzfu class  46056 2017-04-26 15:30 link
+-rwxr-xr-x 1 classzfu class 160176 2017-04-26 15:30 install
+-rwxr-xr-x 1 classzfu class 163928 2017-04-26 15:30 du
+-rwxr-xr-x 1 classzfu class  62072 2017-04-26 15:30 dircolors
+-rwxr-xr-x 1 classzfu class  96208 2017-04-26 15:30 dd
+-rwxr-xr-x 1 classzfu class 145984 2017-04-26 15:30 cp
+-rwxr-xr-x 1 classzfu class 100728 2017-04-26 15:30 chmod
+-rwxr-xr-x 1 classzfu class 108664 2017-04-26 15:30 chown
+-rwxr-xr-x 1 classzfu class 101096 2017-04-26 15:30 chgrp
+-rwxr-xr-x 1 classzfu class  66448 2017-04-26 15:30 [
+[Inferior 1 (process 49024) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-157.el7_3.1.x86_64
+(gdb) ^CQuit
+(gdb) exit
+Undefined command: "exit".  Try "help".
+(gdb) quit
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug-install/bin]$ cd $tmp
+[classzfu@lnxsrv09 ~]$ tmp=$(mktemp -d)
+[classzfu@lnxsrv09 ~]$ cd $tmp
+[classzfu@lnxsrv09 /tmp/tmp.5WoZ6llhkd]$ gdb /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/ls
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-94.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+/u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/ls: No such file or directory.
+(gdb) run -lt
+Starting program:  -lt
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) quit
+[classzfu@lnxsrv09 /tmp/tmp.5WoZ6llhkd]$ touch -d '1918-11-11 11:00 GMT' wwi-armistice
+[classzfu@lnxsrv09 /tmp/tmp.5WoZ6llhkd]$ touch now
+[classzfu@lnxsrv09 /tmp/tmp.5WoZ6llhkd]$ sleep 1
+[classzfu@lnxsrv09 /tmp/tmp.5WoZ6llhkd]$ touch now1
+[classzfu@lnxsrv09 /tmp/tmp.5WoZ6llhkd]$ TZ=UTC0 /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/ls -lt --full-time wwi-armistice now now1
+-bash: /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/ls: No such file or directory
+[classzfu@lnxsrv09 /tmp/tmp.5WoZ6llhkd]$ cd /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug-install]$ ls
+bin  share
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug-install]$ cd $tmp
+[classzfu@lnxsrv09 /tmp/tmp.5WoZ6llhkd]$ ls
+now  now1  wwi-armistice
+[classzfu@lnxsrv09 /tmp/tmp.5WoZ6llhkd]$ TZ=UTC0 /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ls -lt --full-time wwi-armistice now now1
+-rw-r--r-- 1 classzfu class 0 1918-11-11 11:00:00.000000000 +0000 wwi-armistice
+-rw-r--r-- 1 classzfu class 0 2017-04-26 22:33:22.375106849 +0000 now1
+-rw-r--r-- 1 classzfu class 0 2017-04-26 22:33:14.678981517 +0000 now
+[classzfu@lnxsrv09 /tmp/tmp.5WoZ6llhkd]$ gdb /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ls
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-94.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /w/home.14/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ls...done.
+(gdb) break ls.c:2953
+Breakpoint 1 at 0x4061dd: file ls.c, line 2953.
+(gdb) info breakpoints
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x00000000004061dd in sort_files at ls.c:2953
+(gdb) s
+The program is not being run.
+(gdb) s
+The program is not being run.
+(gdb) run -lt
+Starting program: /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ls -lt
+
+Breakpoint 1, sort_files () at ls.c:2962
+2962      if (! setjmp (failed_strcoll))
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-157.el7_3.1.x86_64
+(gdb) s
+2964          switch (sort_type)
+(gdb) s
+2969              switch (time_type)
+(gdb) s
+2975                  func = sort_reverse ? rev_cmp_mtime : compare_mtime;
+(gdb) p func
+$1 = (int (*)(V, V)) 0x7ffff7ad66ed <closedir+13>
+(gdb) s
+2976                  break;
+(gdb) s
+2983              break;
+(gdb) s
+3034      qsort (files, files_index, sizeof *files, func);
+(gdb) break compare mtime
+Function "compare mtime" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) ^[[A^[[A^[[B^[[B^[[B^C
+(gdb) Quit
+(gdb) break compare_mtime
+Breakpoint 2 at 0x405c8a: file ls.c, line 2884.
+(gdb) info breakpoint
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x00000000004061dd in sort_files at ls.c:2953
+        breakpoint already hit 1 time
+2       breakpoint     keep y   0x0000000000405c8a in compare_mtime at ls.c:2884
+(gdb) run -lt
+The program being debugged has been started already.
+Start it from the beginning? (y or n) n
+Program not restarted.
+(gdb) run -lt
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+
+Starting program: /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ls -lt
+
+Breakpoint 1, sort_files () at ls.c:2962
+2962      if (! setjmp (failed_strcoll))
+(gdb) c
+Continuing.
+
+Breakpoint 2, compare_mtime (a=0x61a1a0, b=0x61a250) at ls.c:2884
+2884    static int compare_mtime (V a, V b) { return cmp_mtime (a, b, xstrcoll); }
+(gdb) c
+Continuing.
+
+Breakpoint 2, compare_mtime (a=0x61a0f0, b=0x61a1a0) at ls.c:2884
+2884    static int compare_mtime (V a, V b) { return cmp_mtime (a, b, xstrcoll); }
+(gdb) c
+Continuing.
+total 0
+-rw-r--r-- 1 classzfu class 0 1918-11-11 03:00 wwi-armistice
+-rw-r--r-- 1 classzfu class 0 2017-04-26 15:33 now1
+-rw-r--r-- 1 classzfu class 0 2017-04-26 15:33 now
+[Inferior 1 (process 18885) exited normally]
+(gdb) c
+The program is not being run.
+(gdb) info breakpoints
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x00000000004061dd in sort_files at ls.c:2953
+        breakpoint already hit 1 time
+2       breakpoint     keep y   0x0000000000405c8a in compare_mtime at ls.c:2884
+        breakpoint already hit 2 times
+(gdb) break cmp_mtime
+Breakpoint 3 at 0x405c04: file ls.c, line 2880.
+(gdb) run -lt
+Starting program: /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ls -lt
+
+Breakpoint 1, sort_files () at ls.c:2962
+2962      if (! setjmp (failed_strcoll))
+(gdb) c
+Continuing.
+
+Breakpoint 2, compare_mtime (a=0x61a1a0, b=0x61a250) at ls.c:2884
+2884    static int compare_mtime (V a, V b) { return cmp_mtime (a, b, xstrcoll); }
+(gdb) c
+Continuing.
+
+Breakpoint 3, cmp_mtime (a=0x61a1a0, b=0x61a250, cmp=0x405a00 <xstrcoll>) at ls.c:2880
+2880      int diff = timespec_cmp (get_stat_mtime (&b->stat),
+(gdb) n
+2882      return diff ? diff : cmp (a->name, b->name);
+(gdb) info locals
+diff = -8
+(gdb) info args
+a = 0x61a1a0
+b = 0x61a250
+cmp = 0x405a00 <xstrcoll>
+(gdb) run -lt
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+
+Starting program: /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ls -lt
+
+Breakpoint 1, sort_files () at ls.c:2962
+2962      if (! setjmp (failed_strcoll))
+(gdb) c
+Continuing.
+
+Breakpoint 2, compare_mtime (a=0x61a1a0, b=0x61a250) at ls.c:2884
+2884    static int compare_mtime (V a, V b) { return cmp_mtime (a, b, xstrcoll); }
+(gdb) c
+Continuing.
+
+Breakpoint 3, cmp_mtime (a=0x61a1a0, b=0x61a250, cmp=0x405a00 <xstrcoll>) at ls.c:2880
+2880      int diff = timespec_cmp (get_stat_mtime (&b->stat),
+(gdb) n
+2882      return diff ? diff : cmp (a->name, b->name);
+(gdb) info args
+a = 0x61a1a0
+b = 0x61a250
+cmp = 0x405a00 <xstrcoll>
+(gdb) info locals
+diff = -8
+(gdb) s
+2883    }
+(gdb) run -lt
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+
+Starting program: /u/eng/class/classzfu/35l/week4_2/coreutils-with-bug-install/bin/ls -lt
+
+Breakpoint 1, sort_files () at ls.c:2962
+2962      if (! setjmp (failed_strcoll))
+(gdb) c
+Continuing.
+
+Breakpoint 2, compare_mtime (a=0x61a1a0, b=0x61a250) at ls.c:2884
+2884    static int compare_mtime (V a, V b) { return cmp_mtime (a, b, xstrcoll); }
+(gdb) c
+Continuing.
+
+Breakpoint 3, cmp_mtime (a=0x61a1a0, b=0x61a250, cmp=0x405a00 <xstrcoll>) at ls.c:2880
+2880      int diff = timespec_cmp (get_stat_mtime (&b->stat),
+(gdb) n
+2882      return diff ? diff : cmp (a->name, b->name);
+(gdb) s
+2883    }
+(gdb) s
+0x00007ffff7a53ab3 in msort_with_tmp.part.0 () from /lib64/libc.so.6
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 19178] will be killed.
+
+Quit anyway? (y or n) y
+[classzfu@lnxsrv09 /tmp/tmp.5WoZ6llhkd]$ cd ~/35l/week4_2/coreutils-with-bug
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ ls
+ABOUT-NLS     config.h       configure.ac  m4              man       tests
+aclocal.m4    config.hin     COPYING       Makefile        old       THANKS
+announce-gen  config.log     doc           Makefile.am     po        THANKS-to-translators
+AUTHORS       config.status  GNUmakefile   Makefile.cfg    README    THANKStt.in
+build-aux     configure      INSTALL       Makefile.in     src       TODO
+config        configure~     lib           Makefile.maint  stamp-h1  unpack.made
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug]$ cd lib
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug/lib]$ ls
+acl.c           file-type.h     localcharset.c   readtokens0.c     strtol.c
+acl.h           file-type.o     localcharset.h   readtokens0.h     strtoll.c
+acl.o           fnmatch.c       localcharset.o   readtokens0.o     strtoul.c
+alloca.c        fnmatch_.h      long-options.c   readtokens.c      strtoull.c
+alloca_.h       fnmatch_loop.c  long-options.h   readtokens.h      strtoumax.c
+alloca.h        fopen-safer.c   long-options.o   readtokens.o      strverscmp.c
+allocsa.c       fopen-safer.o   lstat.c          readutmp.c        strverscmp.h
+allocsa.h       __fpending.c    lstat.h          readutmp.h        tempname.c
+allocsa.o       __fpending.h    Makefile         readutmp.o        t-fpending
+argmatch.c      fprintftime.c   Makefile.am      realloc.c         t-fpending.c
+argmatch.h      fprintftime.h   Makefile.in      ref-add.sed       t-fpending.o
+argmatch.o      fprintftime.o   malloc.c         ref-add.sin       time_r.c
+asnprintf.c     free.c          mbchar.c         ref-del.sed       time_r.h
+asnprintf.o     fsusage.c       mbchar.h         ref-del.sin       time_r.o
+asprintf.c      fsusage.h       mbchar.o         regcomp.c         timespec.h
+atexit.c        fsusage.o       mbswidth.c       regex.c           TODO
+backupfile.c    ftruncate.c     mbswidth.h       regexec.c         umaxtostr.c
+backupfile.h    fts.c           mbswidth.o       regex.h           umaxtostr.o
+backupfile.o    fts-cycle.c     mbuiter.h        regex_internal.c  unicodeio.c
+basename.c      fts_.h          md5.c            regex_internal.h  unicodeio.h
+basename.o      fts.o           md5.h            regex.o           unicodeio.o
+calloc.c        full-read.c     md5.o            rename.c          unistd--.h
+canon-host.c    full-read.h     memcasecmp.c     rmdir.c           unistd-safer.h
+canon-host.h    full-read.o     memcasecmp.h     root-dev-ino.c    unlinkdir.c
+canon-host.o    full-write.c    memcasecmp.o     root-dev-ino.h    unlinkdir.h
+canonicalize.c  full-write.h    memchr.c         root-dev-ino.o    unlinkdir.o
+canonicalize.h  full-write.o    memcmp.c         rpmatch.c         unlocked-io.h
+canonicalize.o  gai_strerror.c  memcoll.c        safe-read.c       unsetenv.c
+ChangeLog       getaddrinfo.c   memcoll.h        safe-read.h       userspec.c
+charset.alias   getaddrinfo.h   memcoll.o        safe-read.o       userspec.h
+chdir-long.c    getcwd.c        memcpy.c         safe-write.c      userspec.o
+chdir-long.h    getcwd.h        memmove.c        safe-write.h      utime.c
+chdir-long.o    getdate.c       mempcpy.c        safe-write.o      utimecmp.c
+chown.c         getdate.h       mempcpy.h        same.c            utimecmp.h
+cloexec.c       getdate.o       memrchr.c        same.h            utimecmp.o
+cloexec.h       getdate.y       memrchr.h        same.o            utimens.c
+cloexec.o       getdelim.c      memset.c         save-cwd.c        utimens.h
+closeout.c      getdelim.h      mkdir.c          save-cwd.h        utimens.o
+closeout.h      getgroups.c     mkdir-p.c        save-cwd.o        vasnprintf.c
+closeout.o      gethostname.c   mkdir-p.h        savedir.c         vasnprintf.h
+config.charset  gethrxtime.c    mkdir-p.o        savedir.h         vasnprintf.o
+creat-safer.c   gethrxtime.h    mkstemp.c        savedir.o         vasprintf.c
+creat-safer.o   gethrxtime.o    mkstemp-safer.c  setenv.c          vasprintf.h
+c-strtod.c      getline.c       mkstemp-safer.o  setenv.h          verify.h
+c-strtod.h      getline.h       mktime.c         settime.c         version-etc.c
+c-strtod.o      getloadavg.c    mktime.o         settime.o         version-etc-fsf.c
+c-strtold.c     getndelim2.c    modechange.c     sha1.c            version-etc-fsf.o
+c-strtold.o     getndelim2.h    modechange.h     sha1.h            version-etc.h
+cycle-check.c   getndelim2.o    modechange.o     sha1.o            version-etc.o
+cycle-check.h   getopt1.c       mountlist.c      sig2str.c         xalloc-die.c
+cycle-check.o   getopt.c        mountlist.h      sig2str.h         xalloc-die.o
+dev-ino.h       getopt_.h       mountlist.o      sig2str.o         xalloc.h
+diacrit.c       getopt_int.h    nanosleep.c      stat-macros.h     xfts.c
+diacrit.h       getpagesize.h   obstack.c        stat-time.h       xfts.h
+diacrit.o       getpass.c       obstack.h        stdbool_.h        xfts.o
+dirfd.c         getpass.h       offtostr.c       stdio--.h         xgetcwd.c
+dirfd.h         getpass.o       offtostr.o       stdio-safer.h     xgetcwd.h
+dirname.c       gettext.h       openat.c         stdlib--.h        xgetcwd.o
+dirname.h       gettime.c       openat-die.c     stdlib-safer.h    xgethostname.c
+dirname.o       gettime.o       openat-die.o     stpcpy.c          xgethostname.h
+dup2.c          gettimeofday.c  openat.h         strcasecmp.c      xgethostname.o
+dup-safer.c     getugroups.c    open-safer.c     strcasecmp.o      xmalloc.c
+dup-safer.o     getugroups.o    open-safer.o     strcase.h         xmalloc.o
+error.c         getusershell.c  pathmax.h        strcspn.c         xmemcoll.c
+error.h         group-member.c  physmem.c        strdup.c          xmemcoll.h
+euidaccess.c    group-member.h  physmem.h        strdup.h          xmemcoll.o
+euidaccess.h    hard-locale.c   physmem.o        strftime.c        xnanosleep.c
+exclude.c       hard-locale.h   pipe-safer.c     strftime.h        xnanosleep.h
+exclude.h       hard-locale.o   pipe-safer.o     strftime.o        xnanosleep.o
+exclude.o       hash.c          posixtm.c        strintcmp.c       xreadlink.c
+exitfail.c      hash.h          posixtm.h        strintcmp.o       xreadlink.h
+exitfail.h      hash.o          posixtm.o        stripslash.c      xreadlink.o
+exitfail.o      hash-pjw.c      posixver.c       stripslash.o      xstrndup.c
+exit.h          hash-pjw.h      posixver.h       strncasecmp.c     xstrndup.h
+fchdir-stub.c   hash-pjw.o      posixver.o       strndup.c         xstrndup.o
+fchown-stub.c   human.c         printf-args.c    strndup.h         xstrtod.c
+fcntl--.h       human.h         printf-args.h    strnlen1.c        xstrtod.h
+fcntl-safer.h   human.o         printf-args.o    strnlen1.h        xstrtod.o
+fd-reopen.c     idcache.c       printf-parse.c   strnlen1.o        xstrtoimax.c
+fd-reopen.h     idcache.o       printf-parse.h   strnlen.c         xstrtoimax.o
+fd-reopen.o     imaxtostr.c     printf-parse.o   strnlen.h         xstrtol.c
+fd-safer.c      imaxtostr.o     putenv.c         strnumcmp.c       xstrtol.h
+fd-safer.o      intprops.h      quotearg.c       strnumcmp.h       xstrtol.o
+fileblocks.c    inttostr.c      quotearg.h       strnumcmp-in.h    xstrtoul.c
+filemode.c      inttostr.h      quotearg.o       strnumcmp.o       xstrtoul.o
+filemode.h      lchown.c        quote.c          strpbrk.c         xstrtoumax.c
+filemode.o      lchown.h        quote.h          strstr.c          xstrtoumax.o
+filenamecat.c   libcoreutils.a  quote.o          strstr.h          xtime.h
+filenamecat.h   linebuffer.c    raise.c          strstr.o          yesno.c
+filenamecat.o   linebuffer.h    readlink.c       strtod.c          yesno.h
+file-type.c     linebuffer.o    README           strtoimax.c       yesno.o
+[classzfu@lnxsrv09 ~/35l/week4_2/coreutils-with-bug/lib]$ emacs timespec.h
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:14.0 unavailable, simulating -nw
+File Edit Options Buffers Tools C Help
+/* timespec -- System time interface
+
+   Copyright (C) 2000, 2002, 2004, 2005 Free Software Foundation, Inc.
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2, or (at your option)
+   any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software Foundation,
+   Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.  */
+
+#if ! defined TIMESPEC_H
+# define TIMESPEC_H
+
+# include <sys/types.h>
+# if TIME_WITH_SYS_TIME
+#  include <sys/time.h>
+#  include <time.h>
+# else
+#  if HAVE_SYS_TIME_H
+#   include <sys/time.h>
+#  else
+#   include <time.h>
+#  endif
+# endif
+
+# if ! HAVE_STRUCT_TIMESPEC
+/* Some systems don't define this struct, e.g., AIX 4.1, Ultrix 4.3.  */
+struct timespec
+{
+  time_t tv_sec;
+  long tv_nsec;
+};
+# endif
+
+/* Return negative, zero, positive if A < B, A == B, A > B, respectively.
+   Assume the nanosecond components are in range, or close to it.  */
+static inline int
+timespec_cmp (struct timespec a, struct timespec b)
+{
+  int diff = a.tv_sec - b.tv_sec;
+  return diff ? diff : a.tv_nsec - b.tv_nsec;
+}
+
+# if ! HAVE_DECL_NANOSLEEP
+/* Don't specify a prototype here.  Some systems (e.g., OSF) declare
+   nanosleep with a conflicting one (const-less first parameter).  */
+int nanosleep ();
+-UU-:----F1  timespec.h     Top L46    (C/l Abbrev Isearch) --------------------------------
+I-search: timespec_cmp

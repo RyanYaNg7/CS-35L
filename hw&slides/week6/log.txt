@@ -1,0 +1,37 @@
+1. Add /usr/local/cs/bin to PATH
+   export PATH=/usr/local/cs/bin:$PATH
+
+2. check the current version of sort
+   sort --version
+gives us: sort (GNU coreutils) 8.28
+
+3.Generate a file containing 10M random double-precision floating point numbers, one per line with no white space. Each double takes 8 bytes of memory, so we need 80M data.
+   od -tf -N 80000000 < /dev/urandom | tr -s '' '\n' | sed '/^$/d' > random.txt
+
+4. compare  the performances
+a. no parallel option
+   time -p sort -g random.txt > /dev/null
+real 45.87
+user 214.25
+sys 0.56
+
+b. 1 thread
+   time -p sort -g --parallel=1 random.txt > /dev/null
+
+c. 2 threads
+   time -p sort -g --parallel=2 random.txt > /dev/null
+real 113.37
+user 215.74
+sys 0.41
+
+d. 4 threads
+   time -p sort -g --parallel=4 random.txt > /dev/null
+real 68.22
+user 227.16
+sys 0.45
+
+e. 8 threads
+   time -p sort -g --parallel=8 random.txt > /dev/null
+real 46.14
+user 250.60
+sys 0.57

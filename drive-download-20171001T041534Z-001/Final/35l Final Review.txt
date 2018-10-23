@@ -1,0 +1,47 @@
+Practice Final:
+Reguler Expression
+linking
+C programming
+	system call
+		buffer/unbuffered IO
+	pthreads
+		code
+		synchronization
+	dynamic allocation
+Shell commands
+	sort
+		locale
+Git
+	commands (rebase, merge)
+Encryption 
+
+
+Finals:
+1. regular expression
+	find
+	grep
+	cat
+	man
+	sed
+	tr
+2. Shell scripting
+	loops
+	reading from files
+	writing to files
+	set file permission
+3. Python
+4. C programming
+	multithreading
+5. SSH questions
+	reasoning
+6. no emacs commands questions
+7. reasoning system calls
+8. debugging
+
+50% about codings
+syntax is important
+
+To be finished:
+1. lab1
+2. python
+3. makefile

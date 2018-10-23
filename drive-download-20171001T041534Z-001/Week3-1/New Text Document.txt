@@ -1,0 +1,1917 @@
+coreutils-7.6/gnulib-tests/test-getopt.c
+coreutils-7.6/gnulib-tests/test-xprintf-posix.sh
+coreutils-7.6/gnulib-tests/test-update-copyright.sh
+coreutils-7.6/gnulib-tests/test-dirent-safer.c
+coreutils-7.6/gnulib-tests/test-memchr.c
+coreutils-7.6/gnulib-tests/sys_ioctl.in.h
+coreutils-7.6/gnulib-tests/test-signbit.c
+coreutils-7.6/gnulib-tests/test-dirname.c
+coreutils-7.6/gnulib-tests/test-sys_socket.c
+coreutils-7.6/gnulib-tests/test-hash.c
+coreutils-7.6/gnulib-tests/test-btowc2.sh
+coreutils-7.6/gnulib-tests/test-vfprintf-posix.sh
+coreutils-7.6/gnulib-tests/test-mbsrtowcs.c
+coreutils-7.6/gnulib-tests/test-mbsinit.sh
+coreutils-7.6/gnulib-tests/zerosize-ptr.h
+coreutils-7.6/gnulib-tests/test-select-fd.c
+coreutils-7.6/gnulib-tests/test-exclude7.sh
+coreutils-7.6/gnulib-tests/test-signal.c
+coreutils-7.6/gnulib-tests/test-malloca.c
+coreutils-7.6/gnulib-tests/test-lstat.c
+coreutils-7.6/gnulib-tests/test-fseeko.sh
+coreutils-7.6/gnulib-tests/test-mbscasecmp.sh
+coreutils-7.6/gnulib-tests/test-mbsrtowcs4.sh
+coreutils-7.6/gnulib-tests/accept.c
+coreutils-7.6/gnulib-tests/test-freadseek.c
+coreutils-7.6/gnulib-tests/test-version-etc.c
+coreutils-7.6/gnulib-tests/test-u64.c
+coreutils-7.6/gnulib-tests/test-errno.c
+coreutils-7.6/gnulib-tests/test-freadahead.c
+coreutils-7.6/gnulib-tests/test-fseeko.c
+coreutils-7.6/gnulib-tests/test-xstrtoumax.c
+coreutils-7.6/gnulib-tests/test-snprintf.c
+coreutils-7.6/gnulib-tests/test-mbrtowc4.sh
+coreutils-7.6/gnulib-tests/test-open.h
+coreutils-7.6/gnulib-tests/test-file-has-acl.sh
+coreutils-7.6/gnulib-tests/test-ftello.c
+coreutils-7.6/gnulib-tests/test-mbrtowc3.sh
+coreutils-7.6/gnulib-tests/perror.c
+coreutils-7.6/gnulib-tests/test-freadptr.c
+coreutils-7.6/gnulib-tests/test-memcmp.c
+coreutils-7.6/gnulib-tests/test-getdate.c
+coreutils-7.6/gnulib-tests/test-fseterr.c
+coreutils-7.6/gnulib-tests/test-btowc.c
+coreutils-7.6/gnulib-tests/test-stdlib.c
+coreutils-7.6/gnulib-tests/test-select.c
+coreutils-7.6/gnulib-tests/test-isnand-nolibm.c
+coreutils-7.6/gnulib-tests/test-vasprintf-posix.c
+coreutils-7.6/gnulib-tests/test-wchar.c
+coreutils-7.6/gnulib-tests/test-c-strcase.sh
+coreutils-7.6/gnulib-tests/test-stdio.c
+coreutils-7.6/THANKS
+coreutils-7.6/COPYING
+coreutils-7.6/.x-sc_unmarked_diagnostics
+coreutils-7.6/.x-sc_GPL_version
+coreutils-7.6/.x-sc_program_name
+[classzfu@lnxsrv05 ~/35l/week3_1]$ ls
+coreutils-7.6  coreutils-7.6.tar.gz  hw.txt  lab.txt
+[classzfu@lnxsrv05 ~/35l/week3_1]$ cd coreutils-7.6
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$ ls
+ABOUT-NLS       ChangeLog-2005  doc           Makefile.am  tests
+aclocal.m4      ChangeLog-2006  gl            Makefile.in  THANKS
+AUTHORS         ChangeLog-2007  gnulib-tests  man          THANKS-to-translators
+bootstrap       ChangeLog-2008  GNUmakefile   NEWS         THANKStt.in
+bootstrap.conf  configure       INSTALL       old          TODO
+build-aux       configure.ac    lib           po
+cfg.mk          COPYING         m4            README
+ChangeLog       dist-check.mk   maint.mk      src
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$ emacs README
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:12.0 unavailable, simulating -nw
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$ emacs INSTALL
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:12.0 unavailable, simulating -nw
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$ mkdir coreutils-install
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$ cd
+ABOUT-NLS                             po/
+aclocal.m4                            .prev-version
+AUTHORS                               README
+bootstrap                             src/
+bootstrap.conf                        .tarball-version
+build-aux/                            tests/
+cfg.mk                                THANKS
+ChangeLog                             THANKS-to-translators
+ChangeLog-2005                        THANKStt.in
+ChangeLog-2006                        TODO
+ChangeLog-2007                        .version
+ChangeLog-2008                        .vg-suppressions
+configure                             .x-sc_error_message_uppercase
+configure.ac                          .x-sc_file_system
+COPYING                               .x-sc_GPL_version
+coreutils-install/                    .x-sc_obsolete_symbols
+dist-check.mk                         .x-sc_po_check
+doc/                                  .x-sc_program_name
+gl/                                   .x-sc_prohibit_atoi_atof
+gnulib-tests/                         .x-sc_prohibit_stat_st_blocks
+GNUmakefile                           .x-sc_prohibit_strcmp
+INSTALL                               .x-sc_prohibit_tab_based_indentation
+lib/                                  .x-sc_require_config_h
+m4/                                   .x-sc_require_config_h_first
+maint.mk                              .x-sc_space_tab
+Makefile.am                           .x-sc_sun_os_names
+Makefile.in                           .x-sc_system_h_headers
+man/                                  .x-sc_trailing_blank
+NEWS                                  .x-sc_unmarked_diagnostics
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$ rm coreutils-install/
+rm: cannot remove `coreutils-install/': Is a directory
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$ rm -r  coreutils-install/
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$ cd ..
+[classzfu@lnxsrv05 ~/35l/week3_1]$ mkdir coureutils-install
+[classzfu@lnxsrv05 ~/35l/week3_1]$ cd
+coreutils-7.6/        coureutils-install/   lab.txt
+coreutils-7.6.tar.gz  hw.txt
+[classzfu@lnxsrv05 ~/35l/week3_1]$ cd coureutils-install/
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ pwd
+/u/eng/class/classzfu/35l/week3_1/coureutils-install
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ cd ..
+[classzfu@lnxsrv05 ~/35l/week3_1]$ ls
+coreutils-7.6  coreutils-7.6.tar.gz  coureutils-install  hw.txt  lab.txt
+[classzfu@lnxsrv05 ~/35l/week3_1]$ cd co
+coreutils-7.6/        coreutils-7.6.tar.gz  coureutils-install/
+[classzfu@lnxsrv05 ~/35l/week3_1]$ cd coureutils-install/
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ man rm
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ cd ..
+[classzfu@lnxsrv05 ~/35l/week3_1]$ cd coreutils-7.6
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$ ./configure --prefix=/u/eng/class/classzfu/35l/week3_1/coureutils-install
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for gcc option to accept ISO C99... -std=gnu99
+checking for gcc -std=gnu99 option to accept ISO Standard C... (cached) -std=gnu99
+checking whether gcc -std=gnu99 and cc understand -c and -o together... yes
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking whether gcc -std=gnu99 needs -traditional... no
+checking for ranlib... ranlib
+checking whether ln -s works... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+configure: autobuild project... GNU coreutils
+configure: autobuild revision... 7.6
+configure: autobuild hostname... lnxsrv05.seas.ucla.edu
+configure: autobuild timestamp... 20170417T223442Z
+checking for inline... inline
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for arpa/inet.h... yes
+checking for sys/param.h... yes
+checking for sys/socket.h... yes
+checking for dirent.h... yes
+checking for errno.h... yes
+checking for libgen.h... yes
+checking for fcntl.h... yes
+checking for float.h... yes
+checking for wctype.h... yes
+checking for stdio_ext.h... yes
+checking for sys/vfs.h... yes
+checking for sys/fs_types.h... no
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for termios.h... yes
+checking for sys/time.h... yes
+checking for iconv.h... yes
+checking for stdint.h... (cached) yes
+checking for wchar.h... yes
+checking for inttypes.h... (cached) yes
+checking for math.h... yes
+checking for sys/mman.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/statvfs.h... yes
+checking for sys/select.h... yes
+checking for utmp.h... yes
+checking for utmpx.h... yes
+checking for locale.h... yes
+checking for signal.h... yes
+checking for stdarg.h... yes
+checking for stddef.h... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for time.h... yes
+checking for priv.h... no
+checking for utime.h... yes
+checking for sys/wait.h... yes
+checking for sys/ioctl.h... yes
+checking for hurd.h... no
+checking for paths.h... yes
+checking for stropts.h... no
+checking for sys/resource.h... yes
+checking for sys/systeminfo.h... no
+checking for syslog.h... yes
+checking for grp.h... yes
+checking for pwd.h... yes
+checking for OS.h... no
+checking whether the preprocessor supports include_next... yes
+checking for d_ino member in directory struct... yes
+checking whether system is Windows or MSDOS... no
+checking for long file names... yes
+checking for pathconf... yes
+checking for btowc... yes
+checking for canonicalize_file_name... yes
+checking for resolvepath... no
+checking for chown... yes
+checking for fdopendir... yes
+checking for dup2... yes
+checking for faccessat... yes
+checking for fchdir... yes
+checking for mempcpy... yes
+checking for isblank... yes
+checking for iswctype... yes
+checking for mbsrtowcs... yes
+checking for wmemchr... yes
+checking for wmemcpy... yes
+checking for wmempcpy... yes
+checking for __fpending... yes
+checking for fpurge... no
+checking for __fpurge... yes
+checking for __freading... yes
+checking for ftruncate... yes
+checking for lchmod... no
+checking for fstatfs... yes
+checking for microuptime... no
+checking for nanouptime... no
+checking for flockfile... yes
+checking for funlockfile... yes
+checking for __fsetlocking... yes
+checking for tcgetattr... yes
+checking for tcsetattr... yes
+checking for gettimeofday... yes
+checking for nanotime... no
+checking for link... yes
+checking for readlink... yes
+checking for lstat... yes
+checking for mbsinit... yes
+checking for mbrtowc... yes
+checking for mbrlen... yes
+checking for isascii... yes
+checking for mprotect... yes
+checking for fchmod... yes
+checking for alarm... yes
+checking for utmpname... yes
+checking for utmpxname... yes
+checking for wcscoll... yes
+checking for setenv... yes
+checking for settimeofday... yes
+checking for stime... yes
+checking for sigaction... yes
+checking for sigaltstack... yes
+checking for siginterrupt... yes
+checking for tzset... yes
+checking for strndup... yes
+checking for pipe... yes
+checking for futimes... yes
+checking for futimesat... yes
+checking for futimens... yes
+checking for utimensat... yes
+checking for vasnprintf... no
+checking for wcrtomb... yes
+checking for iswcntrl... yes
+checking for wcwidth... yes
+checking for symlink... yes
+checking for wctob... yes
+checking for strxfrm... yes
+checking for directio... no
+checking for nl_langinfo... yes
+checking for endgrent... yes
+checking for endpwent... yes
+checking for fchown... yes
+checking for iswspace... yes
+checking for mkfifo... yes
+checking for setgroups... yes
+checking for sethostname... yes
+checking for sync... yes
+checking for sysctl... yes
+checking for sysinfo... yes
+checking for tcgetpgrp... yes
+checking for C/C++ restrict keyword... __restrict
+checking for nl_langinfo and CODESET... yes
+checking for a traditional french locale... fr_FR
+checking whether strtold conforms to C99... yes
+checking for size_t... yes
+checking whether malloc, realloc, calloc are POSIX compliant... yes
+checking whether canonicalize_file_name is declared... yes
+checking for uid_t in sys/types.h... yes
+checking for unistd.h... (cached) yes
+checking for working chown... yes
+checking whether chown(2) dereferences symlinks... yes
+checking whether byte ordering is bigendian... no
+checking whether // is distinct from /... no
+checking for complete errno.h... yes
+checking whether strerror_r is declared... yes
+checking for strerror_r... yes
+checking whether strerror_r returns char *... yes
+checking whether setregid is declared... yes
+checking type of array argument to getgroups... gid_t
+checking for getgroups... yes
+checking for working getgroups... yes
+checking for mode_t... yes
+checking for promoted mode_t type... mode_t
+checking for st_dm_mode in struct stat... no
+checking whether strmode is declared... no
+checking for mbstate_t... yes
+checking whether stdin defaults to large file offsets... yes
+checking whether lstat dereferences a symlink specified with a trailing slash... yes
+checking whether <sys/socket.h> is self-contained... yes
+checking for shutdown... yes
+checking whether <sys/socket.h> defines the SHUT_* macros... yes
+checking for struct sockaddr_storage... yes
+checking for sa_family_t... yes
+checking for library containing gethostbyname... none required
+checking for gethostbyname... yes
+checking for library containing getservbyname... none required
+checking for getservbyname... yes
+checking for IPv4 sockets... yes
+checking for IPv6 sockets... yes
+checking whether getcwd (NULL, 0) allocates memory for result... yes
+checking whether getcwd is declared... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for compound literals... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_gmtoff... yes
+checking whether getdelim is declared... yes
+checking for arithmetic hrtime_t... no
+checking for long long int... yes
+checking whether getline is declared... yes
+checking for ssize_t... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for getopt_long_only... yes
+checking whether getopt is POSIX compatible... yes
+checking for working GNU getopt function... yes
+checking whether getenv is declared... yes
+checking whether getpass is declared... yes
+checking whether fflush_unlocked is declared... yes
+checking whether flockfile is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether funlockfile is declared... yes
+checking whether putc_unlocked is declared... yes
+checking for struct timeval... yes
+checking for ld used by GCC... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for off_t... yes
+checking for unsigned long long int... yes
+checking whether stdint.h conforms to C99... yes
+checking for inttypes.h... (cached) yes
+checking whether the inttypes.h PRIxNN macros are broken... no
+checking whether imaxabs is declared... yes
+checking whether imaxdiv is declared... yes
+checking whether strtoimax is declared... yes
+checking whether strtoumax is declared... yes
+checking where to find the exponent in a 'float'... word 0 bit 23
+checking whether getc_unlocked is declared... yes
+checking whether we are using the GNU C Library 2.1 or newer... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking whether mbrtowc and mbstate_t are properly declared... (cached) yes
+checking for a traditional japanese locale... ja_JP
+checking for a transitional chinese locale... zh_CN.GB18030
+checking for a french Unicode locale... fr_FR.UTF-8
+checking whether mbrtowc handles incomplete characters... yes
+checking whether mbrtowc works as well as mbtowc... yes
+checking whether mbrtowc handles a NULL string argument... yes
+checking whether mbrtowc has a correct return value... yes
+checking whether mbrtowc returns 0 when parsing a NUL character... yes
+checking for mmap... yes
+checking for MAP_ANONYMOUS... yes
+checking for memchr... yes
+checking whether memchr works... yes
+checking whether memrchr is declared... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for external symbol _system_configuration... no
+checking for desired default level of POSIX conformance... none-specified
+checking whether lstat accepts an empty string... no
+checking whether <sys/select.h> is self-contained... yes
+checking for library containing setfilecon... -lselinux
+checking whether snprintf is declared... yes
+checking for wchar_t... yes
+checking whether strdup is declared... yes
+checking for working strerror function... yes
+checking whether strndup is declared... yes
+checking whether strnlen is declared... yes
+checking whether stat file-mode macros are broken... no
+checking for struct timespec in <time.h>... yes
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... yes
+checking whether ferror_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking whether fputc_unlocked is declared... yes
+checking whether fread_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether getchar_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking determine whether the utimes function works... yes
+checking for struct utimbuf... yes
+checking for wint_t... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for intmax_t... yes
+checking for snprintf... yes
+checking for strnlen... yes
+checking for wcslen... yes
+checking for wcsnlen... yes
+checking for mbrtowc... (cached) yes
+checking for wcrtomb... (cached) yes
+checking whether _snprintf is declared... no
+checking whether printf supports size specifiers as in C99... yes
+checking whether printf supports 'long double' arguments... yes
+checking whether printf supports infinite 'double' arguments... yes
+checking whether printf supports infinite 'long double' arguments... no
+checking whether printf supports the 'a' and 'A' directives... yes
+checking whether printf supports the 'F' directive... yes
+checking whether printf supports the 'n' directive... yes
+checking whether printf supports the 'ls' directive... yes
+checking whether printf supports POSIX/XSI format strings with positions... yes
+checking whether printf supports the grouping flag... yes
+checking whether printf supports the left-adjust flag correctly... yes
+checking whether printf supports the zero flag correctly... yes
+checking whether printf supports large precisions... yes
+checking whether printf survives out-of-memory conditions... yes
+checking POSIX termios... yes
+checking whether use of TIOCGWINSZ requires termios.h... no
+checking whether alarm is declared... yes
+checking whether ungetc works on arbitrary bytes... yes
+checking sys/acl.h usability... yes
+checking sys/acl.h presence... yes
+checking for sys/acl.h... yes
+checking for library containing acl_get_file... -lacl
+checking for acl_get_file... yes
+checking for acl_get_fd... yes
+checking for acl_set_file... yes
+checking for acl_set_fd... yes
+checking for acl_free... yes
+checking for acl_from_mode... yes
+checking for acl_from_text... yes
+checking for acl_delete_def_file... yes
+checking for acl_extended_file... yes
+checking for acl_delete_fd_np... no
+checking for acl_delete_file_np... no
+checking for acl_copy_ext_native... no
+checking for acl_create_entry_np... no
+checking for acl_to_short_text... no
+checking for acl_free_text... no
+checking for working acl_get_file... yes
+checking acl/libacl.h usability... yes
+checking acl/libacl.h presence... yes
+checking for acl/libacl.h... yes
+checking for acl_entries... yes
+checking for ACL_FIRST_ENTRY... yes
+checking for ACL_TYPE_EXTENDED... no
+checking for alloca as a compiler built-in... yes
+checking whether to enable assertions... yes
+checking for atexit... yes
+checking whether btowc(EOF) is correct... yes
+checking for GNU libc compatible calloc... yes
+checking whether this system has an arbitrary file name length limit... yes
+checking for library containing clock_gettime... -lrt
+checking for clock_gettime... yes
+checking for clock_settime... yes
+checking for d_ino member in directory struct... (cached) yes
+checking for d_type member in directory struct... yes
+checking for dirfd... yes
+checking whether dirfd is declared... yes
+checking whether dirfd is a macro... no
+checking whether // is distinct from /... (cached) no
+checking whether dup2 works... yes
+checking if environ is properly declared... yes
+checking for error_at_line... yes
+checking for euidaccess... yes
+checking for working fcntl.h... yes
+checking whether fflush works on input streams... no
+checking for struct stat.st_blocks... yes
+checking for flexible array member... yes
+checking for working GNU fnmatch... yes
+checking whether fopen recognizes a trailing slash... yes
+checking whether __fpending is declared... yes
+checking whether fpurge is declared... no
+checking whether frexp() can be used without linking with libm... yes
+checking whether frexp works... yes
+checking whether frexpl() can be used without linking with libm... yes
+checking whether frexpl works... yes
+checking whether frexpl is declared... yes
+checking for fseeko... yes
+checking for sys/mount.h... yes
+configure: checking how to get file system space usage
+checking for statvfs function (SVR4)... no
+checking for 3-argument statfs function (DEC OSF/1)... no
+checking for two-argument statfs with statfs.bsize member (AIX, 4.3BSD)... yes
+checking dustat.h usability... no
+checking dustat.h presence... no
+checking for dustat.h... no
+checking sys/fs/s5param.h usability... no
+checking sys/fs/s5param.h presence... no
+checking for sys/fs/s5param.h... no
+checking sys/filsys.h usability... no
+checking sys/filsys.h presence... no
+checking for sys/filsys.h... no
+checking sys/statfs.h usability... yes
+checking sys/statfs.h presence... yes
+checking for sys/statfs.h... yes
+checking for statfs that truncates block counts... no
+checking for ftello... yes
+checking for fchmodat... yes
+checking for mkdirat... yes
+checking for openat... yes
+checking for fchownat... yes
+checking whether fchownat works with AT_SYMLINK_NOFOLLOW... yes
+checking for struct statfs.f_type... yes
+configure: checking how to do getaddrinfo, freeaddrinfo and getnameinfo
+checking for library containing getaddrinfo... none required
+checking for getaddrinfo... yes
+checking for gai_strerror (possibly via ws2tcpip.h)... yes
+checking for struct sockaddr.sa_len... no
+checking whether getaddrinfo is declared... yes
+checking whether freeaddrinfo is declared... yes
+checking whether gai_strerror is declared... yes
+checking whether getnameinfo is declared... yes
+checking for struct addrinfo... yes
+checking whether getcwd handles long file names properly... no, but it is partly working
+checking for getpagesize... yes
+checking whether getcwd aborts when 4k < cwd_length < 16k... no
+checking for struct tm.tm_zone... yes
+checking for getdelim... yes
+checking for gethostname... yes
+checking for HOST_NAME_MAX... yes
+checking whether gethrtime is declared... no
+checking whether CLOCK_MONOTONIC or CLOCK_REALTIME is defined... yes
+checking for getline... yes
+checking for working getline function... yes
+checking for getloadavg... yes
+checking for pstat_getdynamic... no
+checking for kstat_open in -lkstat... no
+checking for perfstat_cpu_total in -lperfstat... no
+checking for getloadavg... yes
+checking whether getloadavg requires setgid... no
+checking sys/loadavg.h usability... no
+checking sys/loadavg.h presence... no
+checking for sys/loadavg.h... no
+checking whether getloadavg is declared... yes
+checking for getpagesize... (cached) yes
+checking whether __fsetlocking is declared... yes
+checking for gettimeofday with POSIX signature... yes
+checking whether gettimeofday clobbers localtime buffer... no
+checking type of array argument to getgroups... (cached) gid_t
+checking for getusershell... yes
+checking for group_member... yes
+checking host operating system... GNU/Linux
+checking for library containing gethostbyname... (cached) none required
+checking for gethostbyname... (cached) yes
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration...
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for library containing inet_ntop... none required
+checking whether inet_ntop is declared... yes
+checking whether the compiler generally respects inline... yes
+checking whether inttypes.h conforms to C99... yes
+checking whether INT32_MAX < INTMAX_MAX... yes
+checking whether INT64_MAX == LONG_MAX... yes
+checking whether UINT32_MAX < UINTMAX_MAX... yes
+checking whether UINT64_MAX == ULONG_MAX... yes
+checking for isapipe... no
+checking whether pipes are FIFOs (and for their link count)... yes (1)
+checking whether isnan(double) can be used without linking with libm... yes
+checking whether isnan(float) can be used without linking with libm... yes
+checking whether isnan(float) works... yes
+checking whether isnan(long double) can be used without linking with libm... yes
+checking whether isnanl works... no
+checking where to find the exponent in a 'long double'... word 2 bit 0
+checking for lchown... yes
+checking for flag to ignore unused libraries... -Wl,--as-needed
+checking whether link handles trailing slash correctly... yes
+checking whether link(2) dereferences a symlink... no
+checking whether lseek detects pipes... yes
+checking whether lstat dereferences a symlink specified with a trailing slash... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... (cached) yes
+checking whether NAN macro works... yes
+checking whether HUGE_VAL works... yes
+checking whether mbrtowc handles incomplete characters... (cached) yes
+checking whether mbrtowc works as well as mbtowc... (cached) yes
+checking whether mbrtowc handles a NULL string argument... (cached) yes
+checking whether mbrtowc has a correct return value... (cached) yes
+checking whether mbrtowc returns 0 when parsing a NUL character... (cached) yes
+checking whether mbrtowc handles incomplete characters... (cached) yes
+checking whether mbrtowc works as well as mbtowc... (cached) yes
+checking whether mbrtowc handles incomplete characters... (cached) yes
+checking whether mbrtowc works as well as mbtowc... (cached) yes
+checking whether mbsrtowcs works... yes
+checking whether mbswidth is declared in <wchar.h>... no
+checking for mbstate_t... (cached) yes
+checking for working memcmp... yes
+checking for working strcoll... yes
+checking for memcpy... yes
+checking for memmove... yes
+checking for mempcpy... (cached) yes
+checking for memrchr... yes
+checking for memset... yes
+checking for getgrouplist... yes
+checking whether mkdir fails due to a trailing slash... no
+checking for working mkstemp... yes
+checking for working mktime... yes
+checking for listmntent... no
+checking for getmntinfo... no
+checking for sys/ucred.h... no
+checking for sys/mount.h... (cached) yes
+checking mntent.h usability... yes
+checking mntent.h presence... yes
+checking for mntent.h... yes
+checking for sys/fs_types.h... (cached) no
+checking for struct fsstat.f_fstypename... no
+checking for library containing getmntent... none required
+checking for getmntent... yes
+checking for listmntent of Cray/Unicos-9... no
+checking for mntctl function and struct vmount... no
+checking for one-argument getmntent function... yes
+checking sys/mntent.h usability... no
+checking sys/mntent.h presence... no
+checking for sys/mntent.h... no
+checking for struct statfs.f_fstypename... no
+checking for library containing nanosleep... none required
+checking for working nanosleep... no (mishandles large arguments)
+checking whether <netinet/in.h> is self-contained... yes
+checking for obstacks... yes
+checking whether open recognizes a trailing slash... yes
+checking for fchmodat... (cached) yes
+checking for mkdirat... (cached) yes
+checking for openat... (cached) yes
+checking for fchownat... (cached) yes
+checking whether fchownat works with AT_SYMLINK_NOFOLLOW... (cached) yes
+checking for perl5.005 or newer... yes
+checking for sys/pstat.h... no
+checking for sys/sysmp.h... no
+checking for sys/sysinfo.h... yes
+checking for machine/hal_sysinfo.h... no
+checking for sys/table.h... no
+checking for sys/param.h... (cached) yes
+checking for sys/sysctl.h... yes
+checking for sys/systemcfg.h... no
+checking for pstat_getstatic... no
+checking for pstat_getdynamic... (cached) no
+checking for sysmp... no
+checking for getsysinfo... no
+checking for sysctl... (cached) yes
+checking for table... no
+checking for a shell that conforms to POSIX... /bin/sh
+checking whether frexp can be used without linking with libm... (cached) yes
+checking whether frexp works... (cached) yes
+checking whether ldexp can be used without linking with libm... yes
+checking whether frexpl can be used without linking with libm... (cached) yes
+checking whether frexpl works... (cached) yes
+checking whether frexpl is declared... (cached) yes
+checking whether ldexpl can be used without linking with libm... yes
+checking whether ldexpl works... yes
+checking whether ldexpl is declared... yes
+checking for getppriv... no
+checking whether program_invocation_name is declared... yes
+checking for putenv compatible with GNU and SVID... yes
+checking for raise... yes
+checking whether getutent is declared... yes
+checking for struct utmpx.ut_user... yes
+checking for struct utmp.ut_user... yes
+checking for struct utmpx.ut_name... yes
+checking for struct utmp.ut_name... yes
+checking for struct utmpx.ut_type... yes
+checking for struct utmp.ut_type... yes
+checking for struct utmpx.ut_pid... yes
+checking for struct utmp.ut_pid... yes
+checking for struct utmpx.ut_id... yes
+checking for struct utmp.ut_id... yes
+checking for struct utmpx.ut_exit... yes
+checking for struct utmp.ut_exit... yes
+checking for struct utmpx.ut_exit.ut_exit... no
+checking for struct utmp.ut_exit.ut_exit... no
+checking for struct utmpx.ut_exit.e_exit... yes
+checking for struct utmp.ut_exit.e_exit... yes
+checking for struct utmpx.ut_exit.ut_termination... no
+checking for struct utmp.ut_exit.ut_termination... no
+checking for struct utmpx.ut_exit.e_termination... yes
+checking for struct utmp.ut_exit.e_termination... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for working re_compile_pattern... no
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking whether isblank is declared... yes
+checking whether rename is broken with a trailing slash... no
+checking whether rename is broken when the destination exists... no
+checking whether rename is broken with respect to destination slashes... no
+checking for rmdir... yes
+checking for rmdir-not-empty errno value... 39
+checking for rpmatch... yes
+checking whether select supports a 0 argument... yes
+checking selinux/flask.h usability... yes
+checking selinux/flask.h presence... yes
+checking for selinux/flask.h... yes
+checking selinux/selinux.h usability... yes
+checking selinux/selinux.h presence... yes
+checking for selinux/selinux.h... yes
+checking selinux/context.h usability... yes
+checking selinux/context.h presence... yes
+checking for selinux/context.h... yes
+checking for library containing getservbyname... (cached) none required
+checking for getservbyname... (cached) yes
+checking for sig2str... no
+checking for struct sigaction.sa_sigaction... yes
+checking for volatile sig_atomic_t... yes
+checking for signbit macro... yes
+checking for signbit compiler built-ins... yes
+checking for sigprocmask... yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking for snprintf... (cached) yes
+checking whether snprintf respects a size of 1... yes
+checking for library containing setsockopt... none needed
+checking for socklen_t... yes
+checking for ssize_t... (cached) yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_birthtimensec... no
+checking for struct stat.st_birthtim.tv_nsec... no
+checking for va_copy... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking whether stdint.h conforms to C99... (cached) yes
+checking for random.h... no
+checking for struct random_data... yes
+checking for stpcpy... yes
+checking for working stpncpy... yes
+checking for strcspn... yes
+checking for strdup... yes
+checking for strdup... (cached) yes
+checking for working strndup... yes
+checking for working strnlen... yes
+checking for strpbrk... yes
+checking for working strtod... yes
+checking whether strtod obeys C99... yes
+checking whether <inttypes.h> defines strtoimax as a macro... no
+checking for strtoimax... yes
+checking for strtol... yes
+checking for strtoll... yes
+checking for strtoul... yes
+checking for strtoull... yes
+checking whether <inttypes.h> defines strtoumax as a macro... no
+checking for strtoumax... yes
+checking for strverscmp... yes
+checking whether <sys/select.h> is self-contained... (cached) yes
+checking whether <sys/socket.h> is self-contained... (cached) yes
+checking for shutdown... (cached) yes
+checking whether <sys/socket.h> defines the SHUT_* macros... (cached) yes
+checking for struct sockaddr_storage... (cached) yes
+checking for sa_family_t... (cached) yes
+checking for nlink_t... yes
+checking whether localtime_r is compatible with its POSIX signature... yes
+checking whether tzset clobbers localtime buffer... no
+checking whether a running program can be unlinked... yes
+checking for unsetenv... yes
+checking for unsetenv() return type... int
+checking for /proc/uptime... yes
+checking for ptrdiff_t... yes
+checking for vasprintf... yes
+checking for vasprintf... (cached) yes
+checking for ptrdiff_t... (cached) yes
+checking for ptrdiff_t... (cached) yes
+checking whether <wchar.h> is standalone... yes
+checking whether mbrtowc handles incomplete characters... (cached) yes
+checking whether mbrtowc works as well as mbtowc... (cached) yes
+checking whether wcrtomb return value is correct... yes
+checking whether iswcntrl works... yes
+checking whether wcwidth is declared... yes
+checking whether wcwidth works reasonably in UTF-8 locales... yes
+checking whether use of TIOCGWINSZ requires sys/ioctl.h... yes
+checking whether use of TIOCGWINSZ requires termios.h... (cached) no
+checking whether use of struct winsize requires sys/ptem.h... no
+checking for stdint.h... (cached) yes
+checking for a traditional french locale... (cached) fr_FR
+checking for a french Unicode locale... (cached) fr_FR.UTF-8
+checking for a traditional french locale... (cached) fr_FR
+checking for a turkish Unicode locale... tr_TR.UTF-8
+checking for inet_pton... yes
+checking whether inet_pton is declared... yes
+checking where to find the exponent in a 'double'... word 1 bit 20
+checking where to find the exponent in a 'float'... (cached) word 0 bit 23
+checking where to find the exponent in a 'long double'... (cached) word 2 bit 0
+checking for a traditional french locale... (cached) fr_FR
+checking for a french Unicode locale... (cached) fr_FR.UTF-8
+checking for a traditional japanese locale... (cached) ja_JP
+checking for a transitional chinese locale... (cached) zh_CN.GB18030
+checking for a turkish Unicode locale... (cached) tr_TR.UTF-8
+checking for a french Unicode locale... (cached) fr_FR.UTF-8
+checking for a traditional french locale... (cached) fr_FR
+checking for a french Unicode locale... (cached) fr_FR.UTF-8
+checking for a traditional japanese locale... (cached) ja_JP
+checking for a transitional chinese locale... (cached) zh_CN.GB18030
+checking for a french Unicode locale... (cached) fr_FR.UTF-8
+checking for a transitional chinese locale... (cached) zh_CN.GB18030
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking for mmap... (cached) yes
+checking for MAP_ANONYMOUS... yes
+checking for a traditional french locale... (cached) fr_FR
+checking for a french Unicode locale... (cached) fr_FR.UTF-8
+checking whether sleep is declared... yes
+checking for wchar_t... (cached) yes
+checking for wint_t... (cached) yes
+checking whether <sys/ioctl.h> declares ioctl... yes
+checking for shutdown... (cached) yes
+checking for a traditional french locale... (cached) fr_FR
+checking for a french Unicode locale... (cached) fr_FR.UTF-8
+checking for a traditional japanese locale... (cached) ja_JP
+checking for a transitional chinese locale... (cached) zh_CN.GB18030
+checking whether wctob works... yes
+checking whether wctob is declared... yes
+checking for library containing strerror... none required
+checking for function prototypes... yes
+checking for string.h... (cached) yes
+checking for working volatile... yes
+checking for sys/sysctl.h... (cached) yes
+checking for pid_t... yes
+checking whether sys/types.h defines makedev... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether free is declared... yes
+checking whether geteuid is declared... yes
+checking whether getlogin is declared... yes
+checking whether getuid is declared... yes
+checking whether lseek is declared... yes
+checking whether malloc is declared... yes
+checking whether memchr is declared... yes
+checking whether realloc is declared... yes
+checking whether getgrgid is declared... yes
+checking whether getpwuid is declared... yes
+checking whether ttyname is declared... yes
+checking whether isblank is declared... (cached) yes
+checking attr/error_context.h usability... yes
+checking attr/error_context.h presence... yes
+checking for attr/error_context.h... yes
+checking attr/libattr.h usability... yes
+checking attr/libattr.h presence... yes
+checking for attr/libattr.h... yes
+checking for library containing attr_copy_file... -lattr
+checking for attr_copy_file... yes
+checking for inline... (cached) inline
+checking for struct stat.st_author... no
+checking for ino_t... yes
+checking for major_t... no
+checking for minor_t... no
+checking for matchpathcon_init_prefix... yes
+checking for inotify_init... yes
+checking nfs/vfs.h usability... no
+checking nfs/vfs.h presence... no
+checking for nfs/vfs.h... no
+checking for struct statfs.f_namelen... yes
+checking for struct statfs.f_type... (cached) yes
+checking for library containing fdatasync... none required
+checking for fdatasync... yes
+checking for cap_get_file in -lcap... yes
+checking sys/capability.h usability... yes
+checking sys/capability.h presence... yes
+checking for sys/capability.h... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for uname... yes
+checking for chroot... yes
+checking for gethostid... yes
+checking whether use of struct winsize requires sys/ptem.h... (cached) no
+checking whether localtime caches TZ... no
+checking for initgroups... yes
+checking for syslog... yes
+checking for 3-argument setpriority function... yes
+checking ut_host in struct utmp... yes
+checking for sysctl... (cached) yes
+checking for sys/sysctl.h... (cached) yes
+checking whether we can get the system boot time... yes
+checking POSIX termios... (cached) yes
+checking whether use of TIOCGWINSZ requires sys/ioctl.h... (cached) yes
+checking whether termios.h needs _XOPEN_SOURCE... no
+checking c_line in struct termios... yes
+checking whether use of struct winsize requires sys/ptem.h... (cached) no
+checking whether use of TIOCGWINSZ requires termios.h... (cached) no
+checking whether strsignal is declared... yes
+checking whether sys_siglist is declared... yes
+checking whether _sys_siglist is declared... yes
+checking whether __sys_siglist is declared... no
+checking for main in -lypsec... no
+checking for main in -lldgc... no
+checking for library containing yp_match... no
+checking for library containing getspnam... none required
+checking shadow.h usability... yes
+checking shadow.h presence... yes
+checking for shadow.h... yes
+checking for struct spwd.sp_pwdp... yes
+checking for getspnam... yes
+checking for library containing crypt... -lcrypt
+checking for library containing __gmpz_init... -lgmp
+checking whether this is an ELF system... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for a traditional french locale... (cached) fr_FR
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating lib/Makefile
+config.status: creating man/Makefile
+config.status: creating po/Makefile.in
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating gnulib-tests/Makefile
+config.status: creating lib/config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$ make
+make  all-recursive
+make[1]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6'
+Making all in lib
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+  GEN    alloca.h
+  GEN    arpa/inet.h
+  GEN    configmake.h
+  GEN    dirent.h
+  GEN    fcntl.h
+  GEN    inttypes.h
+  GEN    math.h
+  GEN    signal.h
+  GEN    stdio.h
+  GEN    stdlib.h
+  GEN    string.h
+  GEN    sys/stat.h
+  GEN    time.h
+  GEN    unistd.h
+make  all-recursive
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+make[4]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+  CC     set-mode-acl.o
+  CC     copy-acl.o
+  CC     file-has-acl.o
+  CC     areadlink-with-size.o
+  CC     argv-iter.o
+  CC     base64.o
+  CC     c-ctype.o
+  CC     c-strcasecmp.o
+  CC     c-strncasecmp.o
+  CC     close-hook.o
+  CC     diacrit.o
+  CC     file-set.o
+  CC     filevercmp.o
+  CC     freadahead.o
+  CC     freading.o
+  CC     freadptr.o
+  CC     freadseek.o
+  CC     fseterr.o
+  CC     full-read.o
+  CC     full-write.o
+  CC     getdate.o
+  CC     hash-pjw.o
+  CC     hash-triple.o
+  CC     linebuffer.o
+  CC     localcharset.o
+  CC     malloca.o
+  CC     mbchar.o
+  CC     mbsalign.o
+  CC     mbscasecmp.o
+  CC     mbslen.o
+  CC     mbsstr.o
+  CC     mbswidth.o
+  CC     memchr2.o
+  CC     memcmp2.o
+  CC     openat-die.o
+  CC     printf-frexp.o
+  CC     printf-frexpl.o
+  CC     priv-set.o
+  CC     progname.o
+  CC     propername.o
+  CC     randint.o
+  CC     randperm.o
+  CC     randread.o
+  CC     rand-isaac.o
+  CC     readtokens0.o
+  CC     savewd.o
+  CC     sockets.o
+  CC     striconv.o
+  CC     strnlen1.o
+  CC     trim.o
+  CC     unicodeio.o
+  CC     unistr/u8-uctomb.o
+  CC     unistr/u8-uctomb-aux.o
+  CC     uniwidth/width.o
+  CC     verror.o
+  CC     version-etc.o
+  CC     version-etc-fsf.o
+  CC     xalloc-die.o
+  CC     xfreopen.o
+  CC     xgethostname.o
+  CC     xmemcoll.o
+  CC     xprintf.o
+  CC     xstriconv.o
+  CC     xstrndup.o
+  CC     xstrtoimax.o
+  CC     xstrtoumax.o
+  CC     xvasprintf.o
+  CC     xasprintf.o
+  CC     buffer-lcm.o
+  CC     xmemxfrm.o
+  CC     argmatch.o
+  CC     asnprintf.o
+  CC     asprintf.o
+  CC     backupfile.o
+  CC     basename.o
+  CC     c-strtod.o
+  CC     c-strtold.o
+  CC     canon-host.o
+  CC     canonicalize.o
+  CC     chdir-long.o
+  CC     cloexec.o
+  CC     close-stream.o
+  CC     closein.o
+  CC     closeout.o
+  CC     creat-safer.o
+  CC     cycle-check.o
+  CC     dirchownmod.o
+  CC     dirname.o
+  CC     dup-safer.o
+  CC     exclude.o
+  CC     exitfail.o
+  CC     fd-safer.o
+  CC     fflush.o
+  CC     file-type.o
+  CC     filemode.o
+  CC     filenamecat.o
+  CC     fopen-safer.o
+  CC     fprintftime.o
+  CC     fpurge.o
+  CC     fseeko.o
+  CC     fsusage.o
+  CC     fts.o
+  CC     getcwd.o
+  CC     gethrxtime.o
+  CC     getndelim2.o
+  CC     getpass.o
+  CC     gettime.o
+  CC     getugroups.o
+  CC     hard-locale.o
+  CC     hash.o
+  CC     human.o
+  CC     i-ring.o
+  CC     idcache.o
+  CC     imaxtostr.o
+  CC     isapipe.o
+  CC     isnanl.o
+  CC     long-options.o
+  CC     md5.o
+  CC     memcasecmp.o
+  CC     memcoll.o
+  CC     mgetgroups.o
+  CC     mkancesdirs.o
+  CC     mkdir-p.o
+  CC     mkstemp-safer.o
+  CC     modechange.o
+  CC     mountlist.o
+  CC     mpsort.o
+  CC     nanosleep.o
+  CC     offtostr.o
+  CC     open-safer.o
+  CC     openat-proc.o
+  CC     openat-safer.o
+  CC     opendir-safer.o
+  CC     physmem.o
+  CC     pipe-safer.o
+  CC     posixtm.o
+  CC     posixver.o
+  CC     printf-args.o
+  CC     printf-parse.o
+  CC     quote.o
+  CC     quotearg.o
+  CC     readtokens.o
+  CC     readutmp.o
+  CC     regex.o
+  CC     root-dev-ino.o
+  CC     safe-read.o
+  CC     safe-write.o
+  CC     same.o
+  CC     save-cwd.o
+  CC     savedir.o
+  CC     selinux-at.o
+  CC     settime.o
+  CC     sha1.o
+  CC     sha256.o
+  CC     sha512.o
+  CC     sig2str.o
+  CC     strftime.o
+  CC     stripslash.o
+  CC     tempname.o
+  CC     uinttostr.o
+  CC     umaxtostr.o
+  CC     unlinkdir.o
+  CC     userspec.o
+  CC     utimecmp.o
+  CC     utimens.o
+  CC     vasnprintf.o
+  CC     vasprintf.o
+  CC     vfprintf.o
+  CC     vprintf.o
+  CC     write-any-file.o
+  CC     xgetcwd.o
+  CC     xmalloc.o
+  CC     xnanosleep.o
+  CC     xstrtod.o
+  CC     xstrtol.o
+  CC     xstrtol-error.o
+  CC     xstrtold.o
+  CC     xstrtoul.o
+  CC     yesno.o
+  CC     euidaccess-stat.o
+  CC     fd-reopen.o
+  CC     xfts.o
+  CC     memxfrm.o
+  CC     strintcmp.o
+  CC     strnumcmp.o
+  AR     libcoreutils.a
+  GEN    charset.alias
+  GEN    ref-add.sed
+  GEN    ref-del.sed
+make[4]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+Making all in src
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/src'
+  GEN    version.c
+  GEN    version.h
+make  all-am
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/src'
+  CC     version.o
+  AR     libver.a
+  CC     uname.o
+  CC     uname-uname.o
+  CCLD   uname
+  CC     chroot.o
+  CCLD   chroot
+  CC     hostid.o
+  CCLD   hostid
+  CC     nice.o
+  CCLD   nice
+  CC     who.o
+  CCLD   who
+  CC     users.o
+  CCLD   users
+  CC     pinky.o
+  CCLD   pinky
+  CC     uptime.o
+  CCLD   uptime
+  CC     stty.o
+  CCLD   stty
+  CC     df.o
+  CCLD   df
+  CC     stdbuf.o
+  CCLD   stdbuf
+  CC     lbracket.o
+  CCLD   [
+  CC     chcon.o
+  CCLD   chcon
+  CC     chgrp.o
+  CC     chown-core.o
+  CCLD   chgrp
+  CC     chown.o
+  CCLD   chown
+  CC     chmod.o
+  CCLD   chmod
+  CC     cp.o
+  CC     copy.o
+  CC     cp-hash.o
+  CCLD   cp
+  CC     dd.o
+  CCLD   dd
+  CC     dircolors.o
+  CCLD   dircolors
+  CC     du.o
+  CCLD   du
+  CC     ginstall-install.o
+  CC     ginstall-prog-fprintf.o
+  CC     ginstall-copy.o
+  CC     ginstall-cp-hash.o
+  CCLD   ginstall
+  CC     link.o
+  CCLD   link
+  CC     ln.o
+  CCLD   ln
+  CC     ls.o
+  CC     ls-dir.o
+  CCLD   dir
+  CC     ls-vdir.o
+  CCLD   vdir
+  CC     ls-ls.o
+  CCLD   ls
+  CC     mkdir.o
+  CC     prog-fprintf.o
+  CCLD   mkdir
+  CC     mkfifo.o
+  CCLD   mkfifo
+  CC     mknod.o
+  CCLD   mknod
+  CC     mktemp.o
+  CCLD   mktemp
+  CC     mv.o
+  CC     remove.o
+  CCLD   mv
+  CC     nohup.o
+  CCLD   nohup
+  CC     readlink.o
+  CCLD   readlink
+  CC     rm.o
+  CCLD   rm
+  CC     rmdir.o
+  CCLD   rmdir
+  CC     shred.o
+  CCLD   shred
+  CC     stat.o
+  CCLD   stat
+  CC     sync.o
+  CCLD   sync
+  CC     touch.o
+  CCLD   touch
+  CC     unlink.o
+  CCLD   unlink
+  CC     cat.o
+  CCLD   cat
+  CC     cksum.o
+  CCLD   cksum
+  CC     comm.o
+  CCLD   comm
+  CC     csplit.o
+  CCLD   csplit
+  CC     cut.o
+  CCLD   cut
+  CC     expand.o
+  CCLD   expand
+  CC     fmt.o
+  CCLD   fmt
+  CC     fold.o
+  CCLD   fold
+  CC     head.o
+  CCLD   head
+  CC     join.o
+  CCLD   join
+  CC     groups.o
+  CC     group-list.o
+  CCLD   groups
+  CC     md5sum-md5sum.o
+  CCLD   md5sum
+  CC     nl.o
+  CCLD   nl
+  CC     od.o
+  CCLD   od
+  CC     paste.o
+  CCLD   paste
+  CC     pr.o
+  CCLD   pr
+  CC     ptx.o
+  CCLD   ptx
+  CC     sha1sum-md5sum.o
+  CCLD   sha1sum
+  CC     sha224sum-md5sum.o
+  CCLD   sha224sum
+  CC     sha256sum-md5sum.o
+  CCLD   sha256sum
+  CC     sha384sum-md5sum.o
+  CCLD   sha384sum
+  CC     sha512sum-md5sum.o
+  CCLD   sha512sum
+  CC     shuf.o
+  CCLD   shuf
+  CC     sort.o
+  CCLD   sort
+  CC     split.o
+  CCLD   split
+  CC     sum.o
+  CCLD   sum
+  CC     tac.o
+  CCLD   tac
+  CC     tail.o
+  CCLD   tail
+  CC     tr.o
+  CCLD   tr
+  CC     tsort.o
+  CCLD   tsort
+  CC     unexpand.o
+  CCLD   unexpand
+  CC     uniq.o
+  CCLD   uniq
+  CC     wc.o
+  CCLD   wc
+  CC     basename.o
+  CCLD   basename
+  CC     date.o
+  CCLD   date
+  CC     dirname.o
+  CCLD   dirname
+  CC     echo.o
+  CCLD   echo
+  CC     env.o
+  CCLD   env
+  CC     expr.o
+  CCLD   expr
+  CC     factor.o
+  CCLD   factor
+  CC     false.o
+  CCLD   false
+  CC     id.o
+  CCLD   id
+  CC     kill.o
+  CC     operand2sig.o
+  CCLD   kill
+  CC     logname.o
+  CCLD   logname
+  CC     pathchk.o
+  CCLD   pathchk
+  CC     printenv.o
+  CCLD   printenv
+  CC     printf.o
+  CCLD   printf
+  CC     pwd.o
+  CCLD   pwd
+  CC     runcon.o
+  CCLD   runcon
+  CC     seq.o
+  CCLD   seq
+  CC     sleep.o
+  CCLD   sleep
+  CC     tee.o
+  CCLD   tee
+  CC     test.o
+  CCLD   test
+  CC     timeout.o
+  CCLD   timeout
+  CC     true.o
+  CCLD   true
+  CC     truncate.o
+  CCLD   truncate
+  CC     tty.o
+  CCLD   tty
+  CC     whoami.o
+  CCLD   whoami
+  CC     yes.o
+  CCLD   yes
+  CC     base64.o
+  CCLD   base64
+  CC     setuidgid.o
+  CCLD   setuidgid
+  CC     getlimits.o
+  CCLD   getlimits
+  CC     libstdbuf_so-libstdbuf.o
+  CCLD   libstdbuf.so
+  CC     su.o
+  CCLD   su
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/src'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/src'
+Making all in doc
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/doc'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/doc'
+Making all in man
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/man'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/man'
+Making all in po
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/po'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/po'
+Making all in tests
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/tests'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/tests'
+Making all in gnulib-tests
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make  all-recursive
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make[4]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6'
+make[1]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6'
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$ make install
+make  install-recursive
+make[1]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6'
+Making install in lib
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+make  install-recursive
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+make[4]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+make[5]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+if test yes = no; then \
+          case 'linux-gnu' in \
+            darwin[56]*) \
+              need_charset_alias=true ;; \
+            darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+              need_charset_alias=false ;; \
+            *) \
+              need_charset_alias=true ;; \
+          esac ; \
+        else \
+          need_charset_alias=false ; \
+        fi ; \
+        if $need_charset_alias; then \
+          /bin/sh /u/eng/class/classzfu/35l/week3_1/coreutils-7.6/build-aux/install-sh -d /u/eng/class/classzfu/35l/week3_1/coureutils-install/lib ; \
+        fi ; \
+        if test -f /u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/charset.alias; then \
+          sed -f ref-add.sed /u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/charset.alias > /u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/charset.tmp ; \
+          /usr/bin/install -c -m 644 /u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/charset.tmp /u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/charset.alias ; \
+          rm -f /u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/charset.tmp ; \
+        else \
+          if $need_charset_alias; then \
+            sed -f ref-add.sed charset.alias > /u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/charset.tmp ; \
+            /usr/bin/install -c -m 644 /u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/charset.tmp /u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/charset.alias ; \
+            rm -f /u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/charset.tmp ; \
+          fi ; \
+        fi
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+make[4]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/lib'
+Making install in src
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/src'
+make  install-am
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/src'
+make[4]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/src'
+test -z "/u/eng/class/classzfu/35l/week3_1/coureutils-install/bin" || /bin/mkdir -p "/u/eng/class/classzfu/35l/week3_1/coureutils-install/bin"
+  ./ginstall ginstall '/u/eng/class/classzfu/35l/week3_1/coureutils-install/bin/./install'
+  ./ginstall uname chroot hostid nice who users pinky uptime stty df stdbuf [ chcon chgrp chown chmod cp dd dircolors du link ln dir vdir ls mkdir mkfifo mknod mktemp mv nohup readlink rm rmdir shred stat sync touch unlink cat cksum comm csplit cut expand fmt fold head join groups md5sum nl od paste pr ptx sha1sum sha224sum sha256sum sha384sum sha512sum shuf sort split sum tac tail tr tsort unexpand uniq wc basename date dirname echo env expr factor false id kill logname pathchk printenv printf pwd runcon seq sleep tee test timeout true truncate tty whoami yes base64 '/u/eng/class/classzfu/35l/week3_1/coureutils-install/bin'
+test -z "/u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/coreutils" || /bin/mkdir -p "/u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/coreutils"
+  ./ginstall libstdbuf.so '/u/eng/class/classzfu/35l/week3_1/coureutils-install/lib/coreutils'
+make  install-exec-hook
+make[5]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/src'
+make[5]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/src'
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/src'
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/src'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/src'
+Making install in doc
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/doc'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/doc'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/u/eng/class/classzfu/35l/week3_1/coureutils-install/share/info" || /bin/mkdir -p "/u/eng/class/classzfu/35l/week3_1/coureutils-install/share/info"
+ /usr/bin/install -c -m 644 ./coreutils.info '/u/eng/class/classzfu/35l/week3_1/coureutils-install/share/info'
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/doc'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/doc'
+Making install in man
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/man'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/man'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/u/eng/class/classzfu/35l/week3_1/coureutils-install/share/man/man1" || /bin/mkdir -p "/u/eng/class/classzfu/35l/week3_1/coureutils-install/share/man/man1"
+ /usr/bin/install -c -m 644 uname.1 chroot.1 hostid.1 nice.1 who.1 users.1 pinky.1 uptime.1 stty.1 df.1 stdbuf.1 chcon.1 chgrp.1 chown.1 chmod.1 cp.1 dd.1 dircolors.1 du.1 install.1 link.1 ln.1 dir.1 vdir.1 ls.1 mkdir.1 mkfifo.1 mknod.1 mktemp.1 mv.1 nohup.1 readlink.1 rm.1 rmdir.1 shred.1 stat.1 sync.1 touch.1 unlink.1 cat.1 '/u/eng/class/classzfu/35l/week3_1/coureutils-install/share/man/man1'
+ /usr/bin/install -c -m 644 cksum.1 comm.1 csplit.1 cut.1 expand.1 fmt.1 fold.1 head.1 join.1 groups.1 md5sum.1 nl.1 od.1 paste.1 pr.1 ptx.1 sha1sum.1 sha224sum.1 sha256sum.1 sha384sum.1 sha512sum.1 shuf.1 sort.1 split.1 sum.1 tac.1 tail.1 tr.1 tsort.1 unexpand.1 uniq.1 wc.1 basename.1 date.1 dirname.1 echo.1 env.1 expr.1 factor.1 false.1 '/u/eng/class/classzfu/35l/week3_1/coureutils-install/share/man/man1'
+ /usr/bin/install -c -m 644 id.1 kill.1 logname.1 pathchk.1 printenv.1 printf.1 pwd.1 runcon.1 seq.1 sleep.1 tee.1 test.1 timeout.1 true.1 truncate.1 tty.1 whoami.1 yes.1 base64.1 '/u/eng/class/classzfu/35l/week3_1/coureutils-install/share/man/man1'
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/man'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/man'
+Making install in po
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/po'
+/bin/mkdir -p /u/eng/class/classzfu/35l/week3_1/coureutils-install/share
+installing af.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/af/LC_MESSAGES/coreutils.mo
+installing af.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/af/LC_TIME/coreutils.mo
+installing be.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/be/LC_MESSAGES/coreutils.mo
+installing be.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/be/LC_TIME/coreutils.mo
+installing bg.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/bg/LC_MESSAGES/coreutils.mo
+installing bg.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/bg/LC_TIME/coreutils.mo
+installing ca.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/ca/LC_MESSAGES/coreutils.mo
+installing ca.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/ca/LC_TIME/coreutils.mo
+installing cs.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/cs/LC_MESSAGES/coreutils.mo
+installing cs.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/cs/LC_TIME/coreutils.mo
+installing da.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/da/LC_MESSAGES/coreutils.mo
+installing da.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/da/LC_TIME/coreutils.mo
+installing de.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/de/LC_MESSAGES/coreutils.mo
+installing de.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/de/LC_TIME/coreutils.mo
+installing el.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/el/LC_MESSAGES/coreutils.mo
+installing el.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/el/LC_TIME/coreutils.mo
+installing es.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/es/LC_MESSAGES/coreutils.mo
+installing es.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/es/LC_TIME/coreutils.mo
+installing et.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/et/LC_MESSAGES/coreutils.mo
+installing et.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/et/LC_TIME/coreutils.mo
+installing eu.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/eu/LC_MESSAGES/coreutils.mo
+installing eu.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/eu/LC_TIME/coreutils.mo
+installing fi.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/fi/LC_MESSAGES/coreutils.mo
+installing fi.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/fi/LC_TIME/coreutils.mo
+installing fr.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/fr/LC_MESSAGES/coreutils.mo
+installing fr.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/fr/LC_TIME/coreutils.mo
+installing ga.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/ga/LC_MESSAGES/coreutils.mo
+installing ga.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/ga/LC_TIME/coreutils.mo
+installing gl.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/gl/LC_MESSAGES/coreutils.mo
+installing gl.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/gl/LC_TIME/coreutils.mo
+installing hu.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/hu/LC_MESSAGES/coreutils.mo
+installing hu.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/hu/LC_TIME/coreutils.mo
+installing id.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/id/LC_MESSAGES/coreutils.mo
+installing id.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/id/LC_TIME/coreutils.mo
+installing it.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/it/LC_MESSAGES/coreutils.mo
+installing it.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/it/LC_TIME/coreutils.mo
+installing ja.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/ja/LC_MESSAGES/coreutils.mo
+installing ja.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/ja/LC_TIME/coreutils.mo
+installing ko.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/ko/LC_MESSAGES/coreutils.mo
+installing ko.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/ko/LC_TIME/coreutils.mo
+installing lt.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/lt/LC_MESSAGES/coreutils.mo
+installing lt.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/lt/LC_TIME/coreutils.mo
+installing ms.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/ms/LC_MESSAGES/coreutils.mo
+installing ms.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/ms/LC_TIME/coreutils.mo
+installing nb.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/nb/LC_MESSAGES/coreutils.mo
+installing nb.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/nb/LC_TIME/coreutils.mo
+installing nl.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/nl/LC_MESSAGES/coreutils.mo
+installing nl.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/nl/LC_TIME/coreutils.mo
+installing pl.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/pl/LC_MESSAGES/coreutils.mo
+installing pl.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/pl/LC_TIME/coreutils.mo
+installing pt.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/pt/LC_MESSAGES/coreutils.mo
+installing pt.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/pt/LC_TIME/coreutils.mo
+installing pt_BR.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/pt_BR/LC_MESSAGES/coreutils.mo
+installing pt_BR.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/pt_BR/LC_TIME/coreutils.mo
+installing ru.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/ru/LC_MESSAGES/coreutils.mo
+installing ru.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/ru/LC_TIME/coreutils.mo
+installing sk.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/sk/LC_MESSAGES/coreutils.mo
+installing sk.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/sk/LC_TIME/coreutils.mo
+installing sl.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/sl/LC_MESSAGES/coreutils.mo
+installing sl.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/sl/LC_TIME/coreutils.mo
+installing sv.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/sv/LC_MESSAGES/coreutils.mo
+installing sv.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/sv/LC_TIME/coreutils.mo
+installing tr.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/tr/LC_MESSAGES/coreutils.mo
+installing tr.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/tr/LC_TIME/coreutils.mo
+installing uk.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/uk/LC_MESSAGES/coreutils.mo
+installing uk.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/uk/LC_TIME/coreutils.mo
+installing vi.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/vi/LC_MESSAGES/coreutils.mo
+installing vi.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/vi/LC_TIME/coreutils.mo
+installing zh_CN.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/zh_CN/LC_MESSAGES/coreutils.mo
+installing zh_CN.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/zh_CN/LC_TIME/coreutils.mo
+installing zh_TW.gmo as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/zh_TW/LC_MESSAGES/coreutils.mo
+installing zh_TW.gmo link as /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/locale/zh_TW/LC_TIME/coreutils.mo
+if test "coreutils" = "gettext-tools"; then \
+          /bin/mkdir -p /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/gettext/po; \
+          for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+            /usr/bin/install -c -m 644 ./$file \
+                            /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/gettext/po/$file; \
+          done; \
+          for file in Makevars; do \
+            rm -f /u/eng/class/classzfu/35l/week3_1/coureutils-install/share/gettext/po/$file; \
+          done; \
+        else \
+          : ; \
+        fi
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/po'
+Making install in tests
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/tests'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/tests'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/tests'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/tests'
+Making install in gnulib-tests
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make  install-recursive
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make[4]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make[5]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make[4]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6/gnulib-tests'
+make[2]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6'
+make[3]: Entering directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6'
+make[2]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6'
+make[1]: Leaving directory `/w/home.14/class/classzfu/35l/week3_1/coreutils-7.6'
+[classzfu@lnxsrv05 ~/35l/week3_1/coreutils-7.6]$ cd ..
+[classzfu@lnxsrv05 ~/35l/week3_1]$ cd
+coreutils-7.6/        coureutils-install/   lab.txt
+coreutils-7.6.tar.gz  hw.txt
+[classzfu@lnxsrv05 ~/35l/week3_1]$ cd
+coreutils-7.6/        coureutils-install/   lab.txt
+coreutils-7.6.tar.gz  hw.txt
+[classzfu@lnxsrv05 ~/35l/week3_1]$ cd coureutils-install/
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ ls
+bin  lib  share
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ cd bin
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install/bin]$ ls
+[         csplit     expr     link     nohup     rmdir      split    tr        wc
+base64    cut        factor   ln       od        runcon     stat     true      who
+basename  date       false    logname  paste     seq        stdbuf   truncate  whoami
+cat       dd         fmt      ls       pathchk   sha1sum    stty     tsort     yes
+chcon     df         fold     md5sum   pinky     sha224sum  sum      tty
+chgrp     dir        groups   mkdir    pr        sha256sum  sync     uname
+chmod     dircolors  head     mkfifo   printenv  sha384sum  tac      unexpand
+chown     dirname    hostid   mknod    printf    sha512sum  tail     uniq
+chroot    du         id       mktemp   ptx       shred      tee      unlink
+cksum     echo       install  mv       pwd       shuf       test     uptime
+comm      env        join     nice     readlink  sleep      timeout  users
+cp        expand     kill     nl       rm        sort       touch    vdir
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install/bin]$ cd ..\
+> ^C
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install/bin]$ cd ..
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ ls -l ./bin/bash
+ls: cannot access ./bin/bash: No such file or directory
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ ls -l
+total 16
+drwxr-xr-x 2 classzfu class 8192 Apr 17 15:38 bin
+drwxr-xr-x 3 classzfu class 4096 Apr 17 15:38 lib
+drwxr-xr-x 5 classzfu class 4096 Apr 17 15:38 share
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ ls -l ./bin/bash
+ls: cannot access ./bin/bash: No such file or directory
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ ls -l ./bin
+total 15876
+-rwxr-xr-x 1 classzfu class 107283 Apr 17 15:38 [
+-rwxr-xr-x 1 classzfu class  97947 Apr 17 15:38 base64
+-rwxr-xr-x 1 classzfu class  75919 Apr 17 15:38 basename
+-rwxr-xr-x 1 classzfu class 172924 Apr 17 15:38 cat
+-rwxr-xr-x 1 classzfu class 204982 Apr 17 15:38 chcon
+-rwxr-xr-x 1 classzfu class 185491 Apr 17 15:38 chgrp
+-rwxr-xr-x 1 classzfu class 178574 Apr 17 15:38 chmod
+-rwxr-xr-x 1 classzfu class 192728 Apr 17 15:38 chown
+-rwxr-xr-x 1 classzfu class  95817 Apr 17 15:38 chroot
+-rwxr-xr-x 1 classzfu class  79240 Apr 17 15:38 cksum
+-rwxr-xr-x 1 classzfu class  90977 Apr 17 15:38 comm
+-rwxr-xr-x 1 classzfu class 432356 Apr 17 15:38 cp
+-rwxr-xr-x 1 classzfu class 404854 Apr 17 15:38 csplit
+-rwxr-xr-x 1 classzfu class 138092 Apr 17 15:38 cut
+-rwxr-xr-x 1 classzfu class 186709 Apr 17 15:38 date
+-rwxr-xr-x 1 classzfu class 175902 Apr 17 15:38 dd
+-rwxr-xr-x 1 classzfu class 252920 Apr 17 15:38 df
+-rwxr-xr-x 1 classzfu class 392519 Apr 17 15:38 dir
+-rwxr-xr-x 1 classzfu class  92491 Apr 17 15:38 dircolors
+-rwxr-xr-x 1 classzfu class  76450 Apr 17 15:38 dirname
+-rwxr-xr-x 1 classzfu class 363368 Apr 17 15:38 du
+-rwxr-xr-x 1 classzfu class  76031 Apr 17 15:38 echo
+-rwxr-xr-x 1 classzfu class  73120 Apr 17 15:38 env
+-rwxr-xr-x 1 classzfu class  82081 Apr 17 15:38 expand
+-rwxr-xr-x 1 classzfu class 368483 Apr 17 15:38 expr
+-rwxr-xr-x 1 classzfu class 171869 Apr 17 15:38 factor
+-rwxr-xr-x 1 classzfu class  68515 Apr 17 15:38 false
+-rwxr-xr-x 1 classzfu class  99180 Apr 17 15:38 fmt
+-rwxr-xr-x 1 classzfu class  86113 Apr 17 15:38 fold
+-rwxr-xr-x 1 classzfu class  81027 Apr 17 15:38 groups
+-rwxr-xr-x 1 classzfu class 113896 Apr 17 15:38 head
+-rwxr-xr-x 1 classzfu class  72969 Apr 17 15:38 hostid
+-rwxr-xr-x 1 classzfu class  87539 Apr 17 15:38 id
+-rwxr-xr-x 1 classzfu class 407564 Apr 17 15:38 install
+-rwxr-xr-x 1 classzfu class 122897 Apr 17 15:38 join
+-rwxr-xr-x 1 classzfu class  87881 Apr 17 15:38 kill
+-rwxr-xr-x 1 classzfu class  73258 Apr 17 15:38 link
+-rwxr-xr-x 1 classzfu class 157201 Apr 17 15:38 ln
+-rwxr-xr-x 1 classzfu class  73163 Apr 17 15:38 logname
+-rwxr-xr-x 1 classzfu class 392510 Apr 17 15:38 ls
+-rwxr-xr-x 1 classzfu class 108028 Apr 17 15:38 md5sum
+-rwxr-xr-x 1 classzfu class 180101 Apr 17 15:38 mkdir
+-rwxr-xr-x 1 classzfu class  81794 Apr 17 15:38 mkfifo
+-rwxr-xr-x 1 classzfu class  92482 Apr 17 15:38 mknod
+-rwxr-xr-x 1 classzfu class 113341 Apr 17 15:38 mktemp
+-rwxr-xr-x 1 classzfu class 421737 Apr 17 15:38 mv
+-rwxr-xr-x 1 classzfu class  82574 Apr 17 15:38 nice
+-rwxr-xr-x 1 classzfu class 370465 Apr 17 15:38 nl
+-rwxr-xr-x 1 classzfu class  84651 Apr 17 15:38 nohup
+-rwxr-xr-x 1 classzfu class 217032 Apr 17 15:38 od
+-rwxr-xr-x 1 classzfu class  87970 Apr 17 15:38 paste
+-rwxr-xr-x 1 classzfu class  81229 Apr 17 15:38 pathchk
+-rwxr-xr-x 1 classzfu class  97285 Apr 17 15:38 pinky
+-rwxr-xr-x 1 classzfu class 188260 Apr 17 15:38 pr
+-rwxr-xr-x 1 classzfu class  73556 Apr 17 15:38 printenv
+-rwxr-xr-x 1 classzfu class 184132 Apr 17 15:38 printf
+-rwxr-xr-x 1 classzfu class 459704 Apr 17 15:38 ptx
+-rwxr-xr-x 1 classzfu class  97034 Apr 17 15:38 pwd
+-rwxr-xr-x 1 classzfu class 135315 Apr 17 15:38 readlink
+-rwxr-xr-x 1 classzfu class 204755 Apr 17 15:38 rm
+-rwxr-xr-x 1 classzfu class 145560 Apr 17 15:38 rmdir
+-rwxr-xr-x 1 classzfu class  77496 Apr 17 15:38 runcon
+-rwxr-xr-x 1 classzfu class 158922 Apr 17 15:38 seq
+-rwxr-xr-x 1 classzfu class 114028 Apr 17 15:38 sha1sum
+-rwxr-xr-x 1 classzfu class 124462 Apr 17 15:38 sha224sum
+-rwxr-xr-x 1 classzfu class 124462 Apr 17 15:38 sha256sum
+-rwxr-xr-x 1 classzfu class 144342 Apr 17 15:38 sha384sum
+-rwxr-xr-x 1 classzfu class 144342 Apr 17 15:38 sha512sum
+-rwxr-xr-x 1 classzfu class 164837 Apr 17 15:38 shred
+-rwxr-xr-x 1 classzfu class 123660 Apr 17 15:38 shuf
+-rwxr-xr-x 1 classzfu class  86506 Apr 17 15:38 sleep
+-rwxr-xr-x 1 classzfu class 314085 Apr 17 15:38 sort
+-rwxr-xr-x 1 classzfu class 189332 Apr 17 15:38 split
+-rwxr-xr-x 1 classzfu class 139611 Apr 17 15:38 stat
+-rwxr-xr-x 1 classzfu class 231698 Apr 17 15:38 stdbuf
+-rwxr-xr-x 1 classzfu class 201665 Apr 17 15:38 stty
+-rwxr-xr-x 1 classzfu class 109794 Apr 17 15:38 sum
+-rwxr-xr-x 1 classzfu class  71884 Apr 17 15:38 sync
+-rwxr-xr-x 1 classzfu class 357447 Apr 17 15:38 tac
+-rwxr-xr-x 1 classzfu class 196270 Apr 17 15:38 tail
+-rwxr-xr-x 1 classzfu class  77175 Apr 17 15:38 tee
+-rwxr-xr-x 1 classzfu class  97362 Apr 17 15:38 test
+-rwxr-xr-x 1 classzfu class 175253 Apr 17 15:38 timeout
+-rwxr-xr-x 1 classzfu class 143153 Apr 17 15:38 touch
+-rwxr-xr-x 1 classzfu class 121749 Apr 17 15:38 tr
+-rwxr-xr-x 1 classzfu class  68514 Apr 17 15:38 true
+-rwxr-xr-x 1 classzfu class 170848 Apr 17 15:38 truncate
+-rwxr-xr-x 1 classzfu class  98461 Apr 17 15:38 tsort
+-rwxr-xr-x 1 classzfu class  70983 Apr 17 15:38 tty
+-rwxr-xr-x 1 classzfu class  75495 Apr 17 15:38 uname
+-rwxr-xr-x 1 classzfu class  85335 Apr 17 15:38 unexpand
+-rwxr-xr-x 1 classzfu class 111245 Apr 17 15:38 uniq
+-rwxr-xr-x 1 classzfu class  73126 Apr 17 15:38 unlink
+-rwxr-xr-x 1 classzfu class 120517 Apr 17 15:38 uptime
+-rwxr-xr-x 1 classzfu class  82954 Apr 17 15:38 users
+-rwxr-xr-x 1 classzfu class 392520 Apr 17 15:38 vdir
+-rwxr-xr-x 1 classzfu class 119902 Apr 17 15:38 wc
+-rwxr-xr-x 1 classzfu class 167253 Apr 17 15:38 who
+-rwxr-xr-x 1 classzfu class  73719 Apr 17 15:38 whoami
+-rwxr-xr-x 1 classzfu class  72681 Apr 17 15:38 yes
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ ls -l ./bin/bash
+ls: cannot access ./bin/bash: No such file or directory
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ cd ..
+[classzfu@lnxsrv05 ~/35l/week3_1]$ ls
+coreutils-7.6  coreutils-7.6.tar.gz  coureutils-install  hw.txt  lab.txt
+[classzfu@lnxsrv05 ~/35l/week3_1]$ ls -l
+total 9836
+drwxr-xr-x 13 classzfu class     8192 Apr 17 15:35 coreutils-7.6
+-rwx------  1 classzfu class 10014650 Apr 17 15:10 coreutils-7.6.tar.gz
+drwxr-xr-x  5 classzfu class     4096 Apr 17 15:38 coureutils-install
+-rw-r--r--  1 classzfu class        0 Apr 17 14:06 hw.txt
+-rw-r--r--  1 classzfu class        0 Apr 17 14:05 lab.txt
+[classzfu@lnxsrv05 ~/35l/week3_1]$ export LC_ALL='en_US.UTF-8'
+[classzfu@lnxsrv05 ~/35l/week3_1]$ ls -l
+total 9836
+drwxr-xr-x 13 classzfu class     8192 Apr 17 15:35 coreutils-7.6
+-rwx------  1 classzfu class 10014650 Apr 17 15:10 coreutils-7.6.tar.gz
+drwxr-xr-x  5 classzfu class     4096 Apr 17 15:38 coureutils-install
+-rw-r--r--  1 classzfu class        0 Apr 17 14:06 hw.txt
+-rw-r--r--  1 classzfu class        0 Apr 17 14:05 lab.txt
+[classzfu@lnxsrv05 ~/35l/week3_1]$ export LC_ALL='en_US.UTF-8'
+[classzfu@lnxsrv05 ~/35l/week3_1]$ ls -l
+total 9836
+drwxr-xr-x 13 classzfu class     8192 Apr 17 15:35 coreutils-7.6
+-rwx------  1 classzfu class 10014650 Apr 17 15:10 coreutils-7.6.tar.gz
+drwxr-xr-x  5 classzfu class     4096 Apr 17 15:38 coureutils-install
+-rw-r--r--  1 classzfu class        0 Apr 17 14:06 hw.txt
+-rw-r--r--  1 classzfu class        0 Apr 17 14:05 lab.txt
+[classzfu@lnxsrv05 ~/35l/week3_1]$ cd
+coreutils-7.6/        coureutils-install/   lab.txt
+coreutils-7.6.tar.gz  hw.txt
+[classzfu@lnxsrv05 ~/35l/week3_1]$ cd
+coreutils-7.6/        coureutils-install/   lab.txt
+coreutils-7.6.tar.gz  hw.txt
+[classzfu@lnxsrv05 ~/35l/week3_1]$ cd coureutils-install/
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ ls
+bin  lib  share
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ bin
+-bash: bin: command not found
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install]$ cd bin
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install/bin]$ ls
+[         csplit     expr     link     nohup     rmdir      split    tr        wc
+base64    cut        factor   ln       od        runcon     stat     true      who
+basename  date       false    logname  paste     seq        stdbuf   truncate  whoami
+cat       dd         fmt      ls       pathchk   sha1sum    stty     tsort     yes
+chcon     df         fold     md5sum   pinky     sha224sum  sum      tty
+chgrp     dir        groups   mkdir    pr        sha256sum  sync     uname
+chmod     dircolors  head     mkfifo   printenv  sha384sum  tac      unexpand
+chown     dirname    hostid   mknod    printf    sha512sum  tail     uniq
+chroot    du         id       mktemp   ptx       shred      tee      unlink
+cksum     echo       install  mv       pwd       shuf       test     uptime
+comm      env        join     nice     readlink  sleep      timeout  users
+cp        expand     kill     nl       rm        sort       touch    vdir
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install/bin]$ ./ls -l
+total 15876
+-rwxr-xr-x 1 classzfu class 107283 2017-04-17 15:38 [
+-rwxr-xr-x 1 classzfu class  97947 2017-04-17 15:38 base64
+-rwxr-xr-x 1 classzfu class  75919 2017-04-17 15:38 basename
+-rwxr-xr-x 1 classzfu class 172924 2017-04-17 15:38 cat
+-rwxr-xr-x 1 classzfu class 204982 2017-04-17 15:38 chcon
+-rwxr-xr-x 1 classzfu class 185491 2017-04-17 15:38 chgrp
+-rwxr-xr-x 1 classzfu class 178574 2017-04-17 15:38 chmod
+-rwxr-xr-x 1 classzfu class 192728 2017-04-17 15:38 chown
+-rwxr-xr-x 1 classzfu class  95817 2017-04-17 15:38 chroot
+-rwxr-xr-x 1 classzfu class  79240 2017-04-17 15:38 cksum
+-rwxr-xr-x 1 classzfu class  90977 2017-04-17 15:38 comm
+-rwxr-xr-x 1 classzfu class 432356 2017-04-17 15:38 cp
+-rwxr-xr-x 1 classzfu class 404854 2017-04-17 15:38 csplit
+-rwxr-xr-x 1 classzfu class 138092 2017-04-17 15:38 cut
+-rwxr-xr-x 1 classzfu class 186709 2017-04-17 15:38 date
+-rwxr-xr-x 1 classzfu class 175902 2017-04-17 15:38 dd
+-rwxr-xr-x 1 classzfu class 252920 2017-04-17 15:38 df
+-rwxr-xr-x 1 classzfu class 392519 2017-04-17 15:38 dir
+-rwxr-xr-x 1 classzfu class  92491 2017-04-17 15:38 dircolors
+-rwxr-xr-x 1 classzfu class  76450 2017-04-17 15:38 dirname
+-rwxr-xr-x 1 classzfu class 363368 2017-04-17 15:38 du
+-rwxr-xr-x 1 classzfu class  76031 2017-04-17 15:38 echo
+-rwxr-xr-x 1 classzfu class  73120 2017-04-17 15:38 env
+-rwxr-xr-x 1 classzfu class  82081 2017-04-17 15:38 expand
+-rwxr-xr-x 1 classzfu class 368483 2017-04-17 15:38 expr
+-rwxr-xr-x 1 classzfu class 171869 2017-04-17 15:38 factor
+-rwxr-xr-x 1 classzfu class  68515 2017-04-17 15:38 false
+-rwxr-xr-x 1 classzfu class  99180 2017-04-17 15:38 fmt
+-rwxr-xr-x 1 classzfu class  86113 2017-04-17 15:38 fold
+-rwxr-xr-x 1 classzfu class  81027 2017-04-17 15:38 groups
+-rwxr-xr-x 1 classzfu class 113896 2017-04-17 15:38 head
+-rwxr-xr-x 1 classzfu class  72969 2017-04-17 15:38 hostid
+-rwxr-xr-x 1 classzfu class  87539 2017-04-17 15:38 id
+-rwxr-xr-x 1 classzfu class 407564 2017-04-17 15:38 install
+-rwxr-xr-x 1 classzfu class 122897 2017-04-17 15:38 join
+-rwxr-xr-x 1 classzfu class  87881 2017-04-17 15:38 kill
+-rwxr-xr-x 1 classzfu class  73258 2017-04-17 15:38 link
+-rwxr-xr-x 1 classzfu class 157201 2017-04-17 15:38 ln
+-rwxr-xr-x 1 classzfu class  73163 2017-04-17 15:38 logname
+-rwxr-xr-x 1 classzfu class 392510 2017-04-17 15:38 ls
+-rwxr-xr-x 1 classzfu class 108028 2017-04-17 15:38 md5sum
+-rwxr-xr-x 1 classzfu class 180101 2017-04-17 15:38 mkdir
+-rwxr-xr-x 1 classzfu class  81794 2017-04-17 15:38 mkfifo
+-rwxr-xr-x 1 classzfu class  92482 2017-04-17 15:38 mknod
+-rwxr-xr-x 1 classzfu class 113341 2017-04-17 15:38 mktemp
+-rwxr-xr-x 1 classzfu class 421737 2017-04-17 15:38 mv
+-rwxr-xr-x 1 classzfu class  82574 2017-04-17 15:38 nice
+-rwxr-xr-x 1 classzfu class 370465 2017-04-17 15:38 nl
+-rwxr-xr-x 1 classzfu class  84651 2017-04-17 15:38 nohup
+-rwxr-xr-x 1 classzfu class 217032 2017-04-17 15:38 od
+-rwxr-xr-x 1 classzfu class  87970 2017-04-17 15:38 paste
+-rwxr-xr-x 1 classzfu class  81229 2017-04-17 15:38 pathchk
+-rwxr-xr-x 1 classzfu class  97285 2017-04-17 15:38 pinky
+-rwxr-xr-x 1 classzfu class 188260 2017-04-17 15:38 pr
+-rwxr-xr-x 1 classzfu class  73556 2017-04-17 15:38 printenv
+-rwxr-xr-x 1 classzfu class 184132 2017-04-17 15:38 printf
+-rwxr-xr-x 1 classzfu class 459704 2017-04-17 15:38 ptx
+-rwxr-xr-x 1 classzfu class  97034 2017-04-17 15:38 pwd
+-rwxr-xr-x 1 classzfu class 135315 2017-04-17 15:38 readlink
+-rwxr-xr-x 1 classzfu class 204755 2017-04-17 15:38 rm
+-rwxr-xr-x 1 classzfu class 145560 2017-04-17 15:38 rmdir
+-rwxr-xr-x 1 classzfu class  77496 2017-04-17 15:38 runcon
+-rwxr-xr-x 1 classzfu class 158922 2017-04-17 15:38 seq
+-rwxr-xr-x 1 classzfu class 114028 2017-04-17 15:38 sha1sum
+-rwxr-xr-x 1 classzfu class 124462 2017-04-17 15:38 sha224sum
+-rwxr-xr-x 1 classzfu class 124462 2017-04-17 15:38 sha256sum
+-rwxr-xr-x 1 classzfu class 144342 2017-04-17 15:38 sha384sum
+-rwxr-xr-x 1 classzfu class 144342 2017-04-17 15:38 sha512sum
+-rwxr-xr-x 1 classzfu class 164837 2017-04-17 15:38 shred
+-rwxr-xr-x 1 classzfu class 123660 2017-04-17 15:38 shuf
+-rwxr-xr-x 1 classzfu class  86506 2017-04-17 15:38 sleep
+-rwxr-xr-x 1 classzfu class 314085 2017-04-17 15:38 sort
+-rwxr-xr-x 1 classzfu class 189332 2017-04-17 15:38 split
+-rwxr-xr-x 1 classzfu class 139611 2017-04-17 15:38 stat
+-rwxr-xr-x 1 classzfu class 231698 2017-04-17 15:38 stdbuf
+-rwxr-xr-x 1 classzfu class 201665 2017-04-17 15:38 stty
+-rwxr-xr-x 1 classzfu class 109794 2017-04-17 15:38 sum
+-rwxr-xr-x 1 classzfu class  71884 2017-04-17 15:38 sync
+-rwxr-xr-x 1 classzfu class 357447 2017-04-17 15:38 tac
+-rwxr-xr-x 1 classzfu class 196270 2017-04-17 15:38 tail
+-rwxr-xr-x 1 classzfu class  77175 2017-04-17 15:38 tee
+-rwxr-xr-x 1 classzfu class  97362 2017-04-17 15:38 test
+-rwxr-xr-x 1 classzfu class 175253 2017-04-17 15:38 timeout
+-rwxr-xr-x 1 classzfu class 143153 2017-04-17 15:38 touch
+-rwxr-xr-x 1 classzfu class 121749 2017-04-17 15:38 tr
+-rwxr-xr-x 1 classzfu class  68514 2017-04-17 15:38 true
+-rwxr-xr-x 1 classzfu class 170848 2017-04-17 15:38 truncate
+-rwxr-xr-x 1 classzfu class  98461 2017-04-17 15:38 tsort
+-rwxr-xr-x 1 classzfu class  70983 2017-04-17 15:38 tty
+-rwxr-xr-x 1 classzfu class  75495 2017-04-17 15:38 uname
+-rwxr-xr-x 1 classzfu class  85335 2017-04-17 15:38 unexpand
+-rwxr-xr-x 1 classzfu class 111245 2017-04-17 15:38 uniq
+-rwxr-xr-x 1 classzfu class  73126 2017-04-17 15:38 unlink
+-rwxr-xr-x 1 classzfu class 120517 2017-04-17 15:38 uptime
+-rwxr-xr-x 1 classzfu class  82954 2017-04-17 15:38 users
+-rwxr-xr-x 1 classzfu class 392520 2017-04-17 15:38 vdir
+-rwxr-xr-x 1 classzfu class 119902 2017-04-17 15:38 wc
+-rwxr-xr-x 1 classzfu class 167253 2017-04-17 15:38 who
+-rwxr-xr-x 1 classzfu class  73719 2017-04-17 15:38 whoami
+-rwxr-xr-x 1 classzfu class  72681 2017-04-17 15:38 yes
+[classzfu@lnxsrv05 ~/35l/week3_1/coureutils-install/bin]$

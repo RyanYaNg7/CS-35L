@@ -1,0 +1,60 @@
+8. C-x v= in emacs creates a buffer *vc-diff which show s a diff
+C-x v u  vc revert the diff *vc-revert
+then do C-x v= 
+for every files in git status
+revert only text files, no .c .h files in git status
+
+9. C-x v= 
+C-c C-c
+revert the diff manually
+(ex. in src/analyze.c
+change ' to `)
+
+only change comments in .c .h and text file
+
+10
+
+find type -f |grep src/*.c.   rej
+emacs src/diff.c.rej
+find the + change in codes other than comments
+change from - to + in diff.c
+
+emacs src/diff3.c.rej
+
+11.
+save git-log.txt
+save git-tags.txt
+before clean 
+git clean -f
+
+12. git status indeed reports the following sodified files:
+cmp.c
+diff.c
+diff3.c
+dir.c
+sdiff.c
+util.c
+
+git diff > quote-3.0-patch.txt
+
+quote-3.0-patch.txt is indeed 336 lines long
+]
+13. ldd --version shows that the version of GNU libc is 2.12, so no additional patch is needed
+
+export PATH...
+./bootstrap
+./configure
+make
+make check
+
+
+14.
+cd [go to week9]
+mkdir diffutils-3.0
+mkdir diffutils-3.0-patch
+mkdir temp
+
+
+lego0812@gmail.com - send the pics for step 10,14,15
+
+

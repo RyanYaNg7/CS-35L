@@ -1,0 +1,64 @@
+week3 lab3
+
+1. Grab file
+ a.Download coreutils-7.6 to my home directory using:
+ 	 wget ftp://ftp.gnu.org/gnu/coreutils/coreutils-7.6.tar.gz
+
+ b.Untar and Unzip it using:
+       	tar –xzvf coreutils-7.6.tar.gz 
+
+2.Compile and install your copy of Coreutils into a temporary directory of your own. Note any problems you run into.
+ a.create a directory in the current working directory ~/lab3/coreutilsInstall
+	 mkdir coreutilsInstall
+ b.configure the file and use the prefix flag so that when everything is done, it is put into the designated directory
+ 	  cd ./coreutils-7.6
+ 	  ./configure --prefix=/u/eng/class/classefa/lab3/coreutilsInstall
+ c.compile the file
+ 	   make   
+	   make install
+
+3.Reproduce the bug on your machine with the unmodified version of coreutils.
+ a.generate the problematic locale
+ 	    export LC_ALL='en_US.UTF-8'
+ b. reporduce the problem
+    	    cd ..
+	    cd ./coreutilsInstall/bin
+	    ./ls -l /bin/bash
+ the output gives us: -rwxr-xr-x 1 root root 960632 2017-08-03 06:36 /bin/bash
+
+4.Use Emacs or Vim to apply Brady's patch.
+ a.create a patch that needs to be patched and copy the content on the webpage into it
+ 	  vim patch_file
+	  //make copy from web page and change all directories in patch to ./ls.c
+	  ZZ
+ b.go to the folder
+      	 cd ../../coreutils-7.6/scr
+ c.apply the patch to the file
+ 	 patch -p0 < patch_file
+  -p0: strip the smallest prefix containing 0 keading slashes from each file name found in the patch.
+  after checking, the file is changed successfully
+
+5.Type the command make at the top level of your source tree, so that you build (but do not install) the fixed version.
+ a.go back to the top level and remake it
+      	   cd ..
+	   make
+6.Make sure your change fixes the bug, by testing that the modified ls works on your test case and that the installed ls doesn't. Test on a file that has been recently modified, and on a file that is at least a year old. You can use the touch command to artficially mark a file as being a year old.
+ a.go back to our lab folder and run the installed ls
+      cd ..
+      ./coreutilsInstall/bin/ls -l ./coreutils-7.6.tar.gz
+this gives us: -rw-r--r-- 1 classefa class 10014650 2017-10-23 13:13 ./coreutils-7.6.tar.gz
+
+ b. run the modified ls
+      ./coreutils-7.6/src/ls -l ./coreutils-7.6.tar.gz
+this gives us: -rw-r--r-- 1 classefa class 10014650 Oct 23 13:13 ./coreutils-7.6.tar.gz
+
+ c. make a file at least a year old by touching
+      touch -t 0808080000 coreutils-7.6.tar.gz
+ d. test the installed ls
+      ./coreutilsInstall/bin/ls	-l ./coreutils-7.6.tar.gz
+this gives us: -rw-r--r-- 1 classefa class 10014650 2008-08-08 00:00 ./coreutils-7.6.tar.gz
+ e. test the modified ls
+      ./coreutils-7.6/src/ls -l ./coreutils-7.6.tar.gz
+this gives us: -rw-r--r-- 1 classefa class 10014650 Aug  8  2008 ./coreutils-7.6.tar.gz
+
+we can see that the modified version will always give us the correct answer.

@@ -1,0 +1,115 @@
+Use the time command to compare the overall performance of sfrob, sfrobu, sfrobs, sfrobu -f, and sfrobs -f.
+
+First compile all the C programs.
+Then use these command to create files of different sizes:
+     head --bytes=1000000 /dev/urandom > input_1M
+     head --bytes=5000000 /dev/urandom > input_5M
+     head --bytes=10000000 /dev/urandom > input_10M
+
+1.Test on the 1M file
+ a. unbuffered version
+ time ./sfrobu < input_1M > sfrobu_output
+Comparisons: 42170
+
+real	     0m1.197s
+user	     0m0.072s
+sys	     0m1.108s
+
+ b.buffered version
+ time ./sfrob < input_1M > sfrob_output
+real  0m0.077s
+user  0m0.059s
+sys   0m0.001s
+
+ c. shell script version
+ time ./sfrobs < input_1M > sfrobs_output
+real  0m0.027s
+user  0m0.009s
+sys   0m0.009s
+
+ d.unbuffered -f
+ time ./sfrobu -f < input_1M > sfrobu_output
+Comparisons: 42138
+
+real	     0m1.115s
+user	     0m0.054s
+sys	     0m1.043s
+ 
+ e.shell script -f
+ time ./sfrobs -f < input_1M > sfrobs_output
+real  0m0.028s
+user  0m0.006s
+sys   0m0.010s
+
+
+2.input_5M
+ a. unbuffered version
+ time ./sfrobu < input_5M > sfrobu_output
+Comparisons: 253897
+
+real	     0m5.833s
+user	     0m0.301s
+sys	     0m5.458s
+
+ b.buffered version
+ time ./sfrob < input_5M > sfrob_output
+real  0m0.370s
+user  0m0.287s
+sys   0m0.011s
+
+ c. shell script version
+ time ./sfrobs < input_5M > sfrobs_output
+real  0m0.131s
+user  0m0.021s
+sys   0m0.029s
+
+ d.unbuffered -f
+ time ./sfrobu -f < input_5M > sfrobu_output
+Comparisons: 253750
+
+real	     0m6.221s
+user	     0m0.339s
+sys	     0m5.759s
+
+ e.shell script -f
+ time ./sfrobs -f < input_5M > sfrobs_output
+real  0m0.111s
+user  0m0.026s
+sys   0m0.024s
+
+3. 10M file
+ a. unbuffered version
+ time ./sfrobu < input_10M > sfrobu_output
+Comparisons: 542915
+
+real	     0m11.288s
+user	     0m0.635s
+sys	     0m10.501s
+
+ b.buffered version
+ time ./sfrob < input_10M > sfrob_output
+real  0m0.734s
+user  0m0.553s
+sys   0m0.025s
+
+
+ c. shell script version
+ time ./sfrobs < input_10M > sfrobs_output
+real  0m0.222s
+user  0m0.042s
+sys   0m0.065s
+
+ d.unbuffered -f
+ time ./sfrobu -f < input_10M > sfrobu_output
+Comparisons: 542275
+
+real	     0m11.538s
+user	     0m0.667s
+sys	     0m10.681s
+
+ e.shell script -f
+ time ./sfrobs -f < input_10M > sfrobs_output
+real  0m0.213s
+user  0m0.047s
+sys   0m0.044s
+

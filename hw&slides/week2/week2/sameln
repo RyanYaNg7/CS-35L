@@ -1,0 +1,64 @@
+#Replace duplicates
+echo $PWD
+echo -e "Please enter a directory: \c"
+read dir
+result=`ls -a $dir | sort`  #put all the files and directorys in result
+declare -a dotArray
+declare -a alphaArray
+declare -a array
+dotCount=0
+alpfaCount=0
+count=0
+
+original="$IFS"
+IFS=$'\n'
+
+for file in $result
+do
+    if [ ! -r "$dir/$file" ]
+    then
+	echo "No permission for reading this file"
+    fi
+    if [[ ! -L "$dir/#file" && -r "$dir/$file" ]]
+    then 
+	if [ -f "$dir/$file" ]
+	then
+	    firstC=$(echo "${file}" | head -c1)
+	    if [ $firstC == "." ]
+	    then
+		dotArray[$dotCount]="$dir/$file"
+		let dotCount=dotCount+1
+	    else
+		alphaArray[$alphaCount]="$dir/$file"
+		let alphaCount=alphaCount+1
+	    fi
+     	fi
+    fi
+done
+
+let count=alphaCount+dotCount
+
+for (( i=0; i<$dotCount; i++ ))
+do
+    array[$i]=dotArary[$i]
+done
+
+for (( i=0; i<$alphaCount; i++ ))
+do
+    array[$i+$dotCount]=alphaArray[$i]
+done
+
+for (( i=0; i<$count; i++ ))
+do
+    for ((j=i+1; j<$count; j++))
+    do
+	cmp -s "${array[$i]}" "${array[$j]}"
+	if [ $? -eq 0 ]
+	then
+	    ln -fP "${array[$i]}" "${array[$j]}"
+	    array[$j]=array[$i]
+	fi
+    done
+done
+
+IFS=$original

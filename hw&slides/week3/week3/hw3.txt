@@ -1,0 +1,22 @@
+Q1. Why did Brady's patch remove the line "case_long_iso_time_style:"? Was it necessary to remove that line? Explain.
+
+A1. This line is a part of the goto command. But the goto command in 'ls.c' is deleted in the patch, we should then remove it.
+    But it was unnecessary to remove it because it does nothing. The compiler will ignore it.
+
+Q2. If your company adopts this patched version of Coreutils instead of the default one, what else should you watch out for? Might this new version of Coreutils introduce other problems with your application, perhaps in countries where users don't speak English and don't understand English-format dates?
+
+A2. We should watch out for the languge. For non-english speaking countries, the patch may misplace the formatting of displayed dates. Also, if there is no proper translation, people in those area may not understand the result displayed by ls -l.
+
+Q3. What happens when this script is invoked on an empty file like /dev/null, and why?
+
+A3. If we try randline on an empty file, we'll get an IndexError when we call the chooseline() function, because in the original code, under the condition of numlines < 0, we get this error.
+
+Q4. What happens when this script is invoked with Python 3 rather than Python 2, and why?
+
+A4.
+File "randline.py", line 65
+    except IOError as (errno, strerror):
+                          ^
+SyntaxError: invalid syntax
+
+This happen because python3 made some change based on python2, and this also changed the corresponding syntax.

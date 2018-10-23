@@ -1,0 +1,84 @@
+LAB2 REPORT
+
+Log into the seasnet server, and then type in locale command to check the locale.
+
+It turns out that we are in en_US.UTF-8, so we type in command export LC_ALL='C' to change it.
+
+Now run the locale command again and we see that we are in the right locale where the output is LC_CTYPE="C".
+
+Then I go to directory of /usr/share/dict/words to check if the file words is there. 
+
+After checking, I go back to my working directory and use the sort command "sort -o words /usr/share/dict/words" to sort the appointed file and generate a file called words that contain the output in my working directory.
+
+
+Then we use wget command to store get the assignment's web page.
+
+Then we run the first command: tr -c 'A-Za-z' '[\n*]' < assign2.html. This outputs each word or letter in the file with some new lines between them. This is because the -c means complement, that is, it takes the complement of the first set, namely all the non-letter characters, and replace them with new lines.
+
+Next, we run the second command: tr -cs 'A-Za-z' '[\n*]' < assign2.html. What this command does is list all the words and letters in the file in their own lines. Or in other words, this command remove the new lines that appear between each word and letter, and replace them with only one new line in between. This happens because without '-s', the command does the same thing as the previous command. Then, the -s means replace each input sequence of a repeated character taht is listed in SET1 with a single occurance of that character. The Set1 in this case is the output of the first command, that is all new line characters. As a result, all the consecutive new lines are replaced by one single new line character, thus putting each word and letter in a new line.
+
+Then, we run the command: tr -cs 'A-Za-z' '[\n*]' < assign2.html | sort. The result is that all words and letters are in a new line, and they are listed according to ASCII standard alphabetic order. This happens because the command first does the same thing the second command does, and then it sort the output of the second command according to the alphabetic order of ASCII, thus generating the result we see.
+
+Next, we run the command: tr -cs 'A-Za-z' '[\n*]' < assign2.html | sort -u. We see that on the base of result of the third command, all the redundant words and letters(ones that repeat more than once) are cut off from the output, so each word and letter only appears once in alphabetic order. This is because on the ground of the last command, the extra '-u' means outputing only the first of an equal run, thus ignore the redundancy.
+
+Further on, we run the command: tr -cs 'A-Za-z' '[\n*]' | sort -u | comm - words. It turns out that the outputs are in three column. According to the manual, comm command compare the two files after it. The first file "-" means the original input, and "words" means the file named "words". And then, the command produce three-column output. Column one contains lines unique to FILE1, column two contains lines unique to FILE2, and column three contains lines common to both files. 
+
+Fianlly, we run the command: tr -cs 'A-Za-z' '[\n*]' | sort -u | comm -23 - words. The only different from the first command is "-23". According to the manual, -2 means suppress column 2, and -3 means suppress column 3. As a result, the command here shows the first column only, which contains the words that are unique to the original input.
+
+
+
+
+
+
+
+After that, we download the web page as a file by using the wget command.
+      wget http://web.cs.ucla.edu/classes/fall17/cs35L/assign/assign2.html
+Then we use #!/bin/sh command to open the shell, and then run the command:
+     vi buildwords
+By this command we create a script called buildwords in the current working directory.
+
+In the script, the write the first command:
+   grep '<td>.\{1,\}<\/td>' | \
+This command grab all the lines that have <td> and <\td> with something in between, and then send the output to the next command:
+
+   sed -n '1~2!p' - | \:
+This command then take the output of last command, and then delete all the odd numer lines, leaving only the lines that contain Hawaiian words.
+
+Then this command:   tr "A-Z\`" "a-z\'" | \
+takes the lines containing Hawaiian words and then replace all the upper case letter with lower case, and replace ` with ' as required.
+
+The next command:    sed 's/<td>//g;s/<\/td>//g;s/<u>//g;s/<\/u>//g' | \
+removes all HTML tags in the input.
+
+Then: sed "s/^\s*//g" | \
+This command delete all the leading spaces in the text.
+
+Next: sed -E "s/,\s|\s/\n/g" | \
+This command then Substitute comma+spaces and spaces in between words to newline.
+
+Finall we use this command: grep "^[pk\' mnwlhaeiou]\{1,\}$" | \   
+to extract the line that contains only Hawaiian characters,
+
+and then: sort -u
+sort the final result and delete the repeated words.
+
+Then we use command: chmod +x buildwords    to enable the command in the script to be executed. 
+
+We use wget to download the contents of the English-Hawaiin dictionary.
+
+Next we use the command: ./buildwords <hwnwdseng.htm> hwords   to get a file of only Hawaiian words.
+
+Then let us run the Hawaiian checker on the homework web page, using the command: tr 'PKMNWLHAEIOU' 'pkmnwlhaeiou' < assign2.html | tr -cs "pk\'mnwlhaeiou" '[\n*]' | sort -u | comm -23 - hwords | wc -l
+This long command first replace all upper case Hawaiin letters to lower cases, and then use the command in the web page on Hawaiin letters, and finally output the number of lines of the result. 
+After running the command, we get the result of 198, which means that there are 198 misspelled Hawaiian words in assign2 web page.
+
+Then, we run the English checker on the homework web page, using the command:
+tr -cs 'A-Za-z' '[\n*]' < assign2.html | sort -u | comm -23 - words | wc -l
+and we get the result of 81, which is the misspelled English words.
+
+we do a little change to the previous two command, delete the | wc -l part and replace it with > hawaimis.txt and > englmis.txt respectively to extract the result of words into a file.
+
+To find out how many words are misspelled in English but not in Hawaiian, we use the command: comm -23 englmis.txt hawaimis.txt | wc -l, there are 81 of them. Examples are: wget, za, mauimapp 
+
+
+Then we find how many words are misspelled in Hawaiian but not in English, we sue the command: comm -13 englmis.txt hawaimis.txt | wc -l, there are 198 of them. Examples are: keep, how, ample.

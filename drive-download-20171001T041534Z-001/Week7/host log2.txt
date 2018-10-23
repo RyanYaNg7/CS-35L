@@ -1,0 +1,87 @@
+Kyle Wong
+Lab 3
+
+CS35L Assignment 7 Laboratory Log
+
+1. Obtain the Ubuntu CD and place it into the computer. For this lab, I used 
+the UCLA Seasnet computers (Dell). Because the Seasnet Linux Server lnxsrv 
+does not allow admin commands like ssh and sudo, which is required for this 
+lab, you dual boot the machine to get the Ubuntu OS. 
+
+2. Shut down the computer and restart. Once the Dell logo shows up, press the 
+F12 button. The BIOS screen options should show up. Select tge option to 
+boot from CD, and then press Enter. Now, wait for Ubuntu to boot up. Once it 
+is finished booting up, click on 'Try Ubuntu' and wait for it to load. Now 
+you are in the Ubuntu OS. 
+
+3. Open up the terminal. The shortcut keystroke to open the terminal is 
+Ctrl-Alt-T. Run the following command to see what is installed: 
+$ dpkg --get-selections | grep openssh
+This should output: 
+openssh-client 	install
+
+Notice that we still need the openssh-server to be installed. To install the 
+openssh-server, type this command: 
+$ sudo apt-get install openssh-server
+Press Y to continue, and once openssh-server is installed, then type the 
+dpkg command again to confirm you have installed openssh-server: 
+$ dpkg --get-selections | grep openssh
+This should output: 
+openssh-client install
+openssh-server install
+openssh-sftp-server install
+
+Now we have both the openssh-client and openssh-server. We are good to go. 
+
+4. Generate a key using the following command: 
+$ ssh-keygen
+(Then I set the passphrase to be memes)
+memes
+memes
+
+Then, you should see a randomart image RSA 2048, something along the lines of 
+that.
+
+To get the public key: 
+$ cat ~/.ssh/id_rsa.pub
+To get the private key: 
+$ cat ~/.ssh/id_rsa id_rsa.pub
+
+5. Add users and set password. I set the home directory to be kyle and 
+the username to be kw: 
+$ sudo useradd -d /home/kyle -m kw
+$ sudo passwd
+memes1
+memes1 
+That is, I set the passphrase for username kw to be memes1. 
+
+6. Change directory to the home directory name kyle: 
+$ cd /home/kyle
+$ sudo mkdir .ssh
+$ sudo chown -R kw .ssh (change ownership. client owner of the file)
+$ sudo chmod 700 .ssh
+
+7. Check the server IP address: 
+$ ipconfig
+
+The IP address of the server is the inet address, which outputted 
+10.97.85.46. 
+
+
+
+cd /home/kyle
+sudo mkdir .ssh
+sudo chown -R kw .ssh (change ownership to client, username kw to be 
+owner of the file)
+sudo chmod 700 .ssh
+(read write execute to user owner and nothing to group and all others)
+
+ifconfig for IP address (inet adddress: 10.97.85.46)
+
+ps -aux | grep firefox
+Have client run the firefox 
+kw 28121 12.7 2.8 990876 229780 pts/2 Sl+ 16:06 0:02 /usr/lib/firefox/firefox
+ubuntu 28203 0.0 0.0 21296 1028 pts/1 S+ 16:06 0:00 grep --color=auto firefox
+
+see what user kw is running 
+ps -aux | grep kw

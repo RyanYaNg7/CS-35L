@@ -1,0 +1,981 @@
+Using username "classzfu".
+classzfu@lnxsrv09.seas.ucla.edu's password:
+Last login: Tue May 30 16:20:09 2017 from wifi-131-179-52-191.host.ucla.edu
+*****************************************************************************
+                        lnxsrv09.seas.ucla.edu RHEL 7
+*****************************************************************************
+
+        RedHat 7 -- may not behave the same as other lnxsrv
+        Will be used by CS 35L, CS 33, CS 111, and CS 131
+
+*****************************************************************************
+*****************************************************************************
+* ========================================================================= *
+* SEASnet Computing Access                                                  *
+*                                                                           *
+* Priority is given both on the servers and in the student labs to those    *
+* students doing coursework. Computing support for research is provided by  *
+* each department.                                                          *
+*****************************************************************************
+* For assistance please contact help@seas.ucla.edu or call 206-6864.        *
+*****************************************************************************
+
+[classzfu@lnxsrv09 ~]$ cd 35l/
+
+[classzfu@lnxsrv09 ~/35l]$ mkdir week9
+
+[classzfu@lnxsrv09 ~/35l]$ cd week9
+
+[classzfu@lnxsrv09 ~/35l/week9]$ ls
+
+[classzfu@lnxsrv09 ~/35l/week9]$ mkdir gitroot
+
+[classzfu@lnxsrv09 ~/35l/week9]$ cd gitroot/
+
+[classzfu@lnxsrv09 ~/35l/week9/gitroot]$ ls
+
+[classzfu@lnxsrv09 ~/35l/week9/gitroot]$ git init
+Initialized empty Git repository in /w/home.14/class/classzfu/35l/week9/gitroot/                                                                                            .git/
+
+[classzfu@lnxsrv09 ~/35l/week9/gitroot]$ echo
+
+
+[classzfu@lnxsrv09 ~/35l/week9/gitroot]$ echo "Hello Week" > hello.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/gitroot]$ ls
+hello.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/gitroot]$ cd ..
+
+[classzfu@lnxsrv09 ~/35l/week9]$ rm gitroot/
+rm: cannot remove ¡®gitroot/¡¯: Is a directory
+
+[classzfu@lnxsrv09 ~/35l/week9]$ rm -r gitroot/
+
+[classzfu@lnxsrv09 ~/35l/week9]$ ls
+
+[classzfu@lnxsrv09 ~/35l/week9]$ git clone ~eggert/src/gnu/diffutils
+fatal: repository '/u/cs/fac/eggert/src/gnu/diffutils' does not exist
+
+[classzfu@lnxsrv09 ~/35l/week9]$ echo $PATH
+/usr/lib64/qt-3.3/bin:/u/eng/class/classzfu/perl5/bin:/usr/lib64/ccache:/usr/loc                                                                                            al/bin:/usr/bin:/usr/X11R6/bin:/u/eng/class/classzfu/bin
+
+[classzfu@lnxsrv09 ~/35l/week9]$ export $PATH=/usr/local/cs/bin:$PATH
+-bash: export: `/usr/lib64/qt-3.3/bin:/u/eng/class/classzfu/perl5/bin:/usr/lib64                                                                                            /ccache:/usr/local/bin:/usr/bin:/usr/X11R6/bin:/u/eng/class/classzfu/bin=/usr/lo                                                                                            cal/cs/bin:/usr/lib64/qt-3.3/bin:/u/eng/class/classzfu/perl5/bin:/usr/lib64/ccac                                                                                            he:/usr/local/bin:/usr/bin:/usr/X11R6/bin:/u/eng/class/classzfu/bin': not a vali                                                                                            d identifier
+
+[classzfu@lnxsrv09 ~/35l/week9]$ echo $PATH
+/usr/lib64/qt-3.3/bin:/u/eng/class/classzfu/perl5/bin:/usr/lib64/ccache:/usr/loc                                                                                            al/bin:/usr/bin:/usr/X11R6/bin:/u/eng/class/classzfu/bin
+
+[classzfu@lnxsrv09 ~/35l/week9]$ export PATH=/usr/local/cs/bin:$PATH
+
+[classzfu@lnxsrv09 ~/35l/week9]$ echo $PATH
+/usr/local/cs/bin:/usr/lib64/qt-3.3/bin:/u/eng/class/classzfu/perl5/bin:/usr/lib                                                                                            64/ccache:/usr/local/bin:/usr/bin:/usr/X11R6/bin:/u/eng/class/classzfu/bin
+
+[classzfu@lnxsrv09 ~/35l/week9]$ git clone ~eggert/src/gnu/diffutils
+fatal: repository '/u/cs/fac/eggert/src/gnu/diffutils' does not exist
+
+[classzfu@lnxsrv09 ~/35l/week9]$ git clone https://git.savannah.gnu.org/git/diff                                                                                            utils.git
+Cloning into 'diffutils'...
+remote: Counting objects: 4944, done.
+remote: Compressing objects: 100% (1389/1389), done.
+remote: Total 4944 (delta 3537), reused 4878 (delta 3493)
+Receiving objects: 100% (4944/4944), 1.40 MiB | 0 bytes/s, done.
+Resolving deltas: 100% (3537/3537), done.
+
+[classzfu@lnxsrv09 ~/35l/week9]$ ls
+diffutils
+
+[classzfu@lnxsrv09 ~/35l/week9]$ git log
+fatal: Not a git repository (or any parent up to mount point /w/home.14)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[classzfu@lnxsrv09 ~/35l/week9]$ cd diffutils/
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ ls
+AUTHORS         configure.ac   gl            Makefile.am  README-hacking  TODO
+bootstrap       COPYING        gnulib        man          scripts
+bootstrap.conf  dist-check.mk  gnulib-tests  NEWS         src
+cfg.mk          doc            HACKING       po           tests
+ChangeLog-2008  exgettext      lib           README       THANKS
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ git log
+commit 487e009ed7294021dcc0b66c2b5a5046aea51ab4
+Author: Jim Meyering <meyering@fb.com>
+Date:   Sun May 21 15:27:10 2017 -0700
+
+    maint: make the announcement template Cc the devel- list
+
+    * cfg.mk (announcement_Cc_): Define.
+
+commit 592e503b48e42981b0a7fa308a6c3b06f08d582b
+Author: Jim Meyering <meyering@fb.com>
+Date:   Sun May 21 13:27:36 2017 -0700
+
+    maint: post-release administrivia
+commit 487e009ed7294021dcc0b66c2b5a5046aea51ab4
+Author: Jim Meyering <meyering@fb.com>
+Date:   Sun May 21 15:27:10 2017 -0700
+
+    maint: make the announcement template Cc the devel- list
+
+    * cfg.mk (announcement_Cc_): Define.
+
+commit 592e503b48e42981b0a7fa308a6c3b06f08d582b
+Author: Jim Meyering <meyering@fb.com>
+Date:   Sun May 21 13:27:36 2017 -0700
+
+    maint: post-release administrivia
+
+    * NEWS: Add header line for next release.
+    * .prev-version: Record previous version.
+    * cfg.mk (old_NEWS_hash): Auto-update.
+
+commit e73a3d5e44c2e46e2ae947eb99b3834874a601a8
+Author: Jim Meyering <meyering@fb.com>
+Date:   Sun May 21 13:25:42 2017 -0700
+
+    version 3.6
+
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ git log > git-log.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs git-log.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs git-log.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ git tag > git-tags.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs git-tags.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs git-log.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ git format-patch -1 62ca21c8c1a5aa348                                                                                            8589dcb191a4ef04ae9ed4f --stdout > quote-patch.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs quote-patch.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ git checkout v3.0 -b tmp
+Switched to a new branch 'tmp'
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs git-tags.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ git statue
+git: 'statue' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ git status
+On branch tmp
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        git-log.txt
+        git-tags.txt
+        quote-patch.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs git
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ man git
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ patch -p1 < quote-patch.txt
+can't find file to patch at input line 62
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 62ca21c8c1a5aa3488589dcb191a4ef04ae9ed4f Mon Sep 17 00:00:00 2001
+|From: Paul Eggert <eggert@cs.ucla.edu>
+|Date: Wed, 25 Jan 2012 23:46:16 -0800
+|Subject: [PATCH] maint: quote 'like this' or "like this", not `like this'
+|
+|This is in response to a recent change in the GNU coding standards,
+|which now suggest quoting 'like this' or "like this", instead of
+|`like this' or ``like this''.
+|* HACKING, NEWS, README, README-hacking, TODO, doc/diagmeet.note:
+|* doc/diffutils.texi, ms/config.bat, ms/config.site:
+|* src/analyze.c, src/cmp.c, src/context.c, src/diff.c:
+|* src/diff.h, src/diff3.c, src/dir.c, src/ifdef.c, src/io.c:
+|* src/sdiff.c, src/side.c, src/system.h, src/util.c:
+|* tests/help-version:
+|Quote 'like this' or "like this" in commentary.
+|* cfg.mk (old_NEWS_hash): Adjust to reflect new NEWS quoting.
+|* man/help2man: Update to 1.40.4 version, with quoting fixed as above.
+|* po/en.po: Remove translation involving `, as it's no longer needed.
+|* src/cmp.c (try_help, specify_ignore_initial, usage, main):
+|* src/diff.c (main, try_help, option_help_msgid, specify_value)
+|(compare_files):
+|* src/diff3.c (main, try_help, option_help_msgid, usage)
+|(read_diff):
+|* src/dir.c (compare_names):
+|* src/sdiff.c (try_help, usage, check_child_status, main):
+|* src/util.c (finish_output):
+|* tests/help-version:
+|Quote 'like this' in output.
+|---
+| HACKING            |  4 ++--
+| NEWS               | 26 +++++++++++++-------------
+| README             | 10 +++++-----
+| README-hacking     |  2 +-
+| TODO               |  2 +-
+| cfg.mk             |  2 +-
+| doc/diagmeet.note  |  2 +-
+| doc/diffutils.texi |  2 +-
+| man/help2man       | 33 +++++++++++++++++++--------------
+| ms/config.bat      |  2 +-
+| ms/config.site     |  2 +-
+| po/en.po           | 14 +++-----------
+| src/analyze.c      |  6 +++---
+| src/cmp.c          | 20 ++++++++++----------
+| src/context.c      | 10 +++++-----
+| src/diff.c         | 40 ++++++++++++++++++++--------------------
+| src/diff.h         |  8 ++++----
+| src/diff3.c        | 26 +++++++++++++-------------
+| src/dir.c          |  8 ++++----
+| src/ifdef.c        |  2 +-
+| src/io.c           |  4 ++--
+| src/sdiff.c        | 22 +++++++++++-----------
+| src/side.c         |  6 +++---
+| src/system.h       |  6 +++---
+| src/util.c         | 24 ++++++++++++------------
+| tests/help-version | 12 ++++++------
+| 26 files changed, 146 insertions(+), 149 deletions(-)
+|
+|diff --git a/HACKING b/HACKING
+|index 3a99833..522e0b5 100644
+|--- a/HACKING
+|+++ b/HACKING
+--------------------------
+File to patch:
+Skip this patch? [y] y
+Skipping patch.
+1 out of 1 hunk ignored
+patching file NEWS
+Hunk #1 succeeded at 30 (offset -28 lines).
+Hunk #2 succeeded at 66 (offset -28 lines).
+Hunk #3 succeeded at 106 (offset -28 lines).
+Hunk #4 succeeded at 140 (offset -28 lines).
+Hunk #5 succeeded at 184 (offset -28 lines).
+Hunk #6 succeeded at 197 (offset -28 lines).
+Hunk #7 succeeded at 209 (offset -28 lines).
+Hunk #8 succeeded at 221 (offset -28 lines).
+patching file README
+Hunk #1 FAILED at 9.
+Hunk #3 FAILED at 60.
+2 out of 3 hunks FAILED -- saving rejects to file README.rej
+patching file README-hacking
+Hunk #1 FAILED at 19.
+1 out of 1 hunk FAILED -- saving rejects to file README-hacking.rej
+patching file TODO
+patching file cfg.mk
+Hunk #1 FAILED at 29.
+1 out of 1 hunk FAILED -- saving rejects to file cfg.mk.rej
+patching file doc/diagmeet.note
+can't find file to patch at input line 249
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/doc/diffutils.texi b/doc/diffutils.texi
+|index 58b140c..00403df 100644
+|--- a/doc/diffutils.texi
+|+++ b/doc/diffutils.texi
+--------------------------
+File to patch:
+Skip this patch? [y] y
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 262
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/man/help2man b/man/help2man
+|index f9983f7..8bc961c 100755
+|--- a/man/help2man
+|+++ b/man/help2man
+--------------------------
+File to patch:
+Skip this patch? [y]
+Skipping patch.
+9 out of 9 hunks ignored
+patching file ms/config.bat
+patching file ms/config.site
+Hunk #1 succeeded at 73 with fuzz 1.
+patching file po/en.po
+patching file src/analyze.c
+patching file src/cmp.c
+Hunk #1 succeeded at 36 with fuzz 1.
+Hunk #4 succeeded at 185 (offset -6 lines).
+Hunk #5 succeeded at 231 (offset -6 lines).
+Hunk #6 succeeded at 257 (offset -6 lines).
+Hunk #7 succeeded at 269 (offset -6 lines).
+Hunk #8 succeeded at 364 (offset -6 lines).
+Hunk #9 succeeded at 377 (offset -6 lines).
+patching file src/context.c
+Hunk #1 succeeded at 159 (offset 1 line).
+Hunk #2 succeeded at 289 (offset 1 line).
+Hunk #3 succeeded at 393 with fuzz 2 (offset 1 line).
+Hunk #4 succeeded at 431 (offset 1 line).
+Hunk #5 succeeded at 459 (offset 1 line).
+patching file src/diff.c
+Hunk #1 succeeded at 40 with fuzz 2 (offset -2 lines).
+Hunk #2 succeeded at 57 (offset -2 lines).
+Hunk #3 succeeded at 92 (offset -2 lines).
+Hunk #4 succeeded at 330 (offset -10 lines).
+Hunk #5 succeeded at 505 (offset -10 lines).
+Hunk #6 succeeded at 534 (offset -10 lines).
+Hunk #7 succeeded at 585 (offset -14 lines).
+Hunk #8 succeeded at 744 (offset -14 lines).
+Hunk #9 succeeded at 826 (offset -14 lines).
+Hunk #10 FAILED at 876.
+Hunk #11 FAILED at 906.
+Hunk #12 FAILED at 942.
+Hunk #13 succeeded at 960 with fuzz 2 (offset -29 lines).
+Hunk #14 succeeded at 1159 with fuzz 2 (offset -32 lines).
+3 out of 14 hunks FAILED -- saving rejects to file src/diff.c.rej
+patching file src/diff.h
+Hunk #2 succeeded at 126 with fuzz 2 (offset -13 lines).
+Hunk #3 succeeded at 202 (offset -13 lines).
+patching file src/diff3.c
+Hunk #1 succeeded at 35 (offset 1 line).
+Hunk #2 succeeded at 159 (offset 1 line).
+Hunk #3 succeeded at 316 (offset 1 line).
+Hunk #4 succeeded at 351 (offset 1 line).
+Hunk #5 succeeded at 412 (offset 1 line).
+Hunk #6 FAILED at 433.
+Hunk #7 succeeded at 460 with fuzz 2 (offset -18 lines).
+Hunk #8 succeeded at 1275 (offset -18 lines).
+Hunk #9 succeeded at 1475 (offset -18 lines).
+1 out of 9 hunks FAILED -- saving rejects to file src/diff3.c.rej
+patching file src/dir.c
+Hunk #1 succeeded at 84 (offset -1 lines).
+Hunk #2 succeeded at 125 (offset -1 lines).
+Hunk #3 succeeded at 154 (offset -1 lines).
+Hunk #4 succeeded at 234 (offset -1 lines).
+patching file src/ifdef.c
+patching file src/io.c
+patching file src/sdiff.c
+Hunk #2 succeeded at 92 (offset 1 line).
+Hunk #3 succeeded at 175 (offset 23 lines).
+Hunk #4 succeeded at 230 (offset 17 lines).
+Hunk #5 succeeded at 286 (offset 17 lines).
+Hunk #6 succeeded at 572 (offset 13 lines).
+Hunk #7 succeeded at 747 (offset 41 lines).
+patching file src/side.c
+patching file src/system.h
+Hunk #2 succeeded at 105 (offset 6 lines).
+patching file src/util.c
+Hunk #4 succeeded at 190 with fuzz 2.
+Hunk #8 succeeded at 650 (offset -27 lines).
+patching file tests/help-version
+Hunk #1 succeeded at 75 (offset 1 line).
+Hunk #2 succeeded at 85 (offset 1 line).
+Hunk #3 succeeded at 96 (offset 1 line).
+Hunk #4 succeeded at 108 (offset 1 line).
+Hunk #5 succeeded at 140 (offset 1 line).
+Hunk #6 succeeded at 188 (offset 1 line).
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ patch -p1 < quote-patch.txt
+can't find file to patch at input line 62
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 62ca21c8c1a5aa3488589dcb191a4ef04ae9ed4f Mon Sep 17 00:00:00 2001
+|From: Paul Eggert <eggert@cs.ucla.edu>
+|Date: Wed, 25 Jan 2012 23:46:16 -0800
+|Subject: [PATCH] maint: quote 'like this' or "like this", not `like this'
+|
+|This is in response to a recent change in the GNU coding standards,
+|which now suggest quoting 'like this' or "like this", instead of
+|`like this' or ``like this''.
+|* HACKING, NEWS, README, README-hacking, TODO, doc/diagmeet.note:
+|* doc/diffutils.texi, ms/config.bat, ms/config.site:
+|* src/analyze.c, src/cmp.c, src/context.c, src/diff.c:
+|* src/diff.h, src/diff3.c, src/dir.c, src/ifdef.c, src/io.c:
+|* src/sdiff.c, src/side.c, src/system.h, src/util.c:
+|* tests/help-version:
+|Quote 'like this' or "like this" in commentary.
+|* cfg.mk (old_NEWS_hash): Adjust to reflect new NEWS quoting.
+|* man/help2man: Update to 1.40.4 version, with quoting fixed as above.
+|* po/en.po: Remove translation involving `, as it's no longer needed.
+|* src/cmp.c (try_help, specify_ignore_initial, usage, main):
+|* src/diff.c (main, try_help, option_help_msgid, specify_value)
+|(compare_files):
+|* src/diff3.c (main, try_help, option_help_msgid, usage)
+|(read_diff):
+|* src/dir.c (compare_names):
+|* src/sdiff.c (try_help, usage, check_child_status, main):
+|* src/util.c (finish_output):
+|* tests/help-version:
+|Quote 'like this' in output.
+|---
+| HACKING            |  4 ++--
+| NEWS               | 26 +++++++++++++-------------
+| README             | 10 +++++-----
+| README-hacking     |  2 +-
+| TODO               |  2 +-
+| cfg.mk             |  2 +-
+| doc/diagmeet.note  |  2 +-
+| doc/diffutils.texi |  2 +-
+| man/help2man       | 33 +++++++++++++++++++--------------
+| ms/config.bat      |  2 +-
+| ms/config.site     |  2 +-
+| po/en.po           | 14 +++-----------
+| src/analyze.c      |  6 +++---
+| src/cmp.c          | 20 ++++++++++----------
+| src/context.c      | 10 +++++-----
+| src/diff.c         | 40 ++++++++++++++++++++--------------------
+| src/diff.h         |  8 ++++----
+| src/diff3.c        | 26 +++++++++++++-------------
+| src/dir.c          |  8 ++++----
+| src/ifdef.c        |  2 +-
+| src/io.c           |  4 ++--
+| src/sdiff.c        | 22 +++++++++++-----------
+| src/side.c         |  6 +++---
+| src/system.h       |  6 +++---
+| src/util.c         | 24 ++++++++++++------------
+| tests/help-version | 12 ++++++------
+| 26 files changed, 146 insertions(+), 149 deletions(-)
+|
+|diff --git a/HACKING b/HACKING
+|index 3a99833..522e0b5 100644
+|--- a/HACKING
+|+++ b/HACKING
+--------------------------
+File to patch:
+Skip this patch? [y]
+Skipping patch.
+1 out of 1 hunk ignored
+patching file NEWS
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+8 out of 8 hunks ignored -- saving rejects to file NEWS.rej
+patching file README
+Hunk #1 FAILED at 9.
+Hunk #2 FAILED at 21.
+Hunk #3 FAILED at 60.
+3 out of 3 hunks FAILED -- saving rejects to file README.rej
+patching file README-hacking
+Hunk #1 FAILED at 19.
+1 out of 1 hunk FAILED -- saving rejects to file README-hacking.rej
+patching file TODO
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file TODO.rej
+patching file cfg.mk
+Hunk #1 FAILED at 29.
+1 out of 1 hunk FAILED -- saving rejects to file cfg.mk.rej
+patching file doc/diagmeet.note
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file doc/diagmeet.note.rej
+can't find file to patch at input line 249
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/doc/diffutils.texi b/doc/diffutils.texi
+|index 58b140c..00403df 100644
+|--- a/doc/diffutils.texi
+|+++ b/doc/diffutils.texi
+--------------------------
+File to patch:
+Skip this patch? [y]
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 262
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/man/help2man b/man/help2man
+|index f9983f7..8bc961c 100755
+|--- a/man/help2man
+|+++ b/man/help2man
+--------------------------
+File to patch:
+Skip this patch? [y]
+Skipping patch.
+9 out of 9 hunks ignored
+patching file ms/config.bat
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file ms/config.bat.rej
+patching file ms/config.site
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file ms/config.site.rej
+patching file po/en.po
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file po/en.po.rej
+patching file src/analyze.c
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+
+3 out of 3 hunks ignored -- saving rejects to file src/analyze.c.rej
+patching file src/cmp.c
+Reversed (or previously applied) patch detected!  Assume -R? [n] Apply anyway? [                                                                                            n]
+Skipping patch.
+9 out of 9 hunks ignored -- saving rejects to file src/cmp.c.rej
+patching file src/context.c
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+5 out of 5 hunks ignored -- saving rejects to file src/context.c.rej
+patching file src/diff.c
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+14 out of 14 hunks ignored -- saving rejects to file src/diff.c.rej
+patching file src/diff.h
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+3 out of 3 hunks ignored -- saving rejects to file src/diff.h.rej
+patching file src/diff3.c
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+9 out of 9 hunks ignored -- saving rejects to file src/diff3.c.rej
+patching file src/dir.c
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+4 out of 4 hunks ignored -- saving rejects to file src/dir.c.rej
+patching file src/ifdef.c
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/ifdef.c.rej
+patching file src/io.c
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/io.c.rej
+patching file src/sdiff.c
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+7 out of 7 hunks ignored -- saving rejects to file src/sdiff.c.rej
+patching file src/side.c
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+3 out of 3 hunks ignored -- saving rejects to file src/side.c.rej
+patching file src/system.h
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+2 out of 2 hunks ignored -- saving rejects to file src/system.h.rej
+patching file src/util.c
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+8 out of 8 hunks ignored -- saving rejects to file src/util.c.rej
+patching file tests/help-version
+Reversed (or previously applied) patch detected!  Assume -R? [n]
+Apply anyway? [n]
+Skipping patch.
+6 out of 6 hunks ignored -- saving rejects to file tests/help-version.rej
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ git status
+On branch tmp
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   NEWS
+        modified:   README
+        modified:   TODO
+        modified:   doc/diagmeet.note
+        modified:   ms/config.bat
+        modified:   ms/config.site
+        modified:   po/en.po
+        modified:   src/analyze.c
+        modified:   src/cmp.c
+        modified:   src/context.c
+        modified:   src/diff.c
+        modified:   src/diff.h
+        modified:   src/diff3.c
+        modified:   src/dir.c
+        modified:   src/ifdef.c
+        modified:   src/io.c
+        modified:   src/sdiff.c
+        modified:   src/side.c
+        modified:   src/system.h
+        modified:   src/util.c
+        modified:   tests/help-version
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        NEWS.orig
+        NEWS.rej
+        README-hacking.orig
+        README-hacking.rej
+        README.orig
+        README.rej
+        TODO.rej
+        cfg.mk.orig
+        cfg.mk.rej
+        doc/diagmeet.note.rej
+        git-log.txt
+        git-tags.txt
+        ms/config.bat.rej
+        ms/config.site.orig
+        ms/config.site.rej
+        po/en.po.rej
+        quote-patch.txt
+        src/analyze.c.rej
+        src/cmp.c.orig
+        src/cmp.c.rej
+        src/context.c.orig
+        src/context.c.rej
+        src/diff.c.orig
+        src/diff.c.rej
+        src/diff.h.orig
+        src/diff.h.rej
+        src/diff3.c.orig
+        src/diff3.c.rej
+        src/dir.c.orig
+        src/dir.c.rej
+        src/ifdef.c.rej
+        src/io.c.rej
+        src/sdiff.c.orig
+        src/sdiff.c.rej
+        src/side.c.rej
+        src/system.h.orig
+        src/system.h.rej
+        src/util.c.orig
+        src/util.c.rej
+        tests/help-version.orig
+        tests/help-version.rej
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ cat io.c.rej
+cat: io.c.rej: No such file or directory
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ cat src/io.c.rej
+--- src/io.c
++++ src/io.c
+@@ -57,10 +57,10 @@
+    The number of an equivalence class is its index in this array.  */
+ static struct equivclass *equivs;
+
+-/* Index of first free element in the array `equivs'.  */
++/* Index of first free element in the array 'equivs'.  */
+ static lin equivs_index;
+
+-/* Number of elements allocated in the array `equivs'.  */
++/* Number of elements allocated in the array 'equivs'.  */
+ static lin equivs_alloc;
+
+ /* Read a block of data into a file buffer, checking for EOF and error.  */
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ git status
+On branch tmp
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   NEWS
+        modified:   README
+        modified:   TODO
+        modified:   doc/diagmeet.note
+        modified:   ms/config.bat
+        modified:   ms/config.site
+        modified:   po/en.po
+        modified:   src/analyze.c
+        modified:   src/cmp.c
+        modified:   src/context.c
+        modified:   src/diff.c
+        modified:   src/diff.h
+        modified:   src/diff3.c
+        modified:   src/dir.c
+        modified:   src/ifdef.c
+        modified:   src/io.c
+        modified:   src/sdiff.c
+        modified:   src/side.c
+        modified:   src/system.h
+        modified:   src/util.c
+        modified:   tests/help-version
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        NEWS.orig
+        NEWS.rej
+        README-hacking.orig
+        README-hacking.rej
+        README.orig
+        README.rej
+        TODO.rej
+        cfg.mk.orig
+        cfg.mk.rej
+        doc/diagmeet.note.rej
+        git-log.txt
+        git-tags.txt
+        ms/config.bat.rej
+        ms/config.site.orig
+        ms/config.site.rej
+        po/en.po.rej
+        quote-patch.txt
+        src/analyze.c.rej
+        src/cmp.c.orig
+        src/cmp.c.rej
+        src/context.c.orig
+        src/context.c.rej
+        src/diff.c.orig
+        src/diff.c.rej
+        src/diff.h.orig
+        src/diff.h.rej
+        src/diff3.c.orig
+        src/diff3.c.rej
+        src/dir.c.orig
+        src/dir.c.rej
+        src/ifdef.c.rej
+        src/io.c.rej
+        src/sdiff.c.orig
+        src/sdiff.c.rej
+        src/side.c.rej
+        src/system.h.orig
+        src/system.h.rej
+        src/util.c.orig
+        src/util.c.rej
+        tests/help-version.orig
+        tests/help-version.rej
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs NEWS
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ git status
+On branch tmp
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README
+        modified:   TODO
+        modified:   doc/diagmeet.note
+        modified:   ms/config.bat
+        modified:   ms/config.site
+        modified:   po/en.po
+        modified:   src/analyze.c
+        modified:   src/cmp.c
+        modified:   src/context.c
+        modified:   src/diff.c
+        modified:   src/diff.h
+        modified:   src/diff3.c
+        modified:   src/dir.c
+        modified:   src/ifdef.c
+        modified:   src/io.c
+        modified:   src/sdiff.c
+        modified:   src/side.c
+        modified:   src/system.h
+        modified:   src/util.c
+        modified:   tests/help-version
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        NEWS.orig
+        NEWS.rej
+        README-hacking.orig
+        README-hacking.rej
+        README.orig
+        README.rej
+        TODO.rej
+        cfg.mk.orig
+        cfg.mk.rej
+        doc/diagmeet.note.rej
+        git-log.txt
+        git-tags.txt
+        ms/config.bat.rej
+        ms/config.site.orig
+        ms/config.site.rej
+        po/en.po.rej
+        quote-patch.txt
+        src/analyze.c.rej
+        src/cmp.c.orig
+        src/cmp.c.rej
+        src/context.c.orig
+        src/context.c.rej
+        src/diff.c.orig
+        src/diff.c.rej
+        src/diff.h.orig
+        src/diff.h.rej
+        src/diff3.c.orig
+        src/diff3.c.rej
+        src/dir.c.orig
+        src/dir.c.rej
+        src/ifdef.c.rej
+        src/io.c.rej
+        src/sdiff.c.orig
+        src/sdiff.c.rej
+        src/side.c.rej
+        src/system.h.orig
+        src/system.h.rej
+        src/util.c.orig
+        src/util.c.rej
+        tests/help-version.orig
+        tests/help-version.rej
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ eamcs README-hacking
+-bash: eamcs: command not found
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs README-hacking
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs README
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs TODO
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs cfg.mk
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs doc/diagmeet.note
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs git-log
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs git-log.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs ms/config.bat
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs ms/config.site
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs po/en.po
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs quote-patch.txt
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ git status
+On branch tmp
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   src/analyze.c
+        modified:   src/cmp.c
+        modified:   src/context.c
+        modified:   src/diff.c
+        modified:   src/diff.h
+        modified:   src/diff3.c
+        modified:   src/dir.c
+        modified:   src/ifdef.c
+        modified:   src/io.c
+        modified:   src/sdiff.c
+        modified:   src/side.c
+        modified:   src/system.h
+        modified:   src/util.c
+        modified:   tests/help-version
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        NEWS.orig
+        NEWS.rej
+        README-hacking.orig
+        README-hacking.rej
+        README.orig
+        README.rej
+        TODO.rej
+        cfg.mk.orig
+        cfg.mk.rej
+        doc/diagmeet.note.rej
+        git-log.txt
+        git-tags.txt
+        ms/config.bat.rej
+        ms/config.site.orig
+        ms/config.site.rej
+        po/en.po.rej
+        quote-patch.txt
+        src/analyze.c.rej
+        src/cmp.c.orig
+        src/cmp.c.rej
+        src/context.c.orig
+        src/context.c.rej
+        src/diff.c.orig
+        src/diff.c.rej
+        src/diff.h.orig
+        src/diff.h.rej
+        src/diff3.c.orig
+        src/diff3.c.rej
+        src/dir.c.orig
+        src/dir.c.rej
+        src/ifdef.c.rej
+        src/io.c.rej
+        src/sdiff.c.orig
+        src/sdiff.c.rej
+        src/side.c.rej
+        src/system.h.orig
+        src/system.h.rej
+        src/util.c.orig
+        src/util.c.rej
+        tests/help-version.orig
+        tests/help-version.rej
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs analyze.c
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs src/analyze.c
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs src/cmp.c
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs src/context.c
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs src/diff.c
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs src/cmp.c
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs analyze.c~
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs src/analyze.c~
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs src/diff3.c
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$ emacs src/dir.c
+
+[classzfu@lnxsrv09 ~/35l/week9/diffutils]$

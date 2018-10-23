@@ -1,0 +1,106 @@
+1. First write the programs tr2b.c and tr2u.c
+Then compile then by using command:
+     gcc -std=c99 -o tr2b tr2b.c
+     gcc -std=c99 -o tr2u tr2u.c
+
+2. Get a big file by using the command:
+   head --bytes=5000000 /dev/urandom > input.txt
+
+3. Use strace to comapre sys calls
+a. first we test copying one file to another
+strace -c –o strace_output ./tr2b ‘AB’ ‘XY’ < input.txt
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+ 97.82    0.076716           4     19876           write
+  2.15    0.001684           3       613           read
+  0.02    0.000015           4         4           fstat
+  0.01    0.000009           1         9           mmap
+  0.00    0.000000           0         2           open
+  0.00    0.000000           0         2           close
+  0.00    0.000000           0         4           mprotect
+  0.00    0.000000           0         1           munmap
+  0.00    0.000000           0         1           brk
+  0.00    0.000000           0         1         1 access
+  0.00    0.000000           0         1           execve
+  0.00    0.000000           0         1           arch_prctl
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.078424                 20515         1 total
+
+
+strace -c –o strace_output2 ./tr2u ‘AB’ ‘XY’ < input.txt
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+ 55.12   23.253631           5   5000000           write
+ 44.88   18.932039           4   5000002           read
+  0.00    0.000000           0         2           open
+  0.00    0.000000           0         2           close
+  0.00    0.000000           0         2           fstat
+  0.00    0.000000           0         7           mmap
+  0.00    0.000000           0         4           mprotect
+  0.00    0.000000           0         1           munmap
+  0.00    0.000000           0         1           brk
+  0.00    0.000000           0         1         1 access
+  0.00    0.000000           0         1           execve
+  0.00    0.000000           0         1           arch_prctl
+------ ----------- ----------- --------- --------- ----------------
+100.00   42.185670              10000024         1 total
+
+As a result, the buffered version used less system calls and takes fewer time.
+
+b. copy one file to the terminal
+strace -c ./tr2b 'AB' 'XY' < input.txt
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+ 98.46    0.345696          17     19876           write
+  1.54    0.005393           9       613           read
+  0.00    0.000000           0         2           open
+  0.00    0.000000           0         2           close
+  0.00    0.000000           0         4           fstat
+  0.00    0.000000           0         9           mmap
+  0.00    0.000000           0         4           mprotect
+  0.00    0.000000           0         1           munmap
+  0.00    0.000000           0         1           brk
+  0.00    0.000000           0         1         1 access
+  0.00    0.000000           0         1           execve
+  0.00    0.000000           0         1           arch_prctl
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.351089                 20515         1 total
+
+strace -c ./tr2u 'AB' 'XY' < input.txt
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+ 55.01   23.461293           5   5000000           write
+ 44.99   19.186349           4   5000002           read
+  0.00    0.000041           6         7           mmap
+  0.00    0.000026           7         4           mprotect
+  0.00    0.000014           7         2           open
+  0.00    0.000010          10         1           munmap
+  0.00    0.000008           4         2           fstat
+  0.00    0.000008           8         1         1 access
+  0.00    0.000007           4         2           close
+  0.00    0.000007           7         1           execve
+  0.00    0.000004           4         1           brk
+  0.00    0.000003           3         1           arch_prctl
+------ ----------- ----------- --------- --------- ----------------
+100.00   42.647770              10000024         1 total
+
+In this case, the buffered version also has much fewer system calls.
+
+4. Test time
+command: time ./tr2b 'abc' 'xyz' < input.txt > output_tr2b
+
+real	 0m0.328s
+user	 0m0.246s
+sys	 0m0.011s
+
+
+
+command: time ./tr2u 'abc' 'xyz' < input.txt > output_tr2u
+
+real	 0m6.115s
+user	 0m0.297s
+sys	 0m5.751s
+
+Obviously, the unbeffered version used more system calls, so it took longer to completet the program.
+
+

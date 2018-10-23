@@ -1,0 +1,171 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<!-- Mirrored from web.cs.ucla.edu/classes/fall17/cs35L/syllabus.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Nov 2017 02:13:03 GMT -->
+<head>
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'>
+<title>Syllabus for UCLA Computer Science 35L</title>
+<link rel='copyright' href='copyright.html'>
+<link rev='made' href='mailto:eggert@cs.ucla.edu'>
+</head>
+
+<body>
+
+<h1>Syllabus for UCLA Computer Science 35L<br>
+Software Construction Laboratory</h1>
+
+<p><small>[<a href='index.html'>35L home</a>]</small></p>
+
+<p>No textbook has been selected;
+   online material will be referred to extensively.</p>
+<p>For some of the later labs you will need
+a <a href='https://www.seeedstudio.com/SeeedStudio-BeagleBone-Green-Wireless-p-2650.html'>Seeed Studio BeagleBone
+Green Wireless Development Board</a>. You may wish to get the
+higher-priced <a href='https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green-Wireless-IOT-Developer-Prototyping-Kit-for-Google-Cloud-Platform-p-2684.html'>Seeed
+Studio BeagleBone Green Wireless IOT Kit</a>, as this is a superset of
+the basic unit needed for 35L, and is used by CS 111 this quarter (and
+likely in later quarters, though this is not guaranteed). These units
+are available from Seeed, Amazon, Digi-Key, Mouser Electronics, Verical,
+and other sources.</p>
+<p>Topics, labs and homeworks are tentative and may be changed
+   as the schedule progresses.</p>
+
+<h2>Lectures</h2>
+
+<h3>1. Introduction, files and editing</h3>
+ <ul>
+  <li>Multiuser and multiprocess operating systems</li>
+  <li>GUI basics (e.g., <a href='https://en.wikipedia.org/wiki/X_Window_System'>X</a>, <a href='https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)'>Wayland</a>, <a href='https://www.gnome.org/'>GNOME</a>, <a href='https://www.kde.org/'>KDE</a>)</li>
+  <li>CLI basics (e.g.,
+    <a href='https://www.gnu.org/software/bash/'>Bash</a>,
+    <a href='https://en.wikipedia.org/wiki/Xterm'>xterm</a>)</li>
+  <li>Unix file system layout</li>
+  <li>Everything is a file &mdash; device files</li>
+  <li>Unix permissions</li>
+  <li>Basic commands:
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/ls.html'>ls</a>;
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/pwd.html'>pwd</a>,
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/cd.html'>cd</a>,
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/mkdir.html'>mkdir</a>,
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/rmdir.html'>rmdir</a>;
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/echo.html'>echo</a>,
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/cat.html'>cat</a>;
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/cp.html'>cp</a>,
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/mv.html'>mv</a>,
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/ln.html'>ln</a>,
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/rm.html'>rm</a>;
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/chmod.html'>chmod</a>,
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/kill.html'>kill</a>,
+    <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/ps.html'>ps</a></li>
+  <li>Documentation and
+   <a href='https://en.wikipedia.org/wiki/Man_page'>man pages</a></li>
+  <li><a href='https://www.gnu.org/software/emacs/'>Emacs</a>
+    basics: <a href='https://www.gnu.org/software/emacs/manual/html_node/emacs/Intro.html'>introduction</a>,
+    online tutorial (<samp>C-h&nbsp;t</samp>),
+    <a href='https://www.gnu.org/software/emacs/manual/html_node/emacs/Help.html'>help</a> (<samp>C-h&nbsp;?</samp>),
+    <a href='https://www.gnu.org/software/emacs/manual/html_node/emacs/Basic.html'>basic editing</a>,
+    <a href='https://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html'>directory editing</a>,
+    <a href='https://www.gnu.org/software/emacs/manual/html_node/emacs/Shell.html'>running shell commands</a>,
+    <a href='https://www.gnu.org/software/emacs/manual/html_node/emacs/Building.html'>building programs</a>,
+    <a href='https://www.gnu.org/software/emacs/manual/eintr.html'>Emacs Lisp</a>.
+ </ul>
+<h3>2. Commands and basic scripting</h3>
+ <ul>
+  <li>Unix wildcards, basic regular expressions</li>
+  <li>More advanced commands (e.g.,
+   <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/grep.html'>grep</a>,
+   <a href='http://pubs.opengroup.org/onlinepubs/9699919799/utilities/find.html'>find</a>)</li>
+  <li>Pipelines and redirection</li>
+  <li>Simple shell scripting</li>
+  <li>Idea of interpreted languages</li>
+ </ul>
+<h3>3. More scripting, VMs, and construction tools</h3>
+ <ul>
+  <li>Basics of <a href='https://python.org/'>Python</a></li>
+  <li><a href='http://www.oracle.com/technetwork/java/index.html'>Java</a>
+   as a compromise between interpreted and compiled languages</li>
+  <li>Building from source
+   <ul>
+    <li><a href='https://www.gnu.org/software/make/'>make</a></li>
+    <li><a href='https://www.gnu.org/software/automake/'>automake</a>
+     and <a href='https://www.gnu.org/software/autoconf'>autoconf</a></li>
+   </ul></li>
+ </ul>
+<h3>4. Change management</h3>
+ <ul>
+  <li><a href='https://www.gnu.org/software/diffutils/'>diff</a> and
+   <a href='https://www.gnu.org/software/patch/'>patch</a></li>
+  <li>Basics of Makefiles</li>
+  <li>Version control systems, e.g., <a href='https://git-scm.com/'>Git</a>, <a href='https://subversion.apache.org/'>Subversion</a>
+   <ul>
+    <li>retrieving a tree to build and install</li>
+    <li>committing a change</li>
+    <li>dealing with merge conflicts</li>
+   </ul></li>
+ </ul>
+<h3>5. Low-level construction and debugging</h3>
+ <ul>
+  <li>The C compilation and linking process</li>
+  <li>Introduction to C</li>
+  <li>Debuggers and debugging tools, e.g.,
+    <a href='https://www.gnu.org/software/gdb/'>GDB</a>,
+    <a href='http://valgrind.org/'>Valgrind</a>,
+    <a href='https://www.ibm.com/developerworks/aix/library/au-unix-strace.html'>strace</a>.</li>
+ </ul>
+<h3>6. Systems programming</h3>
+ <ul>
+  <li>C and system programming</li>
+  <li>Library calls vs. system calls</li>
+ </ul>
+<h3>7. Faults, failures, errors, and holes</h3>
+ <ul>
+  <li>Ways in which a program can go wrong</li>
+  <li>Buffer overruns, and techniques for avoiding them</li>
+  <li>Ken Thompson, <a href='https://dl.acm.org/citation.cfm?id=358210'>Reflections on Trusting Trust</a> (1984). In 2003 Jon Hall was reported to have said that the paper is not a theoretical speculation.</li>
+ </ul>
+<h3>8. Security basics</h3>
+ <ul>
+  <li>Threats, including eavesdropping, tampering, forgery,
+    and denial of service</li>
+  <li>Authentication, authorization, and accounting</li>
+  <li>Chains of trust</li>
+  <li>Firewalls, kernels, and sandboxes</li>
+  <li>Intrusion detection</li>
+  <li>Backups</li>
+  <li>Security policies</li>
+ </ul>
+<h3>9. Parallelism</h3>
+ <ul>
+  <li><a href='https://perilsofparallel.blogspot.com/2008/09/larrabee-vs-nvidia-mimd-vs-simd.html'>SIMD versus vector processing versus MIMD</a></li>
+  <li>Processes versus threads</li>
+  <li>Synchronization</li>
+  <li><a href='https://www.ibm.com/developerworks/library/l-pthred/'>POSIX
+   threads</a></li>
+  <li><a href='https://www.khronos.org/opencl/'>OpenCL</a>
+  <li><a href='http://www.openmp.org/'>OpenMP</a>
+  <li>Clusters, massive parallelism, grids, and clouds</li>
+ </ul>
+<h3>10. The crystal ball</h3>
+ <ul>
+  <li>Trends in computing research and development</li>
+  <li>Things to increase your chances at grad school: research, 199's, etc</li>
+  <li>Other general tips for excelling in upper division classes</li>
+ </ul>
+
+<hr>
+
+<hr>
+<address>
+ &copy; 2005, 2007&ndash;2011, 2014, 2016&ndash;2017 <a href='mail-eggert.html'>Paul Eggert</a>.
+ See <a href='copyright.html'>copying rules</a>.<br>
+
+ $Id: syllabus.html,v 1.24 2017/09/27 05:59:09 eggert Exp $
+
+</address>
+
+</body>
+
+<!-- Mirrored from web.cs.ucla.edu/classes/fall17/cs35L/syllabus.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Nov 2017 02:13:03 GMT -->
+</html>

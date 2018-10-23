@@ -1,0 +1,688 @@
+login as: classzfu
+classzfu@lnxsrv.seas.ucla.edu's password:
+Last login: Mon Apr 10 14:02:21 2017 from cr3760-router.seas.ucla.edu
+*****************************************************************************
+                 lnxsrv01.seas.ucla.edu RHEL 6
+*****************************************************************************
+
+    * Please use "lnxsrv.seas.ucla.edu" to login for load balancing
+    * User processes older than 36 hours will be cleaned up
+    * You can run graphical applications from your PC using SSH and Xming
+    !! Please see http://www.seasnet.ucla.edu/UnixServers/lnxsrv !!
+
+*****************************************************************************
+*****************************************************************************
+* ========================================================================= *
+* ACCOUNT RENEWALS                                             May 23, 2016 *
+*                                                                           *
+* SEASnet has begun notifying users of the account renewal process.  The    *
+* first notification has already been sent via email to your SEASnet        *
+* account or Official UCLA Email Address.  Although the account renewal     *
+* process actually takes place in October, we send out the first notice     *
+* early as a courtesy in case you are planning on taking a leave of absence *
+* for the upcoming fall quarter.  Please make sure you check your email for *
+* this important announcement.  Accounts that are not renewed or placed on  *
+* hold by October 31, 2016 will be removed and will NOT be restored.        *
+*                                                                           *
+* Detailed information about the renewal process can also be found here:    *
+*       http://www.seasnet.ucla.edu/seasnet-accounts                        *
+* ========================================================================= *
+* Starting winter quarter 2016, SEASnet will be restricting access to our   *
+* instructional linux and eeapps servers to on campus IP addresses.  Users  *
+* needing to use these machines will need to connect from:                  *
+*       -a machine on the campus network                                    *
+*       -machines off-campus, but connected to the campus VPN server        *
+*       -SEASnet's terminal server                                          *
+* ========================================================================= *
+* SEASnet Computing Access                                                  *
+*                                                                           *
+* Priority is given both on the servers and in the student labs to those    *
+* students doing coursework. Computing support for research is provided by  *
+* each department.                                                          *
+*****************************************************************************
+* For assistance please contact help@seas.ucla.edu or call 206-6864.        *
+*****************************************************************************
+[classzfu@lnxsrv01 ~]$ ls
+assign1.html     Desktop       exer1.html~  exer3.html    exer4.html~  WINDOWS
+#.bash_history#  Documents     exer2.diff   exer3.html~   junk
+#.bash_logout#   Downloads     exer2.html   exer4.diff    lab2_1
+CS33             #exer1.html#  exer2.html~  #exer4.html#  perl5
+CS35L            exer1.html    exer3.diff   exer4.html    week1
+[classzfu@lnxsrv01 ~]$ cd lab2_1/
+[classzfu@lnxsrv01 ~/lab2_1]$ ls
+assign2.html     assign2tr4.html  assign2tr.html  hello.sh   lab.log     words
+assign2tr2.html  assign2tr5.html  comm            hello.sh~  lab.txt
+assign2tr3.html  assign2tr6.html  file1.txt       hw.txt     myfile.txt
+[classzfu@lnxsrv01 ~/lab2_1]$ emacs hello.sh
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/lab2_1]$ cd ..
+[classzfu@lnxsrv01 ~]$ mkdir lab2-2
+[classzfu@lnxsrv01 ~]$ cd lab2
+lab2_1/ lab2-2/
+[classzfu@lnxsrv01 ~]$ cd lab2-2/
+[classzfu@lnxsrv01 ~/lab2-2]$ man 7 glob
+[classzfu@lnxsrv01 ~/lab2-2]$ man 7 regex
+[classzfu@lnxsrv01 ~/lab2-2]$ man 7 glob
+[classzfu@lnxsrv01 ~/lab2-2]$ touch m99
+[classzfu@lnxsrv01 ~/lab2-2]$ touch m1
+[classzfu@lnxsrv01 ~/lab2-2]$ touch m9
+[classzfu@lnxsrv01 ~/lab2-2]$ touch m29
+[classzfu@lnxsrv01 ~/lab2-2]$ rm m[!9]
+[classzfu@lnxsrv01 ~/lab2-2]$ ls
+m29  m9  m99
+[classzfu@lnxsrv01 ~/lab2-2]$ touch Bat
+[classzfu@lnxsrv01 ~/lab2-2]$ touch Cat
+[classzfu@lnxsrv01 ~/lab2-2]$ touch cat
+[classzfu@lnxsrv01 ~/lab2-2]$ touch Bcat
+[classzfu@lnxsrv01 ~/lab2-2]$ ls -l | grep at$
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Bat
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Bcat
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:39 cat
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Cat
+[classzfu@lnxsrv01 ~/lab2-2]$ ls -l | grep cat$
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Bcat
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:39 cat
+[classzfu@lnxsrv01 ~/lab2-2]$ ls -l | grep [a]
+total 0
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Bat
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Bcat
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:39 cat
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Cat
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:21 m29
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:21 m9
+-rw-r--r-- 1 classzfu class 0 Apr 12 14:21 m99
+[classzfu@lnxsrv01 ~/lab2-2]$ grep -E '^Bat' myfile.txt
+grep: myfile.txt: No such file or directory
+[classzfu@lnxsrv01 ~/lab2-2]$ touch myfile.txt
+[classzfu@lnxsrv01 ~/lab2-2]$ emacs myfile.txt
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/lab2-2]$ grep -E '^Bat" myfile.txt
+>
+> ^C
+[classzfu@lnxsrv01 ~/lab2-2]$ ls -l | grep -E '^Bat" myfile.txt
+
+> ^C
+[classzfu@lnxsrv01 ~/lab2-2]$ cat myfile.txt
+Bt
+Bat
+Cat
+cat
+Bcat
+[classzfu@lnxsrv01 ~/lab2-2]$ echo >> man
+[classzfu@lnxsrv01 ~/lab2-2]$ echo man >> myfile.txt
+[classzfu@lnxsrv01 ~/lab2-2]$ echo Batman >> myfile.txt
+[classzfu@lnxsrv01 ~/lab2-2]$ grep -E 'man$' myfile.txt
+man
+Batman
+[classzfu@lnxsrv01 ~/lab2-2]$ grep -E 'm' myfile.txt
+man
+Batman
+[classzfu@lnxsrv01 ~/lab2-2]$ grep -E 'a' myfile.txt
+Bat
+Cat
+cat
+Bcat
+man
+Batman
+[classzfu@lnxsrv01 ~/lab2-2]$ grep -E '^(bat|Bat|cat|Cat)' myfile.txt
+Bat
+Cat
+cat
+Batman
+[classzfu@lnxsrv01 ~/lab2-2]$ grep -E -iu '^(bat|cat)' myfile.txt
+Bat
+Cat
+cat
+Batman
+[classzfu@lnxsrv01 ~/lab2-2]$ grep -E -i '^(bat|cat)' myfile.txt
+Bat
+Cat
+cat
+Batman
+[classzfu@lnxsrv01 ~/lab2-2]$ grep -Ei '^(bat|cat)' myfile.txt
+Bat
+Cat
+cat
+Batman
+[classzfu@lnxsrv01 ~/lab2-2]$ grep -E '^(bat|cat)' myfile.txt
+cat
+[classzfu@lnxsrv01 ~/lab2-2]$ cd ..
+[classzfu@lnxsrv01 ~]$ mkdir Assignment1
+[classzfu@lnxsrv01 ~]$ mkdir Assignment2
+[classzfu@lnxsrv01 ~]$ cd Assignment2
+[classzfu@lnxsrv01 ~/Assignment2]$ wget https://en.wikipedia.org/wiki/Hawaiian_language
+--2017-04-12 14:57:57--  https://en.wikipedia.org/wiki/Hawaiian_language
+Resolving en.wikipedia.org... 198.35.26.96, 2620:0:863:ed1a::1
+Connecting to en.wikipedia.org|198.35.26.96|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 245612 (240K) [text/html]
+Saving to: “Hawaiian_language”
+
+100%[======================================>] 245,612     --.-K/s   in 0.06s
+
+2017-04-12 14:57:57 (3.80 MB/s) - “Hawaiian_language” saved [245612/245612]
+
+[classzfu@lnxsrv01 ~/Assignment2]$ ls
+Hawaiian_language
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs Hawaiian_language
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ grep -E '<td>.*<\/td>' Hawaiian_language > out1.html
+[classzfu@lnxsrv01 ~/Assignment2]$ ls
+Hawaiian_language  out1.html
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs Hawaiian_language
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ wget https://en.wikipedia.org/wiki/Hawaiian_language original.html
+--2017-04-12 15:04:43--  https://en.wikipedia.org/wiki/Hawaiian_language
+Resolving en.wikipedia.org... 198.35.26.96, 2620:0:863:ed1a::1
+Connecting to en.wikipedia.org|198.35.26.96|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 245612 (240K) [text/html]
+Saving to: “Hawaiian_language.1”
+
+100%[======================================>] 245,612     --.-K/s   in 0.06s
+
+2017-04-12 15:04:43 (3.80 MB/s) - “Hawaiian_language.1” saved [245612/245612]
+
+--2017-04-12 15:04:43--  http://original.html/
+Resolving original.html... failed: Name or service not known.
+wget: unable to resolve host address “original.html”
+FINISHED --2017-04-12 15:04:43--
+Downloaded: 1 files, 240K in 0.06s (3.80 MB/s)
+[classzfu@lnxsrv01 ~/Assignment2]$ ls
+Hawaiian_language  Hawaiian_language.1  out1.html
+[classzfu@lnxsrv01 ~/Assignment2]$ rm Hawaiian_language.1
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs out1.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ sed '/<td><\/td>/d' out1.html > out2.html
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs out2.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ sed 's/<td>\(.*\)<\/td>/\1/g' out2.html > out3.html
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs out3.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs out3.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ wget login as: classzfu
+* hold by October 31, 2016 will be removed and will NOT be restored.        *
+*                                                                           *
+* Detailed information about the renewal process can also be found here:    *
+*       http://www.seasnet.ucla.edu/seasnet-accounts                        *
+* ========================================================================= *
+* Starting winter quarter 2016, SEASnet will be restricting access to our   *
+* instructional linux and eeapps servers to on campus IP addresses.  Users  *
+* needing to use these machines will need to connect from:                  *
+*       -a machine on the campus network                                    *
+*       -machines off-campus, but connected to the campus VPN server        *
+*       -SEASnet's terminal server                                          *
+* ========================================================================= *
+* SEASnet Computing Access                                                  *
+*                                                                           *
+* Priority is given both on the servers and in the student labs to those    *
+* students doing coursework. Computing support for research is provided by  *
+* each department.                                                          *
+*****************************************************************************
+* For assistance please contact help@seas.ucla.edu or call 206-6864.        *
+*****************************************************************************
+[classzfu@lnxsrv01 ~]$ ls
+assign1.html     Desktop       exer1.html~  exer3.html    exer4.html~  WINDOWS
+#.bash_history#  Documents     exer2.diff   exer3.html~   junk
+#.bash_logout#   Downloads     exer2.html   exer4.diff    lab2_1
+CS33             #exer1.html#  exer2.html~  #exer4.html#  perl5
+CS35L            exer1.html    exer3.diff   exer4.html    week1
+[classzfu@lnxsrv01 ~]$ cd lab2_1/
+[classzfu@lnxsrv01 ~/lab2_1]$ ls
+assign2.html     assign2tr4.html  assign2tr.html  hello.sh   lab.log     words
+assign2tr2.html  assign2tr5.html  comm            hello.sh~  lab.txt
+assign2tr3.html  assign2tr6.html  file1.txt       hw.txt     myfile.txt
+[classzfu@lnxsrv01 ~/lab2_1]$ emacs hello.sh
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/lab2_1]$ cd ..
+[classzfu@lnxsrv01 ~]$ mkdir lab2-2
+[classzfu@lnxsrv01 ~]$ cd lab2
+lab2_1/ lab2-2/
+[classzfu@lnxsrv01 ~]$ cd lab2-2/
+[classzfu@lnxsrv01 ~/la--2017-04-12 15:15:25--  http://login/
+Resolving login... failed: Name or service not known.
+wget: unable to resolve host address “login”
+--2017-04-12 15:15:25--  ftp://as/
+           => “.listing”
+Resolving as... failed: Name or service not known.
+wget: unable to resolve host address “as”
+--2017-04-12 15:15:25--  http://classzfu/
+Resolving classzfu... failed: Name or service not known.
+wget: unable to resolve host address “classzfu”
+[classzfu@lnxsrv01 ~/Assignment2]$ classzfu@lnxsrv.seas.ucla.edu's password:
+> Last login: Mon Apr 10 14:02:21 2017 from cr3760-router.seas.ucla.edu
+> *****************************************************************************
+>                  lnxsrv01.seas.ucla.edu RHEL 6
+> *****************************************************************************
+>
+>     * Please use "lnxsrv.seas.ucla.edu" to login for load balancing
+>     * User processes older than 36 hours will be cleaned up
+>     * You can run graphical applications from your PC using SSH and Xming
+>     !! Please see http://www.seasnet.ucla.edu/UnixServers/lnxsrv !!
+>
+> *****************************************************************************
+> *****************************************************************************
+> * ========================================================================= *
+> * ACCOUNT RENEWALS                                             May 23, 2016 *
+> *                                                                           *
+> * SEASnet has begun notifying users of the account renewal process.  The    *
+> * first notification has already been sent via email to your SEASnet        *
+> * account or Official UCLA Email Address.  Although the account renewal     *
+> * process actually takes place in October, we send out the first notice     *
+/
+> * early as a courtesy in case you are planning on taking a leave of absence *
+> * for the upcoming fall quarter.  Please make sure you check your email for *
+> * this important announcement.  Accounts that are not renewed or placed on  *
+> * hold by October 31, 2016 will be removed and will NOT be restored.        *
+> *                                                                           *
+> * Detailed information about the renewal process can also be found here:    *
+> *       http://www.seasnet.ucla.edu/seasnet-accounts                        *
+> * ========================================================================= *
+> * Starting winter quarter 2016, SEASnet will be restricting access to our   *
+> * instructional linux and eeapps servers to on campus IP addresses.  Users  *
+> * needing to use these machines will need to connect from:                  *
+> *       -a machine on the campus network                                    *
+> *       -machines off-campus, but connected to the campus VPN server        *
+> *       -SEASnet's terminal server                                          *
+a
+-bash: classzfu@lnxsrv.seas.ucla.edus password:
+Last login: Mon Apr 10 14:02:21 2017 from cr3760-router.seas.ucla.edu
+*****************************************************************************
+                 lnxsrv01.seas.ucla.edu RHEL 6
+*****************************************************************************
+
+    * Please use "lnxsrv.seas.ucla.edu" to login for load balancing
+    * User processes older than 36 hours will be cleaned up
+    * You can run graphical applications from your PC using SSH and Xming
+    !! Please see http://www.seasnet.ucla.edu/UnixServers/lnxsrv !!
+
+*****************************************************************************
+*****************************************************************************
+* ========================================================================= *
+* ACCOUNT RENEWALS                                             May 23, 2016 *
+*                                                                           *
+* SEASnet has begun notifying users of the account renewal process.  The    *
+* first notification has already been sent via email to your SEASnet        *
+* account or Official UCLA Email Address.  Although the account renewal     *
+* process actually takes place in October, we send out the first notice     *
+* early as a courtesy in case you are planning on taking a leave of absence *
+* for the upcoming fall quarter.  Please make sure you check your email for *
+* this important announcement.  Accounts that are not renewed or placed on  *
+* hold by October 31, 2016 will be removed and will NOT be restored.        *
+*                                                                           *
+* Detailed information about the renewal process can also be found here:    *
+*       http://www.seasnet.ucla.edu/seasnet-accounts                        *
+* ========================================================================= *
+* Starting winter quarter 2016, SEASnet will be restricting access to our   *
+* instructional linux and eeapps servers to on campus IP addresses.  Users  *
+* needing to use these machines will need to connect from:                  *
+*       -a machine on the campus network                                    *
+*       -machines off-campus, but connected to the campus VPN server        *
+*       -SEASnets: File name too long
+[classzfu@lnxsrv01 ~/Assignment2]$ * ========================================================================= *
+t
+-bash: Hawaiian_language: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ * SEASnet Computing Access                                                  *
+-bash: Hawaiian_language: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ *                                                                           *
+[
+-bash: Hawaiian_language: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ * Priority is given both on the servers and in the student labs to those    *
+-bash: Hawaiian_language: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ * students doing coursework. Computing support for research is provided by  *
+-bash: Hawaiian_language: command not found
+p
+[classzfu@lnxsrv01 ~/Assignment2]$ * each department.                                                          *
+
+-bash: Hawaiian_language: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ *****************************************************************************
+t
+-bash: Hawaiian_language: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ * For assistance please contact help@seas.ucla.edu or call 206-6864.        *
+-bash: Hawaiian_language: command not found
+=
+[classzfu@lnxsrv01 ~/Assignment2]$ *****************************************************************************
+-bash: Hawaiian_language: command not found
+6
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~]$ ls
+s
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ assign1.html     Desktop       exer1.html~  exer3.html    exer4.html~  WINDOWS
+P
+-bash: assign1.html: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ #.bash_history#  Documents     exer2.diff   exer3.html~   junk
+[classzfu@lnxsrv01 ~/Assignment2]$ #.bash_logout#   Downloads     exer2.html   exer4.diff    lab2_1
+[classzfu@lnxsrv01 ~/Assignment2]$ CS33             #exer1.html#  exer2.html~  #exer4.html#  perl5
+u
+-bash: CS33: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ CS35L            exer1.html    exer3.diff   exer4.html    week1
+T
+-bash: CS35L: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~]$ cd lab2_1/
+-bash: [classzfu@lnxsrv01: command not found
+l
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2_1]$ ls
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ assign2.html     assign2tr4.html  assign2tr.html  hello.sh   lab.log     words
+-bash: assign2.html: command not found
+4
+[classzfu@lnxsrv01 ~/Assignment2]$ assign2tr2.html  assign2tr5.html  comm            hello.sh~  lab.txt
+-bash: assign2tr2.html: command not found
+e
+[classzfu@lnxsrv01 ~/Assignment2]$ assign2tr3.html  assign2tr6.html  file1.txt       hw.txt     myfile.txt
+-bash: assign2tr3.html: command not found
+t
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2_1]$ emacs hello.sh
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+-bash: PuTTY: command not found
+
+[classzfu@lnxsrv01 ~/Assignment2]$ Display localhost:11.0 unavailable, simulating -nw
+-bash: Display: command not found
+e
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2_1]$ cd ..
+-bash: [classzfu@lnxsrv01: command not found
+s
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~]$ mkdir lab2-2
+-bash: [classzfu@lnxsrv01: command not found
+o
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~]$ cd lab2
+-bash: [classzfu@lnxsrv01: command not found
+n
+[classzfu@lnxsrv01 ~/Assignment2]$ lab2_1/ lab2-2/
+a
+-bash: lab2_1/: No such file or directory
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~]$ cd lab2-2/
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ man 7 glob
+-bash: [classzfu@lnxsrv01: command not found
+v
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ man 7 regex
+-bash: [classzfu@lnxsrv01: command not found
+r
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ man 7 glob
+u
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ touch m99
+
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ touch m1
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ touch m9
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ touch m29
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ rm m[!9]
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ ls
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ m29  m9  m99
+-bash: m29: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ touch Bat
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ touch Cat
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ touch cat
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ touch Bcat
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ ls -l | grep at$
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Bat
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Bcat
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:39 cat
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Cat
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ ls -l | grep cat$
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Bcat
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:39 cat
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ ls -l | grep [a]
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ total 0
+-bash: total: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Bat
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Bcat
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:39 cat
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:39 Cat
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:21 m29
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:21 m9
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ -rw-r--r-- 1 classzfu class 0 Apr 12 14:21 m99
+-bash: -rw-r--r--: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ grep: myfile.txt: No such file or directory
+-bash: grep:: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ touch myfile.txt
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ emacs myfile.txt
+-bash: [classzfu@lnxsrv01: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+-bash: PuTTY: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ Display localhost:11.0 unavailable, simulating -nw
+-bash: Display: command not found
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ grep -E '^Bat" myfile.txt
+> >
+> > ^C
+> [classzfu@lnxsrv01 ~/lab2-2]$ ls -l | grep -E '^Bat" myfile.txt
+>
+> > ^C
+> [classzfu@lnxsrv01 ~/lab2-2]$ cat myfile.txt
+> Bt
+> Bat
+> Cat
+> cat
+> Bcat
+> [classzfu@lnxsrv01 ~/lab2-2]$ echo >> man
+> [classzfu@lnxsrv01 ~/lab2-2]$ echo man >> myfile.txt
+> [classzfu@lnxsrv01 ~/lab2-2]$ echo Batman >> myfile.txt
+> [classzfu@lnxsrv01 ~/lab2-2]$ grep -E 'man$' myfile.txt
+> man
+> Batman
+> [classzfu@lnxsrv01 ~/lab2-2]$ grep -E 'm' myfile.txt
+> man
+> Batman
+> [classzfu@lnxsrv01 ~/lab2-2]$ grep -E 'a' myfile.txt
+> Bat
+> Cat
+> cat
+> Bcat
+> man
+> Batman
+> [classzfu@lnxsrv01 ~/lab2-2]$ grep -E '^(bat|Bat|cat|Cat)' myfile.txt
+> Bat
+> Cat
+> cat
+> Batman
+> [classzfu@lnxsrv01 ~/lab2-2]$ grep -E -iu '^(bat|cat)' myfile.txt
+> Bat
+> Cat
+> cat
+> Batman
+> [classzfu@lnxsrv01 ~/lab2-2]$ grep -E -i '^(bat|cat)' myfile.txt
+> Bat
+> Cat
+> ca
+> Batman
+> [classzfu@lnxsrv01 ~/lab2-2]$ grep -Ei '^(bat|cat)' myfile.txt
+> Bat
+> Cat
+> cat
+> Batman
+> [classzfu@lnxsrv01 ~/lab2-2]$ grep -E '^(bat|cat)' myfile.txt
+> cat
+> [classzfu@lnxsrv01 ~/lab2-2]$ cd ..
+> [classzfu@lnxsrv01 ~]$ mkdir Assignment1
+> [
+> [classzfu@lnxsrv01 ~]$ cd Assignment2
+> [classzfu@lnxsrv01 ~/Assignment2]$ wget https://en.wikipedia.org/wiki/Hawaiian_language
+> --2017-04-12 14:57:57--  http
+> Resolving en.wikipedia.org... 198.35.26.96, 2620:0:863:ed1a::1
+> Connecting to
+> HTTP request sent, awaiting response... 200 OK
+> Length: 245612 (240K) [text/ht
+> Saving to: “Hawaiian_language”
+>
+> 100%[====================================
+>
+> 2017-04-12 14:57:57 (3.80 MB/s) - “Hawaiian_language” saved [245612/2456
+>
+> [classzfu@lnxsrv01 ~/Ass
+> Hawaiian_language
+> [classzfu@lnxsrv01 ~/Assignment2]$ emacs Hawaiian_language
+> P
+> Display localhost:11.0 unavailable, simulating -nw
+> [classzfu@lnxsrv01 ~/Assignment2]$ grep -E '<td>.*<\/td>' Hawaiian_language > out1.html
+> [classzfu@lnxsrv01 ~/Assignment2]$ ls
+> Hawaiian_langu
+> [classzfu@lnxsrv01 ~/Assignment2]$ emacs Hawaiian_language
+> PuTT
+> Display localhost:11.0 unavailabl
+> [classzfu@lnxsrv01 ~/Assignment2]$ wget https://en.wikipedia.org/wiki/Hawaiian_language original.html
+> --2017-04
+> Resolving en.wikipedia.org... 198.35.26.96, 2620:0:863:ed1a::1
+> Conne
+> HTTP request sent, awaiting response... 200 OK
+> Length: 245612 (240K) [t
+> Saving to: “Hawaiian_language.1”
+>
+> 100%[======================================>] 245,612     --.-K/s   in 0.06s
+>
+> 2017-04-12 15:04:43
+>
+> --2017-04-12 15:04:43--  http://original.html/
+> Re
+> wget: unable to resolve host addres
+> FINISHED --2017-04-12 15:04:43--
+> Do
+> [classzfu@lnxsrv01 ~/Assignmen
+> Hawaiian_langua
+> [classzfu@lnxsrv01 ~/Assignment2]$ rm Hawaiian_language.1
+> [classzfu@lnxsrv
+> PuTTY X11 proxy: unable to connect to for
+> Display localhost:11.0 unavailable, simu
+> [classzfu@lnxsrv01 ~/Assignment2]$ sed
+> [classzfu@lnxsrv01 ~/Assignment2]$
+> ^C
+[classzfu@lnxsrv01 ~/Assignment2]$ ls
+Hawaiian_language  out1.html  out2.html  out3.html
+[classzfu@lnxsrv01 ~/Assignment2]$ man wget
+[classzfu@lnxsrv01 ~/Assignment2]$ [classzfu@lnxsrv01 ~/lab2-2]$ grep -E '^Bat" myfile.txt                         ls
+                                   [classzfu@lnxsrv01 ~/lab2-2]$ grep -E '^Bat" myfile.txt                         Display localhost:11.0 unavailable, simulating -nw                              total 0^C
+[classzfu@lnxsrv01 ~/Assignment2]$ wget https://en.wikipedia.org/wiki/Hawaiian_language -o log.html
+[classzfu@lnxsrv01 ~/Assignment2]$ ls
+Hawaiian_language    log.html   out2.html
+Hawaiian_language.1  out1.html  out3.html
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs log.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ man wget
+[classzfu@lnxsrv01 ~/Assignment2]$ wget https://en.wikipedia.org/wiki/Hawaiian_language -o log.html
+[classzfu@lnxsrv01 ~/Assignment2]$ wget https://en.wikipedia.org/wiki/Hawaiian_language -O log.html
+--2017-04-12 15:17:26--  https://en.wikipedia.org/wiki/Hawaiian_language
+Resolving en.wikipedia.org... 198.35.26.96, 2620:0:863:ed1a::1
+Connecting to en.wikipedia.org|198.35.26.96|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 245612 (240K) [text/html]
+Saving to: “log.html”
+
+100%[======================================>] 245,612     --.-K/s   in 0.06s
+
+2017-04-12 15:17:26 (3.74 MB/s) - “log.html” saved [245612/245612]
+
+[classzfu@lnxsrv01 ~/Assignment2]$ ls
+Hawaiian_language    Hawaiian_language.2  out1.html  out3.html
+Hawaiian_language.1  log.html             out2.html
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs log.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ grep -E '<td>.*<\/td>' log.html > out1.html
+[classzfu@lnxsrv01 ~/Assignment2]$ sed '/<td><\/td>/d' out1.html > out2.html
+[classzfu@lnxsrv01 ~/Assignment2]$ sed 's/<td>\(.*\)<\/td>/\1/g' out2.html > out3.html
+[classzfu@lnxsrv01 ~/Assignment2]$ sed -n 2~2p out3.html > out4.html
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs out4.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs out1.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ wget http://mauimapp.com/moolelo/hwnwdseng.htm -O log.html
+--2017-04-12 15:24:54--  http://mauimapp.com/moolelo/hwnwdseng.htm
+Resolving mauimapp.com... 208.131.150.44
+Connecting to mauimapp.com|208.131.150.44|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15435 (15K) [text/html]
+Saving to: “log.html”
+
+100%[======================================>] 15,435      --.-K/s   in 0.02s
+
+2017-04-12 15:24:54 (727 KB/s) - “log.html” saved [15435/15435]
+
+[classzfu@lnxsrv01 ~/Assignment2]$ grep -E '<td>.*<\/td>' log.html > out1.html
+[classzfu@lnxsrv01 ~/Assignment2]$ sed 's/<td>\(.*\)<\/td>/\1/g' out2.html > out3.html
+[classzfu@lnxsrv01 ~/Assignment2]$ sed '/<td><\/td>/d' out1.html > out2.html
+[classzfu@lnxsrv01 ~/Assignment2]$ sed 's/<td>\(.*\)<\/td>/\1/g' out2.html > out3.html
+[classzfu@lnxsrv01 ~/Assignment2]$ sed -n 2~2p out3.html > out4.html
+[classzfu@lnxsrv01 ~/Assignment2]$ sed 's/<u>\(.\)<\/u>/\1/g' out4.html > out5.html
+[classzfu@lnxsrv01 ~/Assignment2]$ tr '\n' <out5.html> out6.html
+tr: missing operand after `\\n'
+Two strings must be given when translating.
+Try `tr --help' for more information.
+[classzfu@lnxsrv01 ~/Assignment2]$ tr , '\n' <out5.html> out6.html
+[classzfu@lnxsrv01 ~/Assignment2]$ sed 's/^[ \t]*//' out6.html > out7.html
+[classzfu@lnxsrv01 ~/Assignment2]$ tr ' ' '\n' < out7.html | sed '/^$/d'> out8.html
+[classzfu@lnxsrv01 ~/Assignment2]$ set "s/
+> ^C
+[classzfu@lnxsrv01 ~/Assignment2]$ set "s/\'/'/g" out8.html > out9.html
+[classzfu@lnxsrv01 ~/Assignment2]$ sed "s/\'/'/g" out8.html > out9.html
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs out9.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ tr A-Z a-z < out9.html > out10.html
+[classzfu@lnxsrv01 ~/Assignment2]$ sed "/[^pkmnwlhaeiou']/d" out10.html > out11.html
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs out7.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs out8.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs out10.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs out11.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ sed "/[^pkmnwlhaeiou']/d" out10.html > out11.html
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs out11.html
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ sort -u out11.html > hwords
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs hwords
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$ ^C
+[classzfu@lnxsrv01 ~/Assignment2]$ emacs hwords
+PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+Display localhost:11.0 unavailable, simulating -nw
+[classzfu@lnxsrv01 ~/Assignment2]$

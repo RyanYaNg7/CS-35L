@@ -1,0 +1,136 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf760
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww19940\viewh15540\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 #include: depend on\
+\
+g(in green): compile all cpp files into an executable program called shop\
+\
+if we change a header file, the effected file can be seen by their depending relations\
+\
+if we change cppfile, we do something that saves more time: compile item.cpp, then make a new link of the new item.o to other existing files,\
+\
+-c: only compile, do not go to the linking process\
+\
+\'93make\'94 help handle what should be compiled and what to link\
+\
+makefile is written by the users, to tell the make to do the management\
+\
+item.o : item.cpp item.h		//item.o depends of the latter two files\
+	\'93what command to do to make it happen\'94\
+\
+make clean:   run the command under \'93clean\'94\
+\
+make shop: identify the entire tree under the name \'93shop\'94\
+	if shop does not exist, run the command\
+	if already exist, if one of the depended file updated(newer), run the corresponding command of the newer file only, then link the final files\
+\
+\
+\
+make install: place the file at the right locations. (just a convention)\
+\
+-   specific line in original file \
++                 in the new file\
+\
+\
+\
+\
+\
+\
+compiler: compile before executing;  faster\
+c/c++\
+\
+interpreter: compile while executing;  faster\
+lisp\
+\
+python and java are compiled and interpreted.\
+\
+python \
+\
+list is mutable or dynamic: you can edit it after creating it\
+\
+l=[1, 2, 3, \'91hELLO\'92, \'91AFDS\'92]\
+l[0]    l[1]    l[3]\
+l[1:2] all elements btw index 1 and 2\
+l.append(3) append at the end a element 3\
+l3 = l1 + l2  (merge two lists)\
+l1=[\'85.] (assigning)\
+print l3\
+\
+\
+tuple is immutable\
+t=(1,2,3,4)\
+t[0]=5\
+you cannot append to a tuple\
+\
+\
+\
+dictionary\
+d = \{\}   //this is empty dictionary\
+d[\'91hello\'92] = \'91world\'92\
+print d[\'91hello\'92]\
+d[\'91hello\'92] = \'91abc\'92\
+del d[\'91hello\'92]\
+print d\
+d=\{\'85\}\
+d.keys()\
+d.values()\
+d.items()\
+for i in d.keys():\
+if you want to check if a certain key is present: \
+	if \'91hello\'92 in d.keys():\
+		print \'91present\'92\
+\
+set is like a list but there is no repeated value\
+s1=set(\'91hello\'92)   //this is \{h,e,l,o\}\
+union of two set: s1 | s2\
+subtraction of set: s1 - s2\
+s2=set(\'91world\'92)\
+print s1\
+s1&s2,  s1^s2		//?\
+\
+\
+syntax\
+do \'85 done\
+list = [\'85]\
+for i in list:\
+	\'85\
+	\'85\
+\
+in c++:\
+	for (i = 0; i<5; i++)\
+\
+in python:\
+	for i in range(5):\
+		print i\
+\
+\
+			(option)(option argument)\
+/randline.py file1 -n 5    //give me 5 random lines from this file\
+		  (argument)\
+what option means is that there will be some argument following it that serves as argument for the option\
+\
+sys.argv[0]	//store all the value you pass in commandline\
+sys.argv[1:]\
+passe,passe_args(sys.argv[1:])\
+\
+try\
+except=catch\
+\
+numlines-int(option.numline)\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

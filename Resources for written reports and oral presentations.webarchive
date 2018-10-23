@@ -1,0 +1,177 @@
+bplist00Ñ_WebMainResourceÕ	
+^WebResourceURL_WebResourceFrameName_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName_5http://web.cs.ucla.edu/classes/fall17/cs35L/comm.htmlPO!8<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Resources for written reports and oral presentations</title>
+<link rel="copyright" href="copyright.html">
+<link rev="made" href="mailto:eggert@cs.ucla.edu">
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+<body>
+
+<h1>Resources for written reports and oral presentations</h1>
+
+<p><small>[<a href="index.html">Class home</a>]</small></p>
+
+<h2>Crediting others</h2>
+
+ <ul>
+  <li>Proper citations are a hallmark of any solidly written report,
+   and are often useful in other forms of publications.
+   <a href="http://library.concordia.ca/help/citing/index.php">Citing Â·
+   Help &amp; how-to</a> (2016) refers to several style guides; pick a
+   suitable style and use it consistently. Especially
+   see its section "<a href="http://library.concordia.ca/help/citing/index.php?guid=why">Why cite?</a>".</li>
+
+  <li>If your report or presentation uses an active format such as PDF
+   or HTML, URLs in citations should be clickable.</li>
+
+  <li>For citations, submit a working link to a freely-readable
+   copy if available, and also submit a working link to a URL based on
+   <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">digital
+   object identifiers</a> (DOIs) if available. Here is an example citation
+   using <a href="https://en.wikipedia.org/wiki/Vancouver_system">Vancouver
+   system</a> format:
+
+   <ul>
+     <li>Bailly G, Lecolinet Ã‰, Nigay L. <a href="https://hal.archives-ouvertes.fr/hal-01258368/document">Visual
+      menu techniques</a>.
+      <em>ACM Comput Surv</em>. 2017;49(4):60.
+     doi:<a href="http://dx.doi.org/10.1145/3002171">10.1145/3002171</a>.</li>
+   </ul>
+
+   The citation's title hyperlinks to a freely-readable resource
+   <a href="https://hal.archives-ouvertes.fr/hal-01258368/document"><samp>&lt;https://hal.archives-ouvertes.fr/hal-01258368/document&gt;</samp></a>.
+   "<em>ACM Comput Surv</em>" is a standard abbreviation for
+   <a href="http://csur.acm.org/"><em>ACM Computing Surveys</em></a>,
+   "2017;49(4):60" contains the year, volume, issue, and article or
+   page numbers, and the DOI hyperlinks to <samp>&lt;<a href="http://dx.doi.org/10.1145/3002171">http://dx.doi.org/10.1145/3002171</a>&gt;</samp>.
+   Unfortunately, freely-available resources
+   are often preliminary or ephemeral or both; when available, a DOI
+   can permanently nail down the final, stable version even
+   if it's not freely readable. For more about DOIs, see
+   <a href="http://library.concordia.ca/help/citing/sharing-links.php">How
+   to share a link to an article with your students and
+   collaborators</a> (2016).</li>
+  <li>See
+   <a href="https://images.webofknowledge.com/images/help/WOS/A_abrvjt.html">Web
+   of Science Journal Title Abbreviations</a> for a list of
+   reasonably-standard journal-title abbreviations.
+   </li>
+ </ul>
+
+<h2>Written reports</h2>
+
+ <ul>
+  <li>Simon Peyton Jones's <a href="https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/">How to write a great research paper</a> (2016)
+   contains a brief and pleasant
+   section about how to write a good research paper.</li>
+
+  <li>Derek Dreyer's <a href="https://www.mpi-sws.org/~dreyer/talks/talk-plmw16.pdf">How
+   to write papers so people can read them</a> (2016) gives more-constructive
+   advice that provides an interesting contrast with Peyton Jones.</li>
+
+  <li>Roy Levin and David D. Redell's
+   <a href="http://www.usenix.org/events/samples/submit/advice.html">An
+   Evaluation of the Ninth SOSP Submissions â€“orâ€“ How (and
+   How Not) to Write a Good Systems Paper</a> (1983) points out common
+   problems in technical papers, and gives suggestions for how to fix
+   them.</li>
+
+  <li>The UNC Writing Center's <a href="http://writingcenter.unc.edu/handouts/scientific-reports/">Scientific
+   Reports</a> (2014) describes how to write and organize a scientific research
+   report.</li>
+
+  <li>David A. McMurrey's <a href="https://www.prismnet.com/~hcexres/textbook/">Online Technical
+   Writing</a> (2013) contains many examples and much
+   discussion of technical writing. For example, it has a <a href="https://www.prismnet.com/~hcexres/textbook/feas.html">chapter on
+   recommendation and feasibility reports</a> that contains several
+   sample reports.</li>
+
+  <li>George Gopen and Judith Swan's
+   <a href="http://www.americanscientist.org/issues/num2/the-science-of-scientific-writing/1">The
+   Science of Scientific Writing</a> (1990) briefly summarizes some of
+   the science behind writing clear writing for scientific audiences.</li>
+
+  <li>William Strunk, Jr.'s <a href="http://www.crockford.com/wrrrld/style.html">The Elements of
+   Style</a> (1918) is the classic style guide for American English
+   writing. It excels at showing how to <a href="http://www.crockford.com/wrrrld/style3.html#13">omit needless
+   words</a>.</li>
+
+  <li>The <a href="https://www.usenix.org/conferences/author-resources/paper-templates">USENIX
+   Templates for Conference Papers</a> provides <a href="http://www.latex-project.org/">LaTeX</a>
+   and <a href="https://en.wikipedia.org/wiki/Doc_%28computing%29">DOC</a>
+   templates and style files for computer science research papers. The USENIX
+   templates use a two-column format with 10-point font for most of
+   the text, on an 8Â½"Ã—11" page. LaTeX
+   typically generates higher-quality output for technical papers. An <a type="application/pdf" href="https://www.usenix.org/legacy/events/samples/frame.pdf">example of
+   the output format</a> and an <a type="application/pdf" href="https://www.usenix.org/legacy/events/lisa05/tech/golubitsky/golubitsky.pdf">example
+   student paper</a> are available.</li>
+
+  <li>The Cabrillo Tidepool Study's <a href="https://academics.utep.edu/Portals/1559/docs/resources/2007Seminars/Scientific%20Report%20RubricCabrillo-TidepoolStudy.pdf">Scientific
+   Report Rubric</a> (1997) is the sort of thing we use when
+   evaluating your report.</li>
+
+ </ul>
+
+<h2>Oral presentations</h2>
+
+ <ul>
+  <li>Simon Peyton Jones's <a href="https://www.microsoft.com/en-us/research/academic-program/give-great-research-talk/">How to give a great research talk</a> (2016)
+   almost makes it look easy and covers the essentials.
+   He's brave enough to point you to a video of himself, giving the talk.</li>
+
+  <li>Michael
+   Ernst's <a href="http://homes.cs.washington.edu/~mernst/advice/giving-talk.html">Giving
+      a technical presentation (giving a scientific talk)</a> (2016)
+   contains workable and
+   up-to-date advice for giving computer science talks.</li>
+
+  <li>Mark D. Hill's <a href="http://pages.cs.wisc.edu/~markhill/conference-talk.html">Oral
+   Presentation Advice</a> (1997) briefly describes how to give a good
+   talk. It contains a summary of David Patterson's classic
+   <a href="http://pages.cs.wisc.edu/~markhill/conference-talk.html#badtalk">How
+   to Give a Bad Talk</a> (1983).</li>
+
+  <li>Judith P. Rhodes <em>et al.</em>'s <a type="application/pdf" href="http://www.tos.org/pdfs/sci_speaking.pdf">Scientifically
+   Speaking: Tips for Preparing Scientific Talks and Using Visual
+   Aids</a> (2005) contains advice and observations on preparing and
+   delivering a scientific talk. Its advice on poster presentations
+   is also valuable, though you can skip it if you are not making
+   a poster.</li>
+
+  <li>The <a href="http://www.library.ucla.edu/sel">Science
+   and Engineering Library (SEL)</a> has a learning center
+   with equipment with which you can rehearse your
+   presentation. Reserve a time slot by visiting the circulation
+   desk in Boelter 8270.</li>
+
+  <li>Caroline McCullen's <a href="https://www.ncsu.edu/midlink/rub.pres.html">Student
+   Presentation Rubric</a> (1997) is the sort of thing we use
+   when evaluating your presentation.</li>
+ </ul>
+
+<hr>
+<address>
+ Â© 2006â€“2017 <a href="mail-eggert.html">Paul Eggert</a>.
+ See <a href="copyright.html">copying rules</a>.<br>
+
+ $Id: comm.html,v 1.51 2017/05/25 14:49:02 eggert Exp $
+
+</address>
+
+
+
+</body></html>Ytext/htmlUUTF-8    ( 7 N ` v ” Ì Í"	"                           "

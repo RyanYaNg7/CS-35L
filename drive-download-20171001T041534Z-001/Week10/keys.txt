@@ -1,0 +1,109 @@
+Using username "classzfu".
+classzfu@lnxsrv09.seas.ucla.edu's password:
+Last login: Mon Jun  5 01:28:12 2017 from wifi-131-179-53-177.host.ucla.edu
+*****************************************************************************
+                        lnxsrv09.seas.ucla.edu RHEL 7
+*****************************************************************************
+
+        RedHat 7 -- may not behave the same as other lnxsrv
+        Will be used by CS 35L, CS 33, CS 111, and CS 131
+
+*****************************************************************************
+*****************************************************************************
+* ========================================================================= *
+* ACCOUNT RENEWALS                                             Jun  1, 2017 *
+*                                                                           *
+* SEASnet has begun notifying users of the account renewal process.  The    *
+* first notification has already been sent via email to your SEASnet        *
+* account or Official UCLA Email Address.  Although the account renewal     *
+* process actually takes place in October, we send out the first notice     *
+* early as a courtesy in case you are planning on taking a leave of absence *
+* for the upcoming fall quarter.  Please make sure you check your email for *
+* this important announcement.  Accounts that are not renewed or placed on  *
+* hold by October 31, 2017 will be removed and will NOT be restored.        *
+*                                                                           *
+* Detailed information about the renewal process can also be found here:    *
+*       http://www.seasnet.ucla.edu/seasnet-accounts                        *
+*                                                                           *
+* ========================================================================= *
+* SEASnet Computing Access                                                  *
+*                                                                           *
+* Priority is given both on the servers and in the student labs to those    *
+* students doing coursework. Computing support for research is provided by  *
+* each department.                                                          *
+*****************************************************************************
+* For assistance please contact help@seas.ucla.edu or call 206-6864.        *
+*****************************************************************************
+[classzfu@lnxsrv09 ~]$ cd 35l
+[classzfu@lnxsrv09 ~/35l]$ mkdir week10
+[classzfu@lnxsrv09 ~/35l]$ cd week10/
+[classzfu@lnxsrv09 ~/35l/week10]$ ls
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs hellomake.c
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs hellofunc.c
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs hellomake.h
+[classzfu@lnxsrv09 ~/35l/week10]$ gcc -o hellomake hellomake.c hellofunc.c -I.
+[classzfu@lnxsrv09 ~/35l/week10]$ ./hellomake
+Hello Makefile
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs Makefile
+[classzfu@lnxsrv09 ~/35l/week10]$ make
+make: `hellomake' is up to date.
+[classzfu@lnxsrv09 ~/35l/week10]$ make install
+make: *** No rule to make target `install'.  Stop.
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs Makefile
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs hellomake.c
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs hellomake.c
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs hellomake.c
+[classzfu@lnxsrv09 ~/35l/week10]$ mv hellomake.c tmp
+[classzfu@lnxsrv09 ~/35l/week10]$ mv hellofunc.c hellomake.c
+[classzfu@lnxsrv09 ~/35l/week10]$ mv tmp hellofunc.c
+[classzfu@lnxsrv09 ~/35l/week10]$ ls
+hellofunc.c  hellomake  #hellomake.c#  hellomake.c  hellomake.h  Makefile
+[classzfu@lnxsrv09 ~/35l/week10]$ rm \#hellomake.c#
+[classzfu@lnxsrv09 ~/35l/week10]$ l
+-bash: l: command not found
+[classzfu@lnxsrv09 ~/35l/week10]$ ls
+hellofunc.c  hellomake  hellomake.c  hellomake.h  Makefile
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs gcc
+[classzfu@lnxsrv09 ~/35l/week10]$ man gcc
+[classzfu@lnxsrv09 ~/35l/week10]$ rm hellomake
+[classzfu@lnxsrv09 ~/35l/week10]$ make
+gcc -o hellomake hellomake.c hellofunc.c -I.
+[classzfu@lnxsrv09 ~/35l/week10]$ ls
+hellofunc.c  hellomake  hellomake.c  hellomake.h  Makefile
+[classzfu@lnxsrv09 ~/35l/week10]$ emcas Makefile
+-bash: emcas: command not found
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs Makefile
+[classzfu@lnxsrv09 ~/35l/week10]$ make
+make: `hellomake' is up to date.
+[classzfu@lnxsrv09 ~/35l/week10]$ rm hellomake
+[classzfu@lnxsrv09 ~/35l/week10]$ make
+gcc -o hellomake hellomake.c hellofunc.c
+hellomake.c:2:23: fatal error: hellomake.h: No such file or directory
+ #include <hellomake.h>
+                       ^
+compilation terminated.
+hellofunc.c:1:23: fatal error: hellomake.h: No such file or directory
+ #include <hellomake.h>
+                       ^
+compilation terminated.
+make: *** [hellomake] Error 1
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs hellomake.c
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs hellofunc.c
+[classzfu@lnxsrv09 ~/35l/week10]$ make
+gcc -o hellomake hellomake.c hellofunc.c
+[classzfu@lnxsrv09 ~/35l/week10]$ ls
+hellofunc.c  hellofunc.c~  hellomake  hellomake.c  hellomake.c~  hellomake.h  Makefile  Makefile~
+[classzfu@lnxsrv09 ~/35l/week10]$ rm hellomake
+[classzfu@lnxsrv09 ~/35l/week10]$ make
+gcc -o hellomake hellomake.c hellofunc.c
+[classzfu@lnxsrv09 ~/35l/week10]$ emacs Makefile
+[classzfu@lnxsrv09 ~/35l/week10]$ make .o
+gcc      -o .o
+gcc: fatal error: no input files
+compilation terminated.
+make: *** [.o] Error 4
+[classzfu@lnxsrv09 ~/35l/week10]$ make
+make: `hellomake' is up to date.
+[classzfu@lnxsrv09 ~/35l/week10]$ make hellofunc.o
+gcc -c -o hellofunc.o hellofunc.c -I.
+[classzfu@lnxsrv09 ~/35l/week10]$

@@ -1,0 +1,61 @@
+1. Check out version 3.0 of Diffutils from your repository, into a new branch named “quote”.
+
+   cd diffutils
+   git checkout v3.0 -b quote
+
+2. Install your change into this new branch, by running the patch command with your patch quote-3.0-patch.txt as input.
+
+   patch -p1 < ../quote-3.0-patch.txt
+patching file src/cmp.c
+patching file src/diff.c
+patching file src/diff3.c
+patching file src/dir.c
+patching file src/sdiff.c
+patching file src/util.c
+
+3.Learn how to use the Emacs function add-change-log-entry-other-window (C-x 4 a).
+
+4. Use this Emacs function to compose an appropriate ChangeLog entry for your patch, by adapting the change log from the original patch.
+
+We use git status to confirm the six C files that are changed and we go
+through all six files using emacs and then using C-x 4 a to create a 
+Changelog for that file and add the relevant messages.
+
+5. Commit your changes to the new branch, using the ChangeLog entry as the commit message.
+
+   git add .
+   git commit -F src/ChangeLog
+
+6. Use the command “git format-patch” to generate a file formatted-patch.txt. This patch should work without having to fix things by hand afterwards.
+
+   git format-patch -1 --stdout > formatted-patch.txt
+
+7. Your teaching assistant will assign you a partner, who will also generate a patch. Verify that your partner's patch works, by checking out version 3.0 again into a new temporary branch partner, applying the patch with the command “git am”, and building the resulting system, checking that it works with “make check”.
+
+First I created a new 3.0 branch called "partner".
+      git checkout v3.0 -b partner
+
+I get a copy of my classmate LIUYI SHI's patch and upload to the server as "sly-formatted-patch.txt".
+
+Then:
+	cd diffutils
+	git am ../sly-formatted-patch.txt
+Applying: 2017-12-02 Liuyi Shi <classihi@lnxsrv09.seas.ucla.edu>
+Then build:
+     ./bootstrap
+     ./configure
+     make
+     make check
+
+8. Verify that your ChangeLog entry works, by running the command “make distdir” and inspecting the resulting diffutils*/ChangeLog file.
+
+   make distdir
+this creates a directory called diffutils-3.0.1-9de4.
+view the Changelog in this new directory and get the same 
+output as the log confirming partners patch as successful.
+
+
+9. There is a copy of the GNU Emacs git repository's master branch on SEASnet in the directory ~eggert/src/gnu/emacs. Run the command gitk on it, and find the newest merge that is not newer than 2015-01-25. Take a screenshot gitk-screenshot.png of your view of the mergepoint, and in an ASCII text file gitk-description.txt briefly describe the roles of subwindows that you see in the screenshot
+
+cd ~eggert/src/gnu/emacs
+

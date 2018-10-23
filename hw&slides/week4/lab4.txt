@@ -1,0 +1,204 @@
+1. download the old version of coreutils
+   wget http://web.cs.ucla.edu/classes/fall17/cs35L/assign/coreutils-with-bug.tar.gz
+
+2. unzip the file
+   tar -xvzf coreutils-with-bug.tar.gz
+
+3. move inside the folder of it
+   cd ./coreutils-with-bug
+
+4. build the program
+configure:
+   ./configure --prefix='/u/eng/class/classefa/lab4/coreutilsInstall'
+build exetable:
+   make
+
+5. then I get the error message saying:
+In file included from utimecmp.c:41:0:
+utimens.h:2:5: error: conflicting types for 'futimens'
+ int futimens (int, char const *, struct timespec const [2]);
+     ^
+In file included from utimecmp.h:25:0,
+                 from utimecmp.c:25:
+/usr/include/sys/stat.h:373:12: note: previous declaration of 'futimens' was here
+ extern int futimens (int __fd, const struct timespec __times[2]) __THROW;
+            ^
+make[3]: *** [utimecmp.o] Error 1
+make[3]: Leaving directory `/w/home.08/class/classefa/lab4/coreutils-with-bug/lib'
+make[2]: *** [all] Error 2
+make[2]: Leaving directory `/w/home.08/class/classefa/lab4/coreutils-with-bug/lib'
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory `/w/home.08/class/classefa/lab4/coreutils-with-bug'
+make: *** [all] Error 2
+
+
+6. get the patch file
+   wget http://web.cs.ucla.edu/classes/fall17/cs35L/assign/coreutils.diff
+
+7. apply the patch
+   patch -p0 < coreutils.diff
+we get the output:
+patching file lib/utimens.c
+patching file lib/utimens.h
+patching file src/copy.c
+patching file src/tee.c
+patching file src/touch.c
+
+8. rebuild the program
+   make
+   make install
+
+9. problem and reason of fixing
+The patch fixed the error when using make by changing all appearances of the function name that has 3 parameters to 'coreutils_futimens'.
+And since we have a different name now,	we don't have the problem anymore.
+
+10. reproduce of the problem
+$ tmp=$(mktemp -d)
+$ cd $tmp
+$ touch -d '1918-11-11 11:00 GMT' wwi-armistice
+$ touch now
+$ sleep 1
+$ touch now1
+$ TZ=UTC0 ls -lt --full-time wwi-armistice now now1
+-rw-r--r-- 1 classefa class 0 2017-10-26 20:09:08.062692227 +0000 now1
+-rw-r--r-- 1 classefa class 0 2017-10-26 20:09:07.061675605 +0000 now
+-rw-r--r-- 1 classefa class 0 1818-11-11 11:00:00.000000000 +0000 wwi-armistice
+$ cd
+$ rm -fr $tmp
+the problem is that the past seems to be in the future 
+
+11. debugging
+run this commands again and not delete the files:
+$ tmp=$(mktemp -d)
+$ cd $tmp
+$ touch -d '1918-11-11 11:00 GMT' wwi-armistice
+$ touch now
+$ sleep 1
+$ touch now1
+$ TZ=UTC0 ls -lt --full-time wwi-armistice now now1
+
+then we try to find the bug:
+cd $tmp
+gdb ~/lab4/coreutilsInstall/bin/ls
+
+(gdb) info functions
+I find the function called sort_files that's related to sorting.
+So I set a break point on the function, and run it again
+
+(gdb) break sort_files
+(gdb) run -lt
+
+in sort_files function, it calls another function called compare_mtime, which is used under arguments -lt, so I set another break point
+
+(gdb) break compare_mtime
+
+Then I run the command again and get the outputs
+(gdb) r -lt --full-time wwi-armistice now now1
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+
+Starting program: /u/eng/class/classefa/lab4/coreutilsInstall/bin/ls -lt --full-time wwi-armistice now now1
+
+Breakpoint 1, sort_files () at ls.c:2954
+2954	   {
+(gdb) s
+2962    if (! setjmp (failed_strcoll))
+(gdb) s
+2964        switch (sort_type)
+(gdb) s
+2969	  switch (time_type)
+(gdb) s
+2975	      func = sort_reverse ? rev_cmp_mtime : compare_mtime;
+(gdb) s
+3034    qsort (files, files_index, sizeof *files, func);
+(gdb) s
+
+Breakpoint 2, compare_mtime (a=0x617190, b=0x617240) at ls.c:2884
+2884	   static int compare_mtime (V a, V b) { return cmp_mtime (a, b, xstrcoll); }
+(gdb) s
+cmp_mtime (cmp=0x404350 <xstrcoll>, b=0x617240, a=0x617190) at ls.c:2884
+2884	  static int compare_mtime (V a, V b) { return cmp_mtime (a, b, xstrcoll); }
+(gdb) s
+timespec_cmp (b=..., a=...) at ../lib/timespec.h:48
+48	       int diff = a.tv_sec - b.tv_sec;
+(gdb) list
+43    /* Return negative, zero, positive if A < B, A == B, A > B, respectively.
+44       Assume the nanosecond components are in range, or close to it.  */
+45	 static inline int
+46	 timespec_cmp (struct timespec a, struct timespec b)
+47	 {
+48	   int diff = a.tv_sec - b.tv_sec;
+49	     return diff ? diff : a.tv_nsec - b.tv_nsec;
+50	     }
+51	     
+52	     # if ! HAVE_DECL_NANOSLEEP
+(gdb) s
+49      return diff ? diff : a.tv_nsec - b.tv_nsec;
+(gdb) info locals
+diff = 1509008498
+
+now this is an integer overflow, so I think we find the source of bug.
+-rw-r--r-- 1 classefa class 0 2017-10-26 20:10:11.553745299 +0000 now1
+-rw-r--r-- 1 classefa class 0 2017-10-26 20:10:10.551728677 +0000 now
+-rw-r--r-- 1 classefa class 0 1818-11-11 11:00:00.000000000 +0000 wwi-armistice
+
+The way to prevent the problem from happening is to avoid subtraction, and directly compare timespec a and timespec b instead.
+
+Then I quit gdb by C-d
+
+12.debugging
+go to the folder:
+   cd ~/lab4/coreutils-with-bug/lib
+open the fild:
+   emacs timespec.h
+after checking that it is the right file, we quit emacs and make a copy of the file:
+   C-x C-c
+   cp timespec.h ../../timespec.h
+then we modify the copied file
+   cd ../..
+   emacs timespec.h
+we change the function to avoid subtraction by using comparison
+static inline int
+timespec_cmp (struct timespec a, struct timespec b)
+{
+  if (a.tv_sec < b.tv_sec)
+    return -1;
+  else if (a.tv_sec > b.tv_sec)
+    return 1;
+  else if (a.tv_nsec < b.tv_nsec)
+    return -1;
+  else if (a.tv_nsec > b.tv_nsec)
+    return 1;
+   else
+    return 0;
+}
+
+then we make the patch file by:
+     diff -u coreutils-with-bug/lib/timespec.h timespec.h > coreutils-with-bug/lab4.diff
+
+after this, we make some modification to the patch:
+      emacs lab4.diff
+      change the original and output file to lib/timespec.h
+
+then we apply the patch:
+     patch -p0 < lab4.diff
+and remake the file:
+    make
+
+we run the commands again and we get:
+-rw-r--r-- 1 classefa class 0 2017-10-26 20:16:17.218809500 +0000 now1
+-rw-r--r-- 1 classefa class 0 2017-10-26 20:16:16.216792885 +0000 now
+-rw-r--r-- 1 classefa class 0 1918-11-11 11:00:00.000000000 +0000 wwi-armistice
+now the order is correct.
+
+13.  reproduce the problem in your home directory on the SEASnet Linux servers
+we run the commands in cd ~
+   touch -d '1918-11-11 11:00 GMT' wwi-armistice
+   touch now \ sleep 1 \ touch now1
+   TZ=UTC0 ls -lt --full-time wwi-armistice now now1
+we get:
+-rw-r--r-- 1 classefa class 0 2054-12-17 17:28:16.000000000 +0000 wwi-armistice
+-rw-r--r-- 1 classefa class 0 2017-10-26 20:20:03.817673000 +0000 now1
+-rw-r--r-- 1 classefa class 0 2017-10-26 20:20:03.809680000 +0000 now
+it seems that the SEASnet ls cannot handle a time that's far in the past.
+
